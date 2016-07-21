@@ -1,0 +1,15 @@
+/*
+Theme Name: subaru
+Theme URI: http: //imarkinfotech.com/
+Description: Alldrivesubaru child theme.
+Author: Baljit 
+Author URI: http: //imarkinfotech.com/
+Template: alldrivesubaru 
+Version: 0.1
+*/
+ 
+@import url("../alldrivesubaru/style.css");
+body:not(.custom-background-image)::before, body:not(.custom-background-image)::after{
+	 
+	  
+}

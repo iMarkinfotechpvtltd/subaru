@@ -1,0 +1,33 @@
+[01-Jul-2016 22:22:45 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '=' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 10
+[01-Jul-2016 23:54:47 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[01-Jul-2016 23:54:52 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[01-Jul-2016 23:54:58 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:10:45 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:10:47 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:10:51 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:11:07 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:11:16 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:11:16 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 31
+[02-Jul-2016 01:16:54 Australia/Melbourne] PHP Parse error:  syntax error, unexpected '}' in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 48
+[02-Jul-2016 01:18:20 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:30 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:33 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:34 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:35 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:36 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:45 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:47 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:48 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:49 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:50 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:18:51 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:20:52 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:20:54 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:20:55 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[02-Jul-2016 01:20:55 Australia/Melbourne] PHP Fatal error:  Call to undefined function get_stylesheet_directory_uri() in /home/adstemp/public_html/wp-content/themes/subaru/ajax/tesmonails.php on line 1
+[18-Jul-2016 05:19:51 UTC] PHP Strict Standards:  Declaration of ik_walker::start_lvl() should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0
+[18-Jul-2016 05:19:51 UTC] PHP Strict Standards:  Declaration of ik_walker::end_lvl() should be compatible with Walker_Nav_Menu::end_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0
+[18-Jul-2016 05:21:00 UTC] PHP Strict Standards:  Declaration of ik_walker::start_lvl() should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0
+[18-Jul-2016 05:21:00 UTC] PHP Strict Standards:  Declaration of ik_walker::end_lvl() should be compatible with Walker_Nav_Menu::end_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0
+[18-Jul-2016 05:26:03 UTC] PHP Strict Standards:  Declaration of ik_walker::start_lvl() should be compatible with Walker_Nav_Menu::start_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0
+[18-Jul-2016 05:26:03 UTC] PHP Strict Standards:  Declaration of ik_walker::end_lvl() should be compatible with Walker_Nav_Menu::end_lvl(&$output, $depth = 0, $args = Array) in /home/adstemp/public_html/wp-content/themes/subaru/functions.php on line 0

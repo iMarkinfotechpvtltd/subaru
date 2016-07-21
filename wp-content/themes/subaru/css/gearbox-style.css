@@ -1,0 +1,3276 @@
+/*************************************/
+/** GearBox CSS Starts Here - Pankaj **/ 
+/*************************************/
+
+
+body.gearbox{
+    height: 100%;
+}
+
+.gearbox .navbar-default.navigation .navbar-nav > li.item1:hover a, .gearbox .navbar-default.navigation .navbar-nav > li.item1.active a {
+    color: #54a358;
+}
+
+
+.gearbox-banner{
+    background-repeat: no-repeat;
+    background-position:  0 0;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.gearbox-banner-text {
+    width: 100%;
+    max-width: 565px;
+    position: absolute;
+    left: 67px;
+    transform: translateY(-24%);
+    -webkit-transform: translateY(-24%);
+    top: 50%;
+}
+
+
+.gearbox-banner-text h1{
+    font-family: 'AgencyBold';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 110px;
+    text-align: center;
+}
+
+.gearbox-banner-text .banner-list-cvr {
+    margin-top: 50px;
+}
+
+.gearbox-banner-text .banner-list-cvr ul{
+    margin: 0;
+    padding: 0;
+}
+
+.gearbox-banner-text .banner-list-cvr ul li {
+    display: inline-block;
+    float: left;
+    width: 32.11%;
+    margin-right: 10px;
+}
+
+.gearbox-banner-text .banner-list-cvr ul li:last-child {
+    margin-right: 0;
+}
+
+.gearbox-banner-text .banner-list-cvr .banner-btn{
+    width: 100%;
+    background: rgba(12, 11, 8,0.85);
+    font-family: 'AgencyBold';
+    color: #0463ac;
+    font-size: 45px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.gearbox-submenu{
+    background:#e1e1e1;
+    width: 100%;
+    padding: 20px 0 28px;
+}
+
+.gearbox-submenu h4{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #414242;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.gearbox-submenu .gearbox-list ul{
+    margin: 0;
+    padding: 0;
+}
+
+.gearbox-submenu .gearbox-list ul li{
+    display: inline-block;
+    float: left;
+    width: 24.0%;
+    background: #fff;
+    margin-right: 15px;
+    position: relative;
+}
+
+
+.gearbox-submenu .gearbox-list ul li:last-child{
+    margin-right: 0;
+}
+
+.gearbox-submenu .gearbox-list ul li a{
+    font-family: 'AgencyBold';
+    font-size: 23px;
+    color: #414242;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+    min-height: 50px;
+    line-height: 2.2;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 0px #e70405; 
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.gearbox-submenu .gearbox-list ul li a:hover{
+    box-shadow: 0px 3px 0px #e70405; 
+    -webkit-box-shadow: 0px 3px 0px #e70405;
+}
+
+.gearbox-submenu .gearbox-list li.dropdown .dropdown-menu{
+    background: #fff;
+    position: absolute;
+    box-shadow: 0px 10px 12px #E1E1E1;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+
+.gearbox-submenu .gearbox-list li.dropdown .dropdown-menu li{
+    width: 100%;
+    
+}
+
+.gearbox-submenu .gearbox-list li.dropdown .dropdown-menu li a:hover{
+    color: #414242;
+    box-shadow: none;
+}
+
+.gearbox-list .caret{
+    margin-left: 8px;
+    vertical-align: middle;
+    border-top: 7px dashed;
+    border-top: 4px solid\9;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.gearbox-mid-about{
+    margin: 65px 0 ;
+}
+
+.gearbox-mid-about-text{
+    background: #fff;
+    padding: 10px 0px 30px;
+    
+}
+
+.gearbox-mid-about h1{
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.gearbox-mid-about h1:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 20px;
+}
+
+.gearbox-mid-about-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.gearbox-mid-about-text p:last-child{
+    margin-bottom: 0;
+}
+
+
+.make-va{
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.search-gearbox-vin, .search-gearbox{
+    background: #f5f4f4;
+    padding: 30px 0 35px;
+    margin-bottom: 30px;
+    border-top:solid 1px #b8b8b8;
+    border-bottom:solid 1px #b8b8b8;
+}
+
+
+.search-gearbox-vin h1, .search-gearbox h1{
+    margin: 0;
+    padding:0;
+    line-height: 1;
+    font-family: 'AgencyBold';
+    font-size: 34px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.search-gearbox-vin .search-gearbox-form input{
+    width: 75%;
+    background: #fafafa;
+    border: solid 1px #b8b8b8;
+    height: 60px;
+    padding: 6px 20px;
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #9e9e9e;
+    letter-spacing: 1px;
+}
+
+.search-gearbox-vin .search-gearbox-form .search-btn{
+    border: none;
+    width: 240px;
+    height: 60px;
+    background: #6cb504;
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    border: solid 1px transparent;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+
+.search-gearbox-vin .search-gearbox-form .search-btn:hover, .search-gearbox-vin .search-gearbox-form .search-btn:focus{
+    background: #fff;
+    border-color:#6cb504;
+    color:#6cb504;
+}
+
+
+.search-gearbox .form-control{
+    width: 100%;
+    background: #fff;
+    border: none;
+    height: 60px;
+    padding: 6px 20px;
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #9e9e9e;
+    letter-spacing: 1px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+
+.search-gearbox select.form-control{
+    background: #fff url(../images/engine/engine-select-arrow.png) no-repeat 95% 50%;
+    appearance:none;
+    -webkit-appearance:none;
+    padding-right: 30px;
+}
+
+.search-gearbox .search-btn{
+    width: 100%;
+    border: none;
+    height: 60px;
+    background: #6cb504;
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    border: solid 1px transparent;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+
+.search-gearbox .search-btn:hover, .search-gearbox .search-btn:active{
+    background: #fff;
+    border-color:#6cb504;
+    color:#6cb504;
+}
+
+
+.search-gearbox .car-model, .search-gearbox .car-model-type, .search-gearbox .car-model-year{
+    position: relative;
+    
+}
+
+.search-gearbox .car-model{
+    padding: 20px 0 0px;
+}
+
+.search-gearbox .car-model:before, .search-gearbox .car-model-year:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    top: 50%;
+    right: -17px;
+    background: #706f6f;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.search-gearbox .car-model:after, .search-gearbox .car-model-year:after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    top: 50%;
+    right: -30px;
+    background: #706f6f;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.search-gearbox .car-model img, .search-gearbox .car-model-type img{
+    text-align: center;
+    margin: 0 auto
+}
+
+.search-gearbox .car-model-year p{
+    font-family: 'AgencyBold';
+    font-size: 160px;
+    color: #9e9e9e;
+    text-align: center;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.gearbox-above-beyond{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,f1f1f1+100 */
+background: rgb(229,229,229); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(229,229,229,1) 49.7%, rgba(241,241,241,1) 49.7%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(229,229,229,1) 49.7%,rgba(241,241,241,1) 49.7%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(229,229,229,1) 49.7%,rgba(241,241,241,1) 49.7%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-9 */
+    width: 100%;
+    padding: 58px 0;
+}
+
+.gearbox-above-beyond h1{
+    margin: 0;
+    padding:0;
+    line-height: 1;
+    font-family: 'AgencyBold';
+    font-size: 38px;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.gearbox-above-beyond-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 36%;
+}
+
+.gearbox-above-beyond-text.pl{
+    padding-left: 2px;
+}
+
+.gearbox-above-beyond-img {
+    display: inline-block;
+    vertical-align: top;
+    width: 23.5%;
+    margin: 0px 18px;
+    text-align: center;
+}
+
+.gearbox-above-beyond-img img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gearbox-above-beyond-text h2{
+    margin: 5px 0 0;
+    padding: 0;
+    font-family: 'AgencyBold';
+    font-size: 33px;
+    color: #3f3f3f;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.gearbox-above-beyond-text h2 span{
+    color:#6cb504;
+}
+
+.gearbox-above-beyond-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #3f3f3f;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.gearbox-above-beyond-img a.abv-bey-btn{
+    display: inline-block;
+    width: 215px;
+    line-height: 2.2;
+    background: #6cb504  url(../images/engine/abv-bey-arrow.png) no-repeat 90% 50%;
+    color: #fff;
+    font-family: 'AgencyBold';
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 28px;
+    margin-top: 20px;
+    text-align: left;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.gearbox-above-beyond-img a.abv-bey-btn:hover{
+    background-position: 10% 50%;
+    padding-left: 60px;
+    background-color: #54880a;
+}
+
+.subaru-sti-cvr{
+    min-height: 777px;
+    width: 100%;
+    background: url(../images/gearbox/subaroo-STI-6-banner.jpg) no-repeat left center;
+    background-size: cover;
+    position: relative;
+    margin-top: 40px;
+}
+
+.subaru-sti-cvr .container{
+     position: relative;
+    min-height: 777px;
+}
+
+.subaru-sti-text{
+    width: 100%;
+    max-width: 620px;
+    background: rgba(38,38,38,0.75);
+    background-size: cover;
+    border: none;
+    box-shadow: none;
+    padding: 45px;
+    top: 50%;
+    right: 0;
+
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.subaru-sti-text h3{
+    font-family: 'AgencyBold';
+    color: #fff;
+    font-size: 43px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 0 20px;
+    line-height: 1.3;
+}
+
+.subaru-sti-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+.subaru-sti-text ul{
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.subaru-sti-text ul li{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-family: 'AgencyBold';
+    color: #6cb504;
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-right: 13px;
+}
+
+.subaru-sti-text ul li:last-child{
+    margin-right: 0;
+}
+
+.subaru-sti-img{
+    display: block;
+    margin-top: 8px;
+    
+}
+
+.subaru-sti-img img{
+    width: 100%;
+}
+
+.subaru-sti-text a.subaru-sti-btn{
+    float: left;
+    width: 100%;
+    line-height: 1.4;
+    background: #6cb504;
+    border: solid 1px transparent;
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.subaru-sti-text a.subaru-sti-btn:hover, .subaru-sti-text a.subaru-sti-btn:focus{
+    background: #fff;
+    border-color: #6cb504;
+    color: #6cb504;
+}
+
+
+.gearbox-service{
+    background: url(../images/engine/engine-service-bottom-back.png), url(../images/engine/engine-service-bg.jpg) ;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat, repeat;
+    background-position: center bottom;
+    background-size: 90%, auto;
+    padding: 40px 0 250px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.gearbox-service h1{
+    margin: 0;
+    padding:0;
+    line-height: 1;
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #3f3f3f;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.gearbox-service-star{
+    position: relative;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 40px;
+}
+
+.gearbox-service-star:before, .gearbox-service-star:after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 1px;
+    width: 36.5%;
+    background: #d8d8d8;
+    z-index: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.gearbox-service-star:after{
+    right: 0;
+    left: auto;
+}
+
+.gearbox-service-star img{
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.gearbox-service-item{
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 30px 8px;
+    width: 32.5%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 13px;
+    vertical-align: top;
+    min-height: 275px;
+}
+
+.gearbox-service-item:nth-child(3), .gearbox-service-item:nth-child(6){
+    margin-right: 0;
+}
+
+.gearbox-service-item .service-icon{
+    display: block;
+    margin: 0 auto 20px;
+    width: 79px;
+    height: 79px;
+    border-radius: 100%;
+    background: #6cb504;
+    padding: 18px;
+    
+}
+
+.gearbox-service-item .service-icon img{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gearbox-service-item h5{
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color: #434343;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+
+.gearbox-service-item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #0f0f0f;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.enquiry-form-gearbox{
+    width: 100%;
+    background: #fff;
+    padding: 50px 0 45px;
+    position: relative;
+    
+}
+
+.enquiry-form-gearbox:before {
+    content: "....";
+    position: absolute;
+    left: -4px;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    color: #414242;
+    text-align: center;
+    z-index: 0;
+    top: 50%;
+    line-height: 1;
+    margin-top: -22px;
+}
+
+.enquiry-form-gearbox h1{
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    color: #313131;
+    margin: 0 0 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.gb-form-cvr{
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.gb-form-left, .gb-form-right{
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+    background: #f4f4f4;
+    padding: 20px 15px;
+    border-radius: 4px;
+    
+
+}
+
+.gb-form-left{
+    text-align: center;
+    margin-right: 40px;
+    min-height: 527px;
+}
+
+.gb-form-left h2{
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    color: #454545;
+    margin: 0 0 3px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.gb-form-left p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#414242;
+}
+
+.gb-form-left ul{
+    margin: 46px 0 0;
+    padding: 0;
+}
+
+.gb-form-left ul li{
+    display: inline-block;
+    width: 31%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.gb-form-left ul li:last-child{
+    margin-right: 0;
+}
+
+.gb-form-left ul li.client-img{
+    background: #fff;
+    border-radius: 100%;
+    overflow: hidden;  
+}
+
+.gb-form-left ul li.client-img img{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.gb-form-left ul li.help-text h4{
+    font-family: 'AgencyBold';
+    font-size: 44px;
+    color: #6cb504;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.gb-form-left ul li.help-text p{
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #414242;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.gb-form-left ul li.start-chat{
+    background: #6cb504;
+    border-radius: 100%;
+    text-align: center;
+    padding: 15px;
+    min-width: 156px;
+    min-height: 156px;
+}
+
+.gb-form-left ul li.start-chat img{
+    margin: 0 auto;
+    text-align: center;
+        width: 96px;
+}
+
+.gb-form-left ul li.start-chat  p{
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #fff ;
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+.gb-form-left ul li.start-chat  p a{
+    color: #fff ;
+}
+
+.gb-form-left ul li.start-chat  p a:hover{
+    color:#54880a;
+}
+
+.gb-form-left .gb-call-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #414242;
+    margin: 0 0 9px;
+    
+}
+
+.gb-form-left .gb-call-text p strong{
+    font-size: 22px;
+    color: #414242;
+    font-weight: 400;
+}
+
+.gb-form-left .gb-call-text p strong a{
+    color: #6cb504;
+    font-weight: 600;
+}
+
+.gb-form-left .gb-call-text p strong a:hover{
+    color:#54880a;
+}
+
+
+
+.gb-form-right{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.gb-form-right input, .gb-form-right select{
+    width: 100%;
+    padding: 6px 15px;
+    border:solid 1px #aaaaaa;
+    height: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 307px;
+    margin-bottom: 16px;
+}
+
+.gb-form-right select{
+    color:#aeaeae;
+    padding: 6px 11px;
+}
+
+.gb-form-right textarea{
+    width: 100%;
+    height: 105px;
+    resize: none;
+    padding: 6px 15px;
+    border:solid 1px #aaaaaa;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.ins-rq p, .ins-rq label{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aeaeae;
+    margin: 0;
+    line-height: 1;
+}
+
+.ins-rq  input[type="radio"]{
+    display: none;
+}
+
+.ins-rq .cust-radio {
+    background: #fff;
+    border: solid 1px #aaaaaa;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 1px;
+    cursor: pointer;
+    border-radius: 0px;
+    display: inline-block;
+    margin-left: 12px;
+    top: -1px;
+    position: relative;
+    
+}
+
+.ins-rq input[type="radio"]:checked + span.cust-radio {
+    background: #e70506;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-color:#e70506;
+}
+
+.ins-rq input[type="radio"]:checked + span.cust-radio:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    background: transparent;
+    top: 3px;
+    left: 2px;
+    border: 1px solid #fff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.col-sm-12.ins-rq {
+    margin-top: 5px;
+    margin-bottom: 17px;
+}
+
+.gb-form-btn{
+    width: 100%;
+    height: 50px;
+    background: #6cb504;
+    border:solid 1px transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.gb-call-text {
+    margin-top: 34px;
+}
+
+
+
+.gb-form-right .gb-form-btn:hover, .gb-form-right .gb-form-btn:active {
+    background: #fff;
+    border-color: #6cb504;
+    color: #6cb504;
+}
+
+.thg-consider-cvr{
+    background: #f4f4f4;
+    width: 100%;
+    padding: 50px 0 30px;
+}
+
+.thg-consider-cvr h1{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #3f3f3f;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.thg-consider-cvr .engine-service-star{
+    margin:15px 0 30px;
+}
+
+.thg-consider-cvr .engine-service-star:before, .thg-consider-cvr .engine-service-star:after{
+    background: #313131;
+
+}
+
+.thg-cons-item{
+    margin: 20px 0;
+}
+
+.thg-cons-item .thg-icon-cvr{
+    width: 80px;
+    height: 75px;
+    background:#f7f7f7;
+    text-align: center; 
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 9px;
+    position: relative;
+}
+
+.thg-cons-item .thg-icon-cvr img{
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.thg-cons-item .thg-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+}
+
+.thg-cons-item .thg-text h5{
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #3e3e3e;
+    margin: 0 0 14px;
+}
+
+.thg-cons-item .thg-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #434343;
+}
+
+.gearbox.featured-category-section{
+    margin: 65px 0 20px;
+    position: relative;
+    z-index: 22;
+}
+
+.gearbox.featured-category-section h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    border: none;
+    padding: 0;
+}
+
+.gearbox.featured-category-section .featured-carousel{
+    margin-top: 10px;
+}
+
+.gearbox.featured-category-section .owl-nav {
+    display: block !important;
+    position: relative;
+}
+
+.gearbox.featured-category-section .owl-nav .owl-prev {
+    background: url(../images/gearbox/price-pre-btn.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+    border-radius: 0;
+    color: #f4f4f4;
+    font-family: "AgencyRegular";
+    font-size: 30px;
+    height: 39px;
+    line-height: 20px;
+    margin: 0 2px 0 0;
+    padding: 5px 10px 10px 50px;
+    width: 118px;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-indent: initial;
+}
+
+.gearbox.featured-category-section .owl-nav .owl-next {
+    background: url(../images/gearbox/price-nex-btn-d.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+    border-radius: 0;
+    color: #f4f4f4;
+    font-family: "AgencyRegular";
+    font-size: 30px;
+    height: 39px;
+    line-height: 20px;
+    margin: 0 0 0 2px;
+    padding: 5px 50px 10px 10px;
+    width: 118px;
+    position: relative;
+    top: 0;
+    right: 0;
+    text-indent: initial;
+}
+
+
+.gearbox.featured-category-section .owl-nav .owl-next:hover {
+    background-position: center -51px;
+    background-repeat: no-repeat;
+}
+
+.gearbox.featured-category-section .owl-nav .owl-prev:hover {
+    background-position: center -51px;
+    background-repeat: no-repeat;
+}
+
+
+.gearbox.featured-category-section .product-img{
+    padding: 10px 10px 0;
+}
+
+.gearbox.featured-category-section .pr-des{
+    background: #e4e4e4;
+    border: none;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.gearbox.featured-category-section .pr-des p {
+    color: #333333;
+    font-family: 'AgencyRegular';
+    font-size: 18px;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+.gearbox.featured-category-section .pr-des .en-price p{ 
+    font-size: 22px;
+    text-align: right;
+}
+
+.gearbox.featured-category-section .pr-des .en-price p span{
+    color: #fe0000;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.gearbox.featured-category-section .product-box:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+.gearbox.featured-category-section .product-box:hover .pr-des{
+    background: #f6f6f6;
+}
+
+.footer-up{
+    background: #303030;
+    padding: 70px 0;
+    width: 100%;
+}
+
+.footer-up h3{
+    color: #fff;
+    font-family: "AgencyBold";
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.footer-up .footer-item{
+    display: inline-block;
+    float: left;
+    width: 21.5%;
+    margin-right: 15px;
+}
+
+.footer-up .footer-item:last-child{
+    margin-right: 0;
+}
+
+.footer-up .footer-item.footer-vdo{
+    width: 31.55%;
+}
+
+.footer-map{
+    width: 100%;
+    min-height: 252px;
+    position: relative;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-light-grey {
+    background: #4f4f4f;
+    padding: 15px;
+}
+
+.footer-light-grey p {
+    color: #dbdbdb;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-light-grey hr {
+    border-color: #828282;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.footer-light-grey .timming{
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.footer-light-grey.foo-cont p {
+    color: #fff;
+    font-size: 13px;
+    margin: 0 0 14px;
+    line-height: 1.5;
+}
+
+.footer-light-grey.foo-cont p:last-child {
+    margin-bottom: 9px;
+}
+
+.footer-light-grey.foo-cont p a{
+    color: #fff;
+}
+
+.footer-light-grey.foo-cont p a:hover{
+    color: #9C9C9C;
+}
+
+/** Installation Peakhurst Page **/
+
+.gearbox-bread-crumb{
+    background: #6cb504;
+    width: 100%;
+    display: block;
+    margin: 40px 0;
+}
+
+.gearbox-bread-crumb ul{
+    margin: 0;
+    padding: 15px 0;
+}
+
+
+.gearbox-bread-crumb ul li{
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+    font-family: 'AgencyRegular';
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.gearbox-bread-crumb ul li a{
+    color: #fff;
+    line-height: 1;
+}
+
+.gearbox-bread-crumb ul li:after{
+    content: "\f101";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #328135;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    bottom: 0;
+
+}
+
+.gearbox-bread-crumb ul li:nth-last-child(2):after{
+    color: #fff;
+}
+
+.gearbox-bread-crumb ul li:last-child:after{
+    display: none;
+}
+
+ul.gear-tick-list {
+    margin: 10px 0 10px;
+    padding: 0;
+}
+
+ul.gear-tick-list li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+ul.gear-tick-list li:before {
+    content: "";
+    background: url(../images/engine/cooling-text-list-icon.jpg) no-repeat;
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+}
+
+.inst-peak-mid-about h2{
+    color: #313131;
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    letter-spacing: normal;
+    margin: 0 0 20px;
+}
+
+.inst-peak-mid-about h3{
+    color: #313131;
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    letter-spacing: normal;
+    margin: 0 0 20px;
+}
+
+.gear-panel-qoute {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.inst-peak-mid-about .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+}
+
+.gear-panel-qoute p:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    background: url(../images/gearbox/quotes-open.png) no-repeat;
+    background-position: left top;
+    width: 21px;
+    height: 17px;
+    left: -5px;
+}
+
+.gear-panel-qoute p:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    background: url(../images/gearbox/quotes-open.png) no-repeat;
+    background-position: left top;
+    width: 21px;
+    height: 17px;
+    right: -5px;
+    transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg);
+}
+
+.insta-peak-sidebar-img img:first-child{
+    margin-top: 25px;
+}
+
+
+.insta-peak-sidebar-img img{
+    margin-bottom: 50px;
+}
+
+.inst-peak-grey{
+    display: block;
+    background: #f2f2f2;
+    padding: 30px 0;
+}
+
+.inst-peak-grey h1{
+    color: #404040;
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    letter-spacing: normal;
+    margin: 0 0 20px;
+}
+
+.inst-peak-grey h2{
+    color: #404040;
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    letter-spacing: normal;
+    margin: 0 0 20px;
+}
+
+.inst-peak-grey p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+.inst-peakbig-green{
+    width: 100%;
+    background: #6cb504;
+    line-height: 1.7;
+    font-family: 'AgencyBold';
+    font-size: 28px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    margin: 40px 0;
+    border: solid 1px transparent;
+}
+
+.inst-peakbig-green:hover, .inst-peakbig-green:focus {
+    background: #fff;
+    color: #6cb504;
+    border-color: #6cb504;
+}
+
+
+/** About Subaru Gearbox page **/
+
+.comp-ppl-cvr.gearbox-comp-ppl-cvr h1 {
+    font-family: 'AgencyBold';
+    font-size: 60px;
+    color: #6cb504;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.gearbox-comp-ppl-cvr h3{
+    font-family: 'AgencyBold';
+    font-size: 25px;
+    color: #404040;
+    margin-bottom: 10px;
+}
+
+.gearbox-comp-ppl-cvr .gear-panel-qoute h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gearbox-comp-ppl-cvr .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+}
+
+.gearbox-comp-ppl-cvr .gear-panel-qoute p a{
+    color: #6cb504;
+}
+
+.gearbox-comp-ppl-cvr .gear-panel-qoute p a:hover {
+    color: #54880a;
+}
+
+.gearbox-motorsport{
+    background: #f6f6f6;
+    width: 100%;
+    padding: 20px 0 0;
+    float: left;
+}
+
+
+.gearbox-motorsport h1{
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    color: #160c0c;
+    margin-bottom: 20px;
+}
+
+.gearbox-motorsport .head-assemblie-heading h2 {
+    font-family: 'AgencyBold';
+    font-size: 33px;
+    color: #6cb504;
+    letter-spacing: normal;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.gearbox-motorsport p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #414242;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.motorsport-outer-cvr{
+    margin-top: 40px;
+}
+
+.gearbox-motorsport-inner .assemblie-icon {
+    padding: 6px 10px;
+    text-align: center;
+    display: table-cell;
+    background: #d3d3d3;
+    vertical-align: middle;
+    width: 12.2%;
+}
+
+
+.gearbox-motorsport-inner .assemblie-heading-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 85%;
+    margin-left: 9px;
+    padding: 2px 15px;
+}
+
+.green-list{
+    margin: 0;
+    padding: 0;
+}
+
+.green-list li{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #414242;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+} 
+
+
+.green-list li b{
+    font-weight: 700;
+    color:#6cb504;
+}
+
+.motorsport-outer-cvr .gear-panel-qoute {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.motorsport-outer-cvr .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 24px;
+    position: relative;
+}
+
+.motosport-more-dtl {
+    padding-left: 25px;
+}
+
+.motosport-more-dtl a{
+    text-decoration: underline;
+    color: #6cb504;
+}
+
+.motosport-more-dtl a:hover {
+    color: #54880a;
+}
+
+.new-used-motosport .gear-panel-qoute {
+    position: relative;
+    margin: 0 0;
+    text-align: left;
+    width: 100%;
+}
+
+.new-used-motosport .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    display: inline-block;
+    padding: 0 24px;
+    position: relative;
+}
+
+.new-used-motosport .gear-panel-qoute p a {
+    color: #6cb504;
+}
+
+.new-used-motosport .gear-panel-qoute p a:hover {
+    color: #54880a;
+}
+
+.new-used-motosport  h3 {
+    font-family: 'AgencyBold';
+    font-size: 25px;
+    color: #404040;
+    letter-spacing: normal;
+    margin: 0 0 15px;
+    line-height: 1.2;
+}
+
+.new-used-motosport .mb20{
+    margin-bottom: 40px;
+}
+
+.engine-service.gearbox-service {
+    background: url(../images/gearbox/gearbox-service-bottom-back.png), url(../images/engine/engine-service-bg.jpg);
+    background-color: #f4f4f4;
+    background-repeat: no-repeat, repeat;
+    background-position: center bottom;
+    background-size: 90%, auto;
+    padding: 40px 0 250px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.gearbox-service .engine-service-item .service-icon{
+    background: #6cb504;
+}
+
+
+/** Centre Differential Final Page **/
+
+.gearbox-center-diff-main h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.gearbox-center-diff-main h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 20px;
+}
+
+.gearbox-center-diff-inner {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ebebeb;
+}
+
+.gearbox-center-diff-inner h2{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.gearbox-center-diff-inner p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.gearbox-center-diff-inner  .gear-panel-qoute {
+    position: relative;
+    margin: 20px auto 0;
+    text-align: center;
+    width:100%;
+}
+
+.gearbox-center-diff-inner .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+  
+}
+
+.gearbox-center-diff-gray{
+    background: #f8f8f8;
+    width: 100%;
+    padding:65px 0;
+    position: relative;
+}
+
+.gearbox-center-diff-gray h1{
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.gearbox-center-diff-gray h2{
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.gearbox-center-diff-gray p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.gearbox-center-diff-gray p b{
+    font-weight: 700;
+}
+
+.gearbox-center-diff-gray .gear-panel-qoute {
+    position: relative;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.gearbox-center-diff-gray .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 18px;
+    position: relative;
+    margin: 0;
+}
+
+.gearbox-center-diff-gray .gear-panel-qoute p a{
+    color: #6cb504;
+}
+
+.gearbox-center-diff-gray .gear-panel-qoute p a:hover{
+    color: #4E8204;
+}
+
+.gearbox-center-diff-gray .enquery-btn{
+    width: 100%;
+    background: #6cb504;
+    line-height: 1.7;
+    font-family: 'AgencyBold';
+    font-size: 28px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    margin: 0;
+    border: solid 1px transparent;
+}
+
+.gearbox-center-diff-gray .enquery-btn:hover, .gearbox-center-diff-gray .enquery-btn:focus{
+    background: #fff;
+    color: #6cb504;
+    border-color: #6cb504;
+}
+
+.gearbox-center-diff-list{
+    border-bottom: solid 1px #a8a8a8;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.gearbox-center-diff-list:last-child{
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.gearbox-center-diff-list-img img{
+    border: solid 2px #dbdbdb;
+}
+
+
+.gearbox-purchase-cvr{
+        background: url(../images/gearbox/center-diff-purchase-top-back.jpg), url(../images/engine/engine-service-bg.jpg);
+    background-color: #f4f4f4;
+    background-repeat: no-repeat, repeat;
+    background-position: center top, left top;
+    background-size: 100% auto;
+    padding: 135px 0 40px;
+}
+
+.gearbox-purchase-white{
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    float: left;
+}
+
+.gearbox-purchase-white h1 {
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    color: #6cb504;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.gearbox-purchase-white h1:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    display: block;
+    margin: 20px 0 25px;
+}
+
+.gearbox-purchase-white p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.green-gray-opt-cvr .grren-gray-opt-gray{
+    background: #e6e6e6;
+    float: left;
+    width: 100%;
+}
+
+.green-gray-opt-heading{
+    background: #6cb504;
+    width: 100%;
+}
+
+.green-gray-opt-heading h3{
+    text-align: center;
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin: 0 0 30px;
+}
+
+.gearbox-purchase-white .grren-gray-opt-gray p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #404040;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.gearbox-purchase-white .grren-gray-opt-gray p.opt-bold-head{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.opt-green-alrt{
+    background:#6cb504;
+    width: 100%;
+}
+
+
+
+.opt-full-text{
+    min-height:200px;
+}
+
+
+.green-gray-opt-img {
+    position: relative;
+}
+
+.gearbox-purchase-white .opt-green-alrt p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 3px 25px;
+    line-height: 1.4;
+}
+
+.grren-gray-opt-gray .green-gray-opt-inn .green-gray-opt-img:before{
+
+    position: absolute;
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: -38px auto 0;
+    text-align: center;
+    background: #E6E6E6;
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    line-height: 1.4;
+    color: #6CB504; 
+}
+
+.green-gray-opt-img.a-wali-line:before{
+    content: "A";
+}
+
+.green-gray-opt-img.b-wali-line:before{
+    content: "B";
+}
+.green-gray-opt-img.c-wali-line:before{
+    content: "C";
+}
+.green-gray-opt-img.d-wali-line:before{
+    content: "D";
+}
+
+.gearbox-purchase-cvr .gear-panel-qoute {
+    position: relative;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.gearbox-purchase-cvr h3{
+    text-align: left;
+    font-family: 'AgencyBold';
+    font-size: 30px;
+    color: #000;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin: 0 0 15px;
+}
+
+ .gearbox-purchase-cvr .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 18px;
+    position: relative;
+    margin: 0;
+}
+
+.gearbox-purchase-cvr .gear-panel-qoute p:before, .gearbox-purchase-cvr .gear-panel-qoute p:after{
+    width:15px;
+    background-size: 100%;
+}
+
+.gearbox-purchase-white .purchase-option-cvr h1{
+    text-align: center;
+    font-family: 'AgencyBold';
+    font-size: 45px;
+    color: #84c02f;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    
+}
+
+.gearbox-purchase-white .purchase-option-cvr h1:after{
+    display: none;
+}
+
+.gearbox-purchase-white .purchase-option-cvr h1:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    display: block;
+    margin: 25px 0px 15px;
+}
+
+.purchase-option-step{
+    background: #fafafa;
+    width: 100%;
+}
+
+.purchase-option-step-black{
+    background: #414242;
+    width: 100%;
+
+}
+
+.purchase-option-step-img{
+    text-align: center;
+    padding: 20px;
+}
+
+.purchase-option-step-img img{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.purchase-option-step-black p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 3px 0px;
+    line-height: 2.4;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.purchase-option-step-black p span{
+    color:#6cb504;
+}
+
+
+.gearbox .gaskit-right-sol-white-no-pad .step-heading h1 small {
+    color: #84c02f;
+}
+
+.gearbox .gaskit-red-select {
+    background: #84c02f;
+}
+
+.gearbox .gaskit-right-sol-darkgrey-heading h1{
+    box-shadow: 0px 3px 0px #84c02f;
+}
+
+.about-subaru-green-btn-panel{
+    margin: 30px 0 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+.about-subaru-green-btn-panel li {
+    float: left;
+    width: 49.5%;
+    margin-right: 10px;
+}
+
+.about-subaru-green-btn-panel li a {
+    background: #6cb504;
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.8;
+    display: block;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.about-subaru-green-btn-panel li:nth-child(2){
+    margin-right: 0;
+}
+
+.about-subaru-green-btn-panel li.about-subaru-green-big-btn{
+    width: 100%;
+    margin-right: 0;
+     margin-top: 10px;
+}
+
+.about-subaru-green-btn-panel li a:hover, .about-subaru-green-btn-panel li a:focus {
+    background: #4D8400;
+}
+
+
+/** PPG Cliff Final page  ***/
+
+.ppg-cliff-main h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.ppg-cliff-main h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 40px;
+}
+
+.ppg-cliff-main-inner h2 {
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.ppg-cliff-main-inner p, .high-qual-ppg-cvr p, .ppg-ongoing-cvr p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.ppg-cliff-main-inner h4, .high-qual-ppg-list h4, .high-qual-feature-cvr h4, .ppg-grey-left.ppg-grey-left-text h4, .ppg-ongoing-cvr h4{
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.ppg-cliff-main-top-list ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    text-align: justify;
+    border-bottom: solid 1px #ebebeb;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.ppg-cliff-main-top-list ul li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.ppg-cliff-main-top-list ul li strong{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.ppg-cliff-main-top-list ul li:before {
+    content: "";
+    background: url(../images/engine/cooling-text-list-icon.jpg) no-repeat;
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.ppg-land-cos-img{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.ppg-land-cos-img p {
+    text-align: left;
+    margin: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    color: #404040;
+    padding-left: 15px;
+}
+
+.ppg-land-cos-img p b{
+    font-weight: 600;
+}
+
+.high-qual-ppg-cvr{
+    border-top: solid 1px #ebebeb;
+    padding-top: 50px;
+}
+
+.high-qual-ppg-cvr h3, .ppg-ongoing-cvr h3 {
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.high-qual-feature-cvr ul li{
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 15px;  
+}
+
+.ppg-cliff-grey{
+    background: #f2f1f2;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ppg-grey-left.ppg-grey-left-img img{
+    width: 100%;
+}
+
+.ppg-grey-left.ppg-grey-left-text{
+    padding-left: 0;
+}
+
+.ppg-grey-left.ppg-grey-left-text h4{
+    margin-bottom: 10px;
+}
+
+.ppg-grey-left.ppg-grey-left-text ul.gear-tick-list li, .ppg-grey-left.ppg-grey-left-text p{
+    
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #414242;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.ppg-grey-left.ppg-grey-left-text ul.gear-tick-list li:before {
+    content: "";
+    background: url(../images/engine/cooling-text-list-icon-2.png) no-repeat;
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+}
+
+.ppg-ongoing-cvr{
+    margin-top: 50px;
+}
+
+
+.ppg-ongoing-cvr ul.gear-tick-list li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.ppg-ongoing-cvr ul.gear-tick-list li:before{
+    top: 4px;
+}
+
+.ppg-products-cvr{
+    background: #f8f8f8;
+    padding: 40px 0;
+}
+
+.ppg-products-cvr h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.ppg-products-cvr h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 40px;
+}
+
+.ppg-products-cvr h2 {
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.ppg-products-cvr h3 {
+    font-family: 'AgencyBold';
+    font-size: 31px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.ppg-products-list {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #858585;
+
+}
+
+.ppg-products-list.no-border{
+    border-bottom: none;
+}
+
+.ppg-products-cvr ul.ppg-prod-green{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+}
+
+.ppg-products-cvr ul.ppg-prod-green li{
+    float: left;  
+    width: 49.5%; 
+    margin-right: 6px;  
+}
+
+.ppg-products-cvr ul.ppg-prod-green li a{
+    background: #6cb504;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.4;
+    display: block;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.ppg-products-cvr ul.ppg-prod-green li:last-child{
+    margin-right: 0;
+}
+
+.ppg-products-cvr ul.ppg-prod-green li a:hover, .ppg-products-cvr ul.ppg-prod-green li a:focus{
+    background: #4D8400;
+}
+
+.ppg-products-cvr p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.ppg-products-cvr p b{
+    font-weight: 700;
+}
+
+.ppg-products-list-text{
+     min-height: 205px;
+}
+
+.ppg-products-list-text p:last-child{
+    margin-bottom: 0;
+}
+
+.ppg-products-list .col-md-8{
+    position: relative;
+    min-height: 294px;
+}
+
+.gearbox-service .ppg-cliff-service .engine-service-item{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    min-height: 400px;
+    text-align: center;
+}
+
+.engine-service-list.eng-land-page.ppg-cliff-service {
+    margin-top: 50px;
+}
+
+.engine-service-list.eng-land-page.ppg-cliff-service .engine-service-item p{
+    text-align: center;
+}
+
+
+/**** About Subaru Transmission page *****/
+
+.about-trans-main h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.about-trans-main h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 40px;
+}
+
+.about-trans-inner h2 {
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #160c0c;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.about-trans-inner p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+ul.trans-top-list{
+    margin: 10px 0 25px;
+    padding: 0;
+}
+
+ul.trans-top-list li{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    margin-right: 11px;
+}
+
+ul.trans-top-list li:last-child{
+    margin-right: 0;
+}
+
+ul.trans-top-list li div{
+    font-family: 'AgencyBold';
+    font-size: 22px;
+    color: #6cb504;
+    text-align: center;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    background: #e3e3e3;
+    width: 100%;
+    line-height: 1.8;
+}
+
+.about-trans-diff-types-cvr h1:after{
+    display: none;
+}
+
+.trans-diff-types-heading{
+    background: #f5f5f5;
+    width: 100%;
+    padding: 8px;
+    box-shadow: 0px 3px 0px #6CB504;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.trans-diff-types-heading img, .trans-diff-types-heading h3{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.trans-diff-types-heading h3{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #414141;
+    margin: 0 0 0 10px;
+}
+
+.about-trans-diff-types-cvr h4{
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #6cb504;
+    margin:20px 0;
+    text-align: center;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body h4.green{
+    font-family: 'AgencyBold';
+    font-size: 26px;
+    color: #6cb504;
+    margin:20px 0;
+    text-align: center;
+}
+
+.about-trans-diff-types-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #414242;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about-trans-diff-types-text h6{
+    font-family: 'AgencyBold';
+    font-size: 19px;
+    color: #626262;
+    margin:30px 0 15px;
+    text-align: left;
+}
+
+.gearbox-conf-panel-grp.right-spef {
+    float: left;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.gearbox-conf-panel-grp.right-spef {
+    float: left;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-group .panel {
+    margin-bottom: 40px;
+}
+
+.gearbox-conf-panel-grp.right-spef  h2{
+    font-family: 'AgencyBold';
+    font-size: 25px;
+    color:#555555;
+    margin: 0 0 20px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-default>.panel-heading {
+    color: #3a3a3a;
+    background-color: #fff;
+    border-color: #e3e0e0;
+    padding: 15px 15px;
+    margin-bottom: 0;
+    
+}
+
+
+.gearbox-conf-panel-grp.right-spef .panel-default>.panel-heading .panel-title{
+    letter-spacing: normal;
+    font-weight: 700;
+    color: #6cb504;
+    font-size:18px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-title span{
+    float: left;
+    margin-right: 10px;
+    border-width: 1px;
+    border-color: #6cb504;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-title span i{
+    color: #6cb504;
+    font-weight: normal;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body{
+    padding: 15px 41px 40px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body h3{
+    font-family: 'AgencyBold';
+    font-size: 20px;
+    color:#626262;
+    margin: 0 0 15px;
+    position: relative;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body h3.with-red-border:before{
+    content: "";
+    top: 2px;
+    left: -15px;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background: red;
+    max-height: 16px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body h4{
+    font-family: 'AgencyBold';
+    font-size: 18px;
+    color:#626262;
+    margin: 0 0 15px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.gearbox-conf-panel-grp.right-spef .panel-body p b{
+    font-weight: 700;
+}
+
+.gearbox-conf-panel-grp.right-spef .make-me-left{
+    float: left;
+    width: 60%;
+}
+
+.gearbox-conf-panel-grp.right-spef .make-me-right{
+    float: right;
+}
+
+
+.gearbox-conf-panel-grp.right-spef .gear-panel-qoute p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+}
+
+.gear-img-link img{
+    margin-bottom: 20px;
+}
+
+.gear-img-link ul{
+    margin: 0;
+    padding: 0;
+}
+
+.gear-img-link ul li{
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    
+}
+
+.gear-img-link ul li:last-child{
+    margin-right: 0;
+}
+
+.gear-img-link ul li a{
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color:#6cb504;
+    text-align: left;
+    text-decoration: underline;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.gear-img-link ul li a:hover, .gear-img-link ul li a:focus{
+    color: #54880a;
+    text-decoration: none;
+}
+
+.gear-cust-table-list{
+    border: solid 1px #b7b7b7;
+    text-align: center;
+    width: 32.6%;
+    float: left;
+    margin-right: 10px;
+}
+
+.gear-cust-table-list:last-child{
+    margin-right: 0;
+}
+
+.gear-cust-table-list table{
+    margin-bottom: 0;
+}
+
+.gear-cust-table-list table caption{
+    background:#f4f3f3;
+    text-align: center;
+    color: #626262;
+    font-family: 'AgencyBold';
+    font-size: 20px;
+}
+
+.gear-cust-table-list table th{
+    text-align: center;
+    font-family: 'AgencyBold';
+    font-size: 20px;
+    color: #6cb504;
+    border-right: solid 1px #b7b7b7;
+}
+
+.gear-cust-table-list table th:last-child, .gear-cust-table-list table td:last-child{
+    border-right: none;
+}
+
+.gear-cust-table-list table td{
+    text-align: center;
+    font-family: 'AgencyBold';
+    font-size: 16px;
+    color: #626262;
+    border-right: solid 1px #b7b7b7;
+}
+
+.gear-cust-table-list .table>tbody>tr>td, .gear-cust-table-list .table>tbody>tr>th, .gear-cust-table-list .table>tfoot>tr>td, .gear-cust-table-list .table>tfoot>tr>th, .gear-cust-table-list .table>thead>tr>td, .gear-cust-table-list .table>thead>tr>th{
+    border-color:#b7b7b7;
+}
+
+
+.gear-pink-heading{
+    width: 100%;
+    font-family: 'AgencyBold';
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    background:#da0184;
+    position: relative;
+    top: -20px;
+    line-height: 1.8;
+}
+
+
+ul.gray-list-countr{
+    margin: 0;
+    padding: 0;
+}
+
+.gray-list-countr li{
+    counter-increment: step-counter;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    font-weight: 600;
+}
+
+.gray-list-countr li::before {
+    content: counter(step-counter)".";
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    margin-right: 8px;
+}
+
+
+/** Subaru Reverse Drive Cliff **/
+
+.reverse-drive-cliff-main h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.reverse-drive-cliff-main h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #949496;
+    margin: 15px 0 50px;
+}
+
+.reverse-drive-cliff-inner{
+    margin-bottom: 50px;
+}
+
+.reverse-drive-cliff-inner h2, .reverse-drive-cliff-avail-pro-list h2{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #414141;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.reverse-drive-cliff-inner h2:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #858585;
+    margin: 15px 0 20px;
+}
+
+.reverse-drive-cliff-inner h4 {
+    font-family: 'AgencyBold';
+    font-size: 23px;
+    color: #414141;
+    text-align: left;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.reverse-drive-cliff-inner p, .reverse-drive-cliff-avail-pro-list p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.reverse-drive-cliff-inner .img-left-custm{
+    float: left;
+}
+
+.reverse-drive-cliff-inner .img-left-custm.mar-15{
+    margin: 0 20px 10px 0;
+}
+
+.reverse-drive-cliff-main .gear-panel-qoute p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #6cb504;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    padding: 0 26px;
+    position: relative;
+}
+
+.reverse-drive-cliff-main .gear-panel-qoute p a{
+    color: #6cb504;
+}
+
+.reverse-drive-cliff-main .gear-panel-qoute p a:hover, .reverse-drive-cliff-main .gear-panel-qoute p a:focus{
+    color: #4D8400;
+}
+
+
+
+.reverse-drive-cliff-avail-pro h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.reverse-drive-cliff-avail-pro h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e3e0e0;
+    margin: 15px 0 50px;
+}
+
+.reverse-drive-cliff-avail-pro-list{
+    border-bottom: solid 1px #e3e0e0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.reverse-drive-cliff-avail-pro-list p b{
+    font-weight: 700;
+    font-weight: 16px;
+}
+
+ul.reverse-drive-cliff-avail-pro-btn{
+    margin: 0;
+    padding: 0;
+}
+
+ul.reverse-drive-cliff-avail-pro-btn li{
+    display: inline-block;
+    float: left;
+    width: 49%;
+    margin-right: 9px;
+}
+
+
+ul.reverse-drive-cliff-avail-pro-btn li a{
+    background: #6cb504;
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.8;
+    display: block;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+ul.reverse-drive-cliff-avail-pro-btn li a:hover, ul.reverse-drive-cliff-avail-pro-btn li a:focus {
+    background: #4D8400;
+}
+
+ul.reverse-drive-cliff-avail-pro-btn li:last-child{
+    margin-right: 0;
+}
+
+.reverse-drive-cliff-exp{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reverse-drive-cliff-exp .img-cust-logo{
+    display: inline-block;
+    margin: 0 auto 30px;
+}
+
+.gearbox-service .reverse-drive-cliff-exp h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+    margin: 15px 0 20px;
+}
+
+.reverse-drive-cliff-exp-list-in img{
+    width: 100%;
+}
+
+.reverse-drive-cliff-exp-list-text{
+    background: #fff;
+    padding: 5px 15px;
+    min-height: 165px;
+    margin-bottom: 30px;
+}
+
+.reverse-drive-cliff-exp-list-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+/** Subaru Reverse Drive Cliff End **/
+
+
+/** 6 Speed Conversoin **/
+
+.speed-conver-main h1 {
+    font-family: 'AgencyBold';
+    font-size: 50px;
+    color: #6cb504;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.speed-conver-inner  h3{
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    color: #414141;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    position: relative;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+    top: -4px;
+}
+
+.speed-conver-inner p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.right-side-img-6{
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.speed-conver-inner  h3 span.red{
+    color: red;
+}
+
+.speed-conver-main-grey{
+    background:#f0f0f0;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.speed-conver-main-grey h2{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #84c02f;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.speed-conver-main-grey p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.speed-conver-main-grey ul.gear-tick-list li:before {
+    content: "";
+    background: url(../images/engine/cooling-text-list-icon-2.png) no-repeat;
+}
+
+.speed-conver-offer{
+    background:#f0f0f0;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.speed-conver-offer h2{
+    font-family: 'AgencyBold';
+    font-size: 40px;
+    color: #84c02f;
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.speed-conver-offer-grey-heading{
+    width: 100%;
+    padding: 5px;
+    background:#616161;
+    box-shadow: 0 3px 0 #9acb55;
+    
+}
+
+.speed-conver-offer-grey-heading h4{
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    color: #fff;
+    text-align:center;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    display: block;
+}
+
+.speed-conver-offer-white{
+    background:#fff;
+    padding: 30px;
+    float: left;
+}
+
+.option-heading {
+    width: 15%;
+    float: left;
+    position: relative;
+    top: -101px;
+}
+
+.speed-conver-offer-text-top {
+    float: right;
+    width: 83%;
+}
+
+.speed-conver-offer-text-top h4{
+    font-family: 'AgencyBold';
+    font-size: 35px;
+    color: #6cb504;
+    text-align:center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.speed-conver-offer-text-top p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404040;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.speed-conver-offer-list-img .sco-list-left{
+    float: left;
+    width: 60%;
+    padding-right: 30px;
+}
+
+.speed-conver-offer-list-img .sco-list-left h5{
+    font-family: 'AgencyBold';
+    font-size: 24px;
+    color: #000;
+    text-align:left;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+
+.speed-conver-offer-list-img .sco-list-right{
+    float: right;
+    width: 40%;
+}
+
+.speed-conver-offer-white .select-engine-options-cvr ul li select.option-list{
+    width: 315px;
+}
+
+/** 6 Speed Conversoin End **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** New Big Submenu ***/
+
+.gearbox-submenu-new{
+    margin:  30px 0;
+}
+
+.gearbox-submenu-new .engine-big-menu .menu-green-btn:hover, .gearbox-submenu-new .engine-big-menu .menu-green-btn:focus {
+    background: #6CB504;
+    color: #fff;
+}
+
+.gearbox-submenu-new .engine-big-menu .engine-big-menu-left label{
+    color: #6CB504;
+}
+
+.gearbox-submenu-new .big-menu-red-btn{
+    background: #6CB504;
+}
+
+.gearbox-submenu-new .big-menu-red-btn:hover, .gearbox-submenu-new .big-menu-red-btn:active {
+    background: #fff;
+    border-color: #6CB504;
+    color: #6CB504;
+}
+
+.gearbox-submenu-new .engine-big-menu .engine-big-menu-right ul li .big-menu-text-right h5 a:hover, .gearbox-submenu-new  .engine-big-menu .engine-big-menu-right ul li .big-menu-text-right h5 a:focus {
+    color:#6CB504;
+}
+
+
+/*************************************/
+/** GearBox CSS Starts Here - Pankaj **/ 
+/*************************************/
+
+
+
+

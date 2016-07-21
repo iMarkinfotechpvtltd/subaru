@@ -1,0 +1,336 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: booking calendar\n"
+"POT-Creation-Date: 2016-01-03 13:04+0400\n"
+"PO-Revision-Date: 2016-02-16 14:38+0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: booking_calendar.php:115 booking_calendar.php:117 booking_calendar.php:140
+#: booking_calendar.php:151 booking_calendar.php:153
+#: includes/booking_class.php:434 includes/booking_class.php:435
+#: includes/booking_class.php:437 includes/booking_class.php:442
+#: includes/booking_class.php:461 includes/booking_class.php:463
+#: includes/booking_class.php:477 includes/booking_class.php:479
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: booking_calendar.php:115
+msgid "Your request has been successfully received. We are waiting you!"
+msgstr "Votre demande a bien été reçue. Nous vous attendons!"
+
+#: booking_calendar.php:117
+msgid "Your request has been successfully sent. Please wait for approval."
+msgstr ""
+"Votre requête a été envoyée avec succès. S'il vous plaît attendre "
+"l'approbation."
+
+#: booking_calendar.php:140
+msgid "Total"
+msgstr "Le total"
+
+#: booking_calendar.php:140
+msgid "Price"
+msgstr "Prix"
+
+#: booking_calendar.php:151
+msgid "There are no services available for the period you selected."
+msgstr ""
+"Il n'y a pas de services disponibles pour la période que vous avez "
+"sélectionné."
+
+#: booking_calendar.php:153
+msgid "There are no services available for this day."
+msgstr "Il n'y a pas de services disponibles pour cette journée."
+
+#: booking_calendar.php:280 booking_calendar.php:285
+msgid "New "
+msgstr "Nouveau"
+
+#: booking_calendar.php:300
+msgid "New Extra"
+msgstr "nouvelle supplémentaire"
+
+#: booking_calendar.php:376 includes/admin_menu.php:56
+msgid "is required."
+msgstr "est requis."
+
+#: booking_calendar.php:377 includes/admin_menu.php:57
+msgid "Enter the valid email address."
+msgstr "Entrez l'adresse e-mail valide."
+
+#: booking_calendar.php:378 includes/admin_menu.php:58
+msgid "Date"
+msgstr "date"
+
+#: includes/booking_class.php:166 includes/booking_class.php:168
+msgid " "
+msgstr ""
+
+#: includes/booking_class.php:336
+msgid "Booked"
+msgstr "Réservé"
+
+#: includes/booking_class.php:338
+msgid "Unavailable"
+msgstr "Indisponible"
+
+#: includes/booking_class.php:434 includes/booking_class.php:437
+msgid "Check in"
+msgstr "Enregistrement"
+
+#: includes/booking_class.php:435 includes/booking_class.php:437
+msgid "Check out"
+msgstr "Check-out"
+
+#: includes/booking_class.php:442
+msgid "Item count"
+msgstr "Nombre d'éléments"
+
+#: includes/booking_class.php:461
+msgid "Reservation"
+msgstr "Réservation"
+
+#: includes/booking_class.php:463
+msgid "Please select the days from calendar."
+msgstr "S'il vous plaît sélectionnez les jours de calendrier."
+
+#: includes/booking_class.php:477
+msgid "I accept to agree to the Terms & Conditions."
+msgstr "Je l'accepte pour accepter les Conditions générales."
+
+#: includes/booking_class.php:479
+msgid "Book Now"
+msgstr "Reserve maintenant"
+
+#: includes/booking_class.php:596
+msgid "No options"
+msgstr "Pas d'options"
+
+#: includes/textfortr.php:2
+msgid "January"
+msgstr "Януари"
+
+#: includes/textfortr.php:3
+msgid "February"
+msgstr "Февруари"
+
+#: includes/textfortr.php:4
+msgid "March"
+msgstr "Март"
+
+#: includes/textfortr.php:5
+msgid "April"
+msgstr "Април"
+
+#: includes/textfortr.php:6 includes/textfortr.php:20
+msgid "May"
+msgstr "Май"
+
+#: includes/textfortr.php:7
+msgid "June"
+msgstr "Юни"
+
+#: includes/textfortr.php:8
+msgid "July"
+msgstr "Юли"
+
+#: includes/textfortr.php:9
+msgid "August"
+msgstr "Август"
+
+#: includes/textfortr.php:10
+msgid "September"
+msgstr "Септември"
+
+#: includes/textfortr.php:11
+msgid "October"
+msgstr "Октомври"
+
+#: includes/textfortr.php:12
+msgid "November"
+msgstr "Ноември"
+
+#: includes/textfortr.php:13
+msgid "December"
+msgstr "Декември"
+
+#: includes/textfortr.php:16
+msgid "Jan"
+msgstr "Яну"
+
+#: includes/textfortr.php:17
+msgid "Feb"
+msgstr "Фев"
+
+#: includes/textfortr.php:18
+msgid "Mar"
+msgstr "Мар"
+
+#: includes/textfortr.php:19
+msgid "Apr"
+msgstr "Апр"
+
+#: includes/textfortr.php:21
+msgid "Jun"
+msgstr "juin"
+
+#: includes/textfortr.php:22
+msgid "Jul"
+msgstr "Юли"
+
+#: includes/textfortr.php:23
+msgid "Aug"
+msgstr "Авг"
+
+#: includes/textfortr.php:24
+msgid "Sep"
+msgstr "Сеп"
+
+#: includes/textfortr.php:25
+msgid "Oct"
+msgstr "Окт"
+
+#: includes/textfortr.php:26
+msgid "Nov"
+msgstr "Ное"
+
+#: includes/textfortr.php:27
+msgid "Dec"
+msgstr "Дек"
+
+#: includes/textfortr.php:30
+msgid "Sunday"
+msgstr "dimanche"
+
+#: includes/textfortr.php:31
+msgid "Monday"
+msgstr "Lundi"
+
+#: includes/textfortr.php:32
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: includes/textfortr.php:33
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: includes/textfortr.php:34
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: includes/textfortr.php:35
+msgid "Friday"
+msgstr "Vendredi"
+
+#: includes/textfortr.php:36
+msgid "Saturday"
+msgstr "samedi"
+
+#: includes/textfortr.php:39
+msgid "Sun"
+msgstr "Soleil"
+
+#: includes/textfortr.php:40
+msgid "Mon"
+msgstr "lun"
+
+#: includes/textfortr.php:41
+msgid "Tue"
+msgstr "mar"
+
+#: includes/textfortr.php:42
+msgid "Wed"
+msgstr "marier"
+
+#: includes/textfortr.php:43
+msgid "Thu"
+msgstr "Jeu"
+
+#: includes/textfortr.php:44
+msgid "Fri"
+msgstr "ven"
+
+#: includes/textfortr.php:45
+msgid "Sat"
+msgstr "sam"
+
+#: includes/textfortr.php:48
+msgid "Su"
+msgstr "Su"
+
+#: includes/textfortr.php:49
+msgid "Mo"
+msgstr "Mo"
+
+#: includes/textfortr.php:50
+msgid "Tu"
+msgstr "Tu"
+
+#: includes/textfortr.php:51
+msgid "We"
+msgstr "nous"
+
+#: includes/textfortr.php:52
+msgid "Th"
+msgstr "th"
+
+#: includes/textfortr.php:53
+msgid "Fr"
+msgstr "Fr"
+
+#: includes/textfortr.php:54
+msgid "Sa"
+msgstr "Sa"
+
+#: includes/widgets/widget-booking_calendar.php:6
+msgid "Displays Booking Calendar WpDevArt"
+msgstr "Affiche calendrier de réservation Wp Devart"
+
+#: includes/widgets/widget-booking_calendar.php:40
+msgid "Title:"
+msgstr "Titre:"
+
+#: includes/widgets/widget-booking_calendar.php:45
+msgid "Calendar to display"
+msgstr "Calendrier pour afficher"
+
+#: includes/wpdevart_lib.php:308 includes/wpdevart_lib.php:363
+#: includes/wpdevart_lib.php:403 includes/wpdevart_lib.php:439
+#: includes/wpdevart_lib.php:482 includes/wpdevart_lib.php:522
+msgid "Label"
+msgstr "Étiquette"
+
+#: includes/wpdevart_lib.php:314 includes/wpdevart_lib.php:369
+#: includes/wpdevart_lib.php:409 includes/wpdevart_lib.php:445
+#: includes/wpdevart_lib.php:488 includes/wpdevart_lib.php:528
+msgid "Required"
+msgstr "requis, demandé"
+
+#: includes/wpdevart_lib.php:320
+msgid "Multiple select"
+msgstr "La sélection multiple"
+
+#: includes/wpdevart_lib.php:326
+msgid "Options"
+msgstr ""
+
+#: includes/wpdevart_lib.php:451
+msgid "Is Email"
+msgstr ""
+
+#: includes/wpdevart_lib.php:534
+msgid "Items"
+msgstr ""
