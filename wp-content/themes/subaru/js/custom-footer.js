@@ -49,3 +49,20 @@ jQuery( "#qdate" ).datepicker();
 jQuery(function() {
 jQuery('#qtime').timepicker();
 });
+
+function more_test(id)
+{
+jQuery.ajax({
+type: "POST", 
+url:ajaxurl,
+data:{
+action: 'moretest',
+id:id},
+success:function(resp){
+if( resp !="") 
+{
+jQuery("#testimonial-cont"+id).html(resp);
+}
+}
+});
+}

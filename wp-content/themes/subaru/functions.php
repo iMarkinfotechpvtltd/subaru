@@ -91,11 +91,12 @@ array(
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
-
 'has_archive' => true
 )
 );
 } 
+
+/*---- Start Create custom post whychoosesubaroo -----*/
 function create_whychoosesubaroo_taxonomies() {
 $labels = array(
 'name'              => _x( 'Categories', 'taxonomy general name' ),
@@ -123,14 +124,7 @@ $args = array(
 register_taxonomy( 'whychoosesubaroo_categories', array( 'whychoosesubaroo' ), $args );
 }
 add_action( 'init', 'create_whychoosesubaroo_taxonomies', 0 );
-add_image_size( 'whychoosesubaroo_image', 74,54, true );  
-add_image_size( 'subapedia_images', 828,341, true ); 
-add_image_size( 'news_image', 276,245, true ); 
-add_image_size( 'news_inner_image', 828,341, true );  
-add_image_size( 'news_banner_image', 1920,725, true );   
-add_image_size( 'latestnews_image', 461,255, true );  
-add_image_size( 'service_head_gasket', 705,242, true );  
-
+/*---- End Create custom post whychoosesubaroo -----*/
 
 /* TESTIMONIALS Section Home Page */
 add_action( 'init', 'create_testimonial' );
@@ -162,6 +156,7 @@ array(
 )
 );
 } 
+
 function create_testimonial_taxonomies() {
 $labels = array(
 'name'              => _x( 'Categories', 'taxonomy general name' ),
@@ -224,8 +219,6 @@ add_action( 'init', 'create_testimonial_taxonomies', 0 );
 
 /* End TESTIMONIALS Section Home Page */
 
-
-
 /* Brand Section Home Page */
 add_action( 'init', 'create_brand' );
 function create_brand() {
@@ -282,12 +275,8 @@ $args = array(
 
 register_taxonomy( 'brand_categories', array( 'brand' ), $args );
 }
-add_action( 'init', 'create_brand_taxonomies', 0 ); 
-add_image_size( 'brand_image', 169,59, true ); 
-add_image_size( 'banner_image', 1920,895, true );
-add_image_size( 'about_inner_image', 562,681, true );             
+add_action( 'init', 'create_brand_taxonomies', 0 );          
 /* End Brand Section Home Page */
-
 
 /* Meet the team Section about Page */
 add_action( 'init', 'create_team' );
@@ -410,19 +399,6 @@ register_taxonomy( 'categories_services', array( 'services' ), $args );
 }
 add_action( 'init', 'create_services_taxonomies', 0 );
 
-/* create excerpt for services */
-function get_excerpt($length){
-$excerpt = get_the_content();
-$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
-$excerpt = strip_shortcodes($excerpt);
-$excerpt = strip_tags($excerpt);
-$excerpt = substr($excerpt, 0, $length);
-$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-$excerpt = $excerpt;
-return $excerpt;
-}
-
 /* create custom widgets that show under appearance */
 function custom_widgets_init() {
 	register_sidebar( array(
@@ -493,6 +469,7 @@ add_filter( 'body_class', function( $classes ) {
 
 /* Create custom post type for packages */
 add_action( 'init', 'create_packages' );
+
 function create_packages() {
 register_post_type( 'packages',
 array(
@@ -516,7 +493,6 @@ array(
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
-
 'has_archive' => true
 )
 );
@@ -584,78 +560,84 @@ function myplugin_meta_box_callback( $post ) {
 /**
  * When the post is saved, saves our custom data.
  *
- * @param int $post_id The ID of the post being saved.
+ * Custom meta box has been used on services pages to save packages
  */
 function myplugin_save_meta_box_data( $post_id ) {
 
-	/*
-	 * We need to verify this came from our screen and with proper authorization,
-	 * because the save_post action can be triggered at other times.
-	 */
+/*
+* We need to verify this came from our screen and with proper authorization,
+* because the save_post action can be triggered at other times.
+*/
 
-	// Check if our nonce is set.
-	if ( ! isset( $_POST['myplugin_meta_box_nonce'] ) ) {
-		return;
-	}
+// Check if our nonce is set.
+if ( ! isset( $_POST['myplugin_meta_box_nonce'] ) ) {
+return;
+}
 
-	// Verify that the nonce is valid.
-	if ( ! wp_verify_nonce( $_POST['myplugin_meta_box_nonce'], 'myplugin_meta_box' ) ) {
-		return;
-	}
+// Verify that the nonce is valid.
+if ( ! wp_verify_nonce( $_POST['myplugin_meta_box_nonce'], 'myplugin_meta_box' ) ) {
+return;
+}
 
-	// If this is an autosave, our form has not been submitted, so we don't want to do anything.
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-		return;
-	}
+// If this is an autosave, our form has not been submitted, so we don't want to do anything.
+if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+return;
+}
 
-	// Check the user's permissions.
-	if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
+// Check the user's permissions.
+if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
 
-		if ( ! current_user_can( 'edit_page', $post_id ) ) {
-			return;
-		}
+if ( ! current_user_can( 'edit_page', $post_id ) ) {
+return;
+}
 
-	} else {
+} else {
 
-		if ( ! current_user_can( 'edit_post', $post_id ) ) {
-			return;
-		}
-	}
+if ( ! current_user_can( 'edit_post', $post_id ) ) {
+return;
+}
+}
 
-	/* OK, it's safe for us to save the data now. */
-	
-	// Make sure that it is set.
-	if ( ! isset( $_POST['myplugin_new_field'] ) ) {
-		return;
-	}
+/* OK, it's safe for us to save the data now. */
 
-	// Sanitize user input.
-	$my_data = $_POST['myplugin_new_field'];
-	
-	$myArray = $_POST['myplugin_new_field'];
-	
-	$asd="";
-	foreach($myArray as $val)
-	{
-		$asd.=$val.",";
-	}
-	$seralizedArray=substr($asd,0,-1); 
-	update_post_meta( $post_id, '_test_value', $seralizedArray);
-	/*
-	foreach($my_data as $val)
-	{
-		
-	}
-	*/
-	
+// Make sure that it is set.
+if ( ! isset( $_POST['myplugin_new_field'] ) ) {
+return;
+}
+
+// Sanitize user input.
+$my_data = $_POST['myplugin_new_field'];
+
+$myArray = $_POST['myplugin_new_field'];
+
+$asd="";
+foreach($myArray as $val)
+{
+$asd.=$val.",";
+}
+$seralizedArray=substr($asd,0,-1); 
+update_post_meta( $post_id, '_test_value', $seralizedArray);
+
 }
 add_action( 'save_post', 'myplugin_save_meta_box_data' );
 /**
 End -> Add the custom Meta box to show packages under Services
  */
 
+add_image_size( 'whychoosesubaroo_image', 74,54, true );  
+add_image_size( 'subapedia_images', 828,341, true ); 
+add_image_size( 'news_image', 276,245, true ); 
+add_image_size( 'news_inner_image', 828,341, true );  
+add_image_size( 'news_banner_image', 1920,725, true );   
+add_image_size( 'latestnews_image', 461,255, true );  
+add_image_size( 'service_head_gasket', 705,242, true );  
+add_image_size( 'brand_image', 169,59, true ); 
+add_image_size( 'banner_image', 1920,895, true );
+add_image_size( 'about_inner_image', 562,681, true ); 
+
+
+/*-- Used on Single service Page For Appointment Form (Used to send Email to Admin) --*/
 function appointmentmail(){  
-  //get the data from ajax() call  
 $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $email=$_POST['email'];
@@ -816,15 +798,14 @@ $body = '
 ';
 $subject="Appointment Booked";
 $sent=wp_mail( 'akanksha.gupta@imarkinfotech.com', $subject, $body, $headers );
-
-  // Return the String  
-   die($sent);  
-
+// Return the String  
+die($sent);  
 }  
 // creating Ajax call for WordPress  
 add_action( 'wp_ajax_nopriv_appointmentmail', 'appointmentmail' );  
 add_action( 'wp_ajax_appointmentmail', 'appointmentmail' );
 
+/* Register locations for menu's */
 function register_my_menu() {
 register_nav_menu('footer-engine-menu',__( 'Footer Engine Menu' ));
 register_nav_menu('footer-parts-menu',__( 'Footer Parts Menu' ));
@@ -833,7 +814,7 @@ register_nav_menu('footer-subpedia-menu',__( 'Footer Subpedia Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
 
-
+/*-- Used on Head Gasket Single service Page For Enquiry Form (Used to send Email to Admin) --*/
 function enquirymail(){  
   //get the data from ajax() call  
 $fname=$_POST['fname'];
@@ -928,17 +909,14 @@ $body = '
 ';
 $subject="Enquiry";
 $sent=wp_mail( 'akanksha.gupta@imarkinfotech.com', $subject, $body, $headers );
-
-  // Return the String  
-   die($sent);  
-
+// Return the String  
+die($sent);  
 }  
 // creating Ajax call for WordPress  
 add_action( 'wp_ajax_nopriv_enquirymail', 'enquirymail' );  
 add_action( 'wp_ajax_enquirymail', 'enquirymail' );
 
 /**** Create Subapedia Post ****/
-
 add_action( 'init', 'create_subapedia' );
 function create_subapedia() {
 register_post_type( 'subapedia',
@@ -996,7 +974,7 @@ register_taxonomy( 'subapedia_categories', array( 'subapedia' ), $args );
 }
 add_action( 'init', 'create_subapedia_taxonomies', 0 );
 
-
+/* Pagination used on Subapedia taxonomy Pages */
 function pagination($pages = '', $range = 4)
 {  
 $showitems = ($range * 2)+1;  
@@ -1034,28 +1012,70 @@ echo "</div>\n";
 }
 }
 
+/* create excerpt for services */
+//function get_excerpt($length){
+//$excerpt = get_the_content();
+//$excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+//$excerpt = strip_shortcodes($excerpt);
+//$excerpt = strip_tags($excerpt);
+//$excerpt = substr($excerpt, 0, $length);
+//$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+//$excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+//$excerpt = $excerpt;
+//return $excerpt;
+//}
+
+function get_excerpt_test($new_length = 20, $id) {
+  add_filter('excerpt_length', function () use ($new_length) {
+    return $new_length;
+  }, 999);
+  $new_more="...<a class='link' href='javascript:void(0);' onclick='more_test($id)'>[+]</a>";
+  add_filter('excerpt_more', function () use ($new_more) {
+    return $new_more;
+  });
+  $output = get_the_excerpt();
+  $output = apply_filters('wptexturize', $output);
+  $output = apply_filters('convert_chars', $output);
+  $output = '<p>' . $output . '</p>';
+  echo $output;
+}
+
+
+function get_excerpt($new_length = 20, $new_more = '...') {
+  add_filter('excerpt_length', function () use ($new_length) {
+    return $new_length;
+  }, 999);
+  add_filter('excerpt_more', function () use ($new_more) {
+    return $new_more;
+  });
+  $output = get_the_excerpt();
+  $output = apply_filters('wptexturize', $output);
+  $output = apply_filters('convert_chars', $output);
+  $output = '<p>' . $output . '</p>';
+  echo $output;
+}
+
 function sbt_custom_excerpt_more( $output ) {
 return preg_replace('/<a[^>]+>Continue reading.*?<\/a>/i','',$output);
 }
 add_filter( 'get_the_excerpt', 'sbt_custom_excerpt_more', 20 );
 
-function wpdocs_custom_excerpt_length( $length ) {
-    return 25;
-}
+//function wpdocs_custom_excerpt_length( $length ) {
+//    return 40;
+//}
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
+/* Change the position of comment field under Leave a reply form (Single Subapedia) */
 function wpb_move_comment_field_to_bottom( $fields ) {
 $comment_field = $fields['comment'];
 unset( $fields['comment'] );
 $fields['comment'] = $comment_field;
 return $fields;
 }
-
 add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom' );
 
+/*-- Used In Header for "Get A Quote" Form (Used to send Email to Admin) --*/
 function quotemail(){  
- //get the data from ajax() call  
-
 $qname=$_POST['qname'];
 $qphone=$_POST['qphone'];
 $qemail=$_POST['qemail'];
@@ -1182,3 +1202,12 @@ add_action( 'wp_ajax_nopriv_quotemail', 'quotemail' );
 add_action( 'wp_ajax_quotemail', 'quotemail' );
 
 
+function moretest(){  
+$post_id = $_POST['id'];
+$post_object = get_post( $post_id );
+$content= '<p>'.$post_object->post_content.'</p>';     
+die($content);  
+}  
+// creating Ajax call for WordPress  
+add_action( 'wp_ajax_nopriv_moretest', 'moretest' );  
+add_action( 'wp_ajax_moretest', 'moretest' );

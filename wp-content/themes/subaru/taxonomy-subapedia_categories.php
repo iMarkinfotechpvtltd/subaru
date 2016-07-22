@@ -162,7 +162,7 @@ get_template_part( 'template-parts/content', 'none' );
 <?php get_sidebar('departments'); ?> <!-- Four Listing Departments -->
 <?php get_sidebar('testimonials_slider'); ?> <!-- Testimonials Slider -->
 
-<!--<div class="container">
+<div class="container">
 <div class="reply-form">
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
@@ -176,8 +176,8 @@ get_template_part( 'template-parts/content', 'none' );
 <button type="button" class="btn btn-danger btn-submit">send</button>
 </div> 
 </div>
-</div> reply-form
-</div>-->
+</div> 
+</div>
 
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->
 

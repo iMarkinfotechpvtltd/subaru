@@ -73,14 +73,14 @@ $class = $item->classes[0].' '.$item->classes[1];
 </a>
 <?php endif; ?>
 <?php 
-if($parent_id == 140) // If parent is service
+if($parent_id == 795) // If parent is service
 { 
 $taxonomy = 'categories_services';  
 $post_type= 'services';
 $img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.jpg';
 }
 
-if($parent_id == 136) // If parent is Subapedia
+if($parent_id == 796) // If parent is Subapedia
 { 
 $taxonomy = 'subapedia_categories';  
 $post_type= 'subapedia';
@@ -88,7 +88,7 @@ $img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.j
 }
 ?>
 <?php //if ( $taxonomy && $post_type ): 
-if ( $parent_id == 140 || $parent_id == 136):
+if ( $parent_id == 795 || $parent_id == 796):
 ?>
 <div class="custm-mega-cvr">
 <div class="mega-heading">

@@ -32,7 +32,7 @@ $i=1;
 <?php while (have_posts()) : the_post(); ?>
 <div class="item">
 <div class="engine-testi-text">
-<?php echo get_excerpt(220).'...'; ?>
+<?php echo get_excerpt(50,'...'); ?>
 <div class="engine-testi-name">
 <h4><?php echo get_the_title();?> </h4>
 <p><?php the_field('client_role'); ?></p>

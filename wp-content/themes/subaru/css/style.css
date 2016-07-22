@@ -11732,10 +11732,13 @@ button.close.red-close:hover {
 
 #myModalGetQuote .popup-get-fm-btn{
     background:#e7008b;
+    border: solid 1px transparent;
 }
 
 #myModalGetQuote .popup-get-fm-btn:hover, #myModalGetQuote .popup-get-fm-btn:focus {
-    background: #c50175;
+    background: #fff;
+    border-color: #e7008b;
+    color: #e7008b;
 }
 
 #myModalGetQuote .modal-form-body .form-control.error{
@@ -11750,6 +11753,23 @@ button.close.red-close:hover {
     border-radius: 4px;
     line-height: 2.5;
     padding: 0.2em 1em;
+    width: 100%;
+        display: block;
+    float: left;
+}
+
+#myModalGetQuote .modal-form-body .form-group.submit-ajax{
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+}
+
+#myModalGetQuote .modal-form-body .form-group.submit-ajax .ajax-loader{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px;
 }
 
 

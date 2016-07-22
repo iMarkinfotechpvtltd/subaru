@@ -47,24 +47,40 @@
 <div class="col-md-4">
 <select class="form-control" name="model" id="model">
 <option value="">Model</option>
-<option value="Model">Model-200</option>
-<option value="Model">Model-200V</option>
+<option value="" selected>Model</option>
+<option value="BRZ">BRZ</option>
+<option value="Exiga">Exiga</option>
+<option value="Forester">Forester</option>
+<option value="Impreza">Impreza</option>
+<option value="Liberty">Liberty</option>
+<option value="Outback">Outback</option>
+<option value="SVX">SVX</option>
+<option value="Tribeca">Tribeca</option>
+<option value="WRX">WRX</option>
+<option value="WRX STI">WRX STI</option>
+<option value="XV">XV</option>
 </select>
 <span class="error" id="modelerror"></span>    
 </div> <!--col-md-4-->
 <div class="col-md-4">
 <select class="form-control" name="modyear" id="modyear">
-<option value="">Year</option>
-<option value="2011">2011</option>
-<option value="2012">2012</option>
+<option value="" selected>Year</option>    
+<?php for($year=2013;$year>=1989;$year--)
+{
+ echo '<option value="'.$year.'">'.$year.'</option>';   
+}
+?>  
 </select>
 <span class="error" id="modyearerror"></span>    
 </div> <!--col-md-4-->
 <div class="col-md-4">
 <select class="form-control" name="engine" id="engine">
 <option value="">Engine</option>
-<option value="Engine1">Engine1</option>
-<option value="Engine2">Engine2</option>
+<option value="Short Block">Short Block</option>
+<option value="Long Bare Engine">Long Bare Engine</option>
+<option value="Long Dressed Engine">Long Dressed Engine</option>
+<option value="Cosworth Upgrade">Cosworth Upgrade</option>
+<option value="Engine Parts">Engine Parts</option>
 </select>
 <span class="error" id="engineerror"></span>    
 </div> <!--col-md-4-->

@@ -23,7 +23,7 @@ echo $fname.' '.$lname;
 </div> 
 <?php echo get_the_post_thumbnail(get_the_ID(),'subapedia_images'); ?>
 
-<p><?php echo get_excerpt(400).'...'; ?></p>
+<p><?php echo get_excerpt(50,'...'); ?></p>
 
 <a href="<?php echo get_permalink(); ?>"><button type="button" class="btn btn-default btn-read">Read More</button></a>
 </div>

@@ -468,6 +468,7 @@ var qphone= jQuery("#qphone").val();
 var qemail= jQuery("#qemail").val();
 var atpos1 = qemail.indexOf("@");
 var dotpos1 = qemail.lastIndexOf(".");
+var dotpos2= qemail.indexOf(".");
 var qdate= jQuery("#qdate").val();
 var qtime=jQuery("#qtime").val();
 var qmodel=jQuery("#qmodel").val();
@@ -498,9 +499,9 @@ if(qemail=="" || qemail==null)
 jQuery("#qemail").addClass('error'); 
 r=false;
 }
- 
+
 if(qemail!=''){
-if (atpos1<1 || dotpos1<atpos1+2 || dotpos1+2>=qemail.length) {
+if (atpos1<1 || dotpos1<atpos1+2 || dotpos1+2>=qemail.length || atpos1==dotpos2-1 ||  dotpos2==atpos1-1 ) {
 jQuery("#qemail").addClass('error');
 r=false;
 }
@@ -536,16 +537,15 @@ qinfo: qinfo,
 },  
 beforeSend: function() {
 // setting a timeout
-jQuery("#quote_form .popup-get-fm-btn").addClass('loading');
+jQuery("#quote_form").addClass('loading');
+jQuery("#ajax-loader").show();
 },
 success: function(data){
 if(data=='1')
 {
-var msg="Your Enquiry has been Sent.";
-jQuery("#quote_form .popup-get-fm-btn").removeClass('loading');
-jQuery("#success-quote").html(''); 
-jQuery("#success-quote").show();
-jQuery("#success-quote").append(msg); 
+jQuery("#quote_form").removeClass('loading');
+jQuery("#ajax-loader").hide();
+jQuery('<span id="success-quote">Your Enquiry has been Sent.</span>').insertAfter('#ajax-loader');
 jQuery('#quote_form').find("input[type=text], textarea,select").val("");
 setTimeout(function(){ jQuery("#success-quote").hide(); }, 3000);
 }

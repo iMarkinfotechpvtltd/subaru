@@ -73,7 +73,6 @@ echo '</ul>';}
 <ul>
 <li><a href="<?php echo get_permalink(133); ?>">Contact US</a></li>
 </ul>
-  
 </div>
 </div>
 </footer>

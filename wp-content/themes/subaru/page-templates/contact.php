@@ -108,7 +108,7 @@ Fax +61 <span><?php echo get_post_meta($post->ID,"cont_fax",true); ?></span>
 <?php } if(get_post_meta($post->ID,"linkedin",true)){ ?>
 <li><a href="<?php echo get_post_meta($post->ID,"linkedin",true); ?>" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 <?php } if(get_post_meta($post->ID,"skype",true)){  ?>
-<li><a href="<?php echo get_post_meta($post->ID,"skype",true); ?>" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+<li><a href="<?php echo get_post_meta($post->ID,"skype",true); ?>"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
 <?php } ?>
 </ul>
 </div>

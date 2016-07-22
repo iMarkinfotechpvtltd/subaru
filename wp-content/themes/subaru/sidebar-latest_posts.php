@@ -34,7 +34,7 @@ $post_id=get_the_ID();
 <?php echo get_the_post_thumbnail($post_id,'latest_posts'); ?>
 <div class="blog-tittles">
 <h3><?php echo get_the_title($post_id); ?></h3>
-<p><?php echo get_excerpt(250); ?></p>
+<p><?php echo get_excerpt(55); ?></p>
 <a href="<?php echo get_the_permalink(); ?>">Read More...</a>
 </div>
 </div> <!--col-md-4-->

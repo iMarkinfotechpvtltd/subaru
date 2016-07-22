@@ -1041,6 +1041,7 @@ footer {
     padding-top: 60px;
     background-repeat: no-repeat;
     float: left;
+    padding-bottom: 30px;
 }
 
 footer .footer-list {
@@ -1226,13 +1227,15 @@ footer .footer-list.subapedia-list:after {
     height: 48px;
     color: #606060;
     font-family: 'AgencyBold';
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.04em;
 }
 
 .enq-form .enq-gray-cvr .form-group select.form-control {
     background: #fff url(../images/form-arrow.png) no-repeat;
     background-position: 96% 50%;
-    color: #c2c2c2;
+    
 }
 
 .enq-form .enq-gray-cvr .form-group textarea.form-control {
@@ -1257,20 +1260,25 @@ footer .footer-list.subapedia-list:after {
 
 .enq-form .enq-gray-cvr .form-group .form-control::-webkit-input-placeholder {
     color: #c2c2c2;
+    font-weight: normal;
+    
 }
 
 .enq-form .enq-gray-cvr .form-group .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #c2c2c2;
+    font-weight: normal;
 }
 
 .enq-form .enq-gray-cvr .form-group .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #c2c2c2;
+    font-weight: normal;
 }
 
 .enq-form .enq-gray-cvr .form-group .form-control:-ms-input-placeholder {
     color: #c2c2c2;
+    font-weight: normal;
 }
 
 .enq-form-btn {
@@ -2334,6 +2342,14 @@ div.wpcf7 img.ajax-loader {
 
 /** Footer Sticky Popup  **/
 
+.popup-content{
+    height: 410px;
+}
+
+.popup-content-pad{
+    position: relative;
+}
+
 .sticky-popup.right-bottom {
     width: 100%;
     max-width: 265px;
@@ -2341,7 +2357,7 @@ div.wpcf7 img.ajax-loader {
 }
 
 .sticky-popup .popup-header {
-    background-color: #0c86ff;
+    background-color: #dd0b84;
     border-radius: 0;
     border: none;
     position: relative;
@@ -2357,7 +2373,7 @@ div.wpcf7 img.ajax-loader {
     left: -12px;
     bottom: 22px;
     width: 30px;
-    background: #0c86ff;
+    background: #dd0b84;
     transform: skewX(-42deg);
     -webkit-transform: skewX(-42deg);
 }
@@ -2369,9 +2385,11 @@ div.wpcf7 img.ajax-loader {
     left: -24px;
     width: 29px;
     bottom: 0;
-    background: #0c86ff;
+    background: #dd0b84;
     z-index: -1;
 }
+
+
 
 .sticky-popup .popup-title {
     position: relative;
@@ -2419,6 +2437,7 @@ div.wpcf7 img.ajax-loader {
     font-size: 14px;
     color: #6c6c6c;
     padding: 6px 12px;
+    margin-bottom: 10px;
 }
 
 .sticky-popup .wpcf7-form-control.wpcf7-textarea{
@@ -2452,6 +2471,121 @@ div.wpcf7 img.ajax-loader {
 
 .sticky-popup span.wpcf7-not-valid-tip{
     display: none !important;
+}
+
+.sticky-popup div.wpcf7-validation-errors {
+    display: none !important;
+}
+
+.sticky-popup .wpcf7-form-control.wpcf7-text.wpcf7-not-valid, .sticky-popup .wpcf7-form-control.wpcf7-captchar.wpcf7-not-valid{
+    border-color: #f00;
+}
+
+.popup-content p{
+    position: relative;
+    
+}
+
+.sticky-popup div.wpcf7 img.ajax-loader {
+    position: absolute;
+    right: 15px;
+    border: none;
+    vertical-align: middle;
+    margin: -8px 0 0;
+    top: 50%;
+}
+
+.sticky-popup div.wpcf7-mail-sent-ok{
+    border: 2px solid #398f14;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    right: 10px;
+    background: rgba(57, 143, 20, 0.86);
+    margin: 0;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.service .sticky-popup .popup-header:after, .service .sticky-popup .popup-header:before, .service .sticky-popup .popup-header, .service .sticky-popup .wpcf7-form-control.wpcf7-submit{
+    background: #027ffd;
+}
+
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover, .service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
+    background: #fff;
+    color: #027ffd;
+    border-color: #027ffd;
+}
+
+.service .sticky-popup .popup-header:after, .service .sticky-popup .popup-header:before, .service .sticky-popup .popup-header, .service .sticky-popup .wpcf7-form-control.wpcf7-submit{
+    background: #027ffd;
+}
+
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover, .service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
+    background: #fff;
+    color: #027ffd;
+    border-color: #027ffd;
+}
+
+.opportunities .subapedia-listing{
+    background: #e1e1e1;
+    border-left: 3px double #ec008c;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.opportunities .subapedia-listing ul, .opportunities .subapedia-listing ol{
+    margin: 0;
+    padding: 0;
+}
+
+.opportunities .subapedia-listing ul li, .opportunities .subapedia-listing ol li{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 8px;
+    counter-increment: step-counter;
+    padding-left: 18px;
+    position: relative;
+}
+
+.opportunities .subapedia-listing ul li:before, .opportunities .subapedia-listing ol li:before {
+    content: counter(step-counter)".";
+   font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #000;
+    position: absolute;
+    top: 0;
+    font-style: normal;
+    text-align: right;
+    width: 30px;
+    left: -18px;
+}
+
+.opportunities .subapedia-listing p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.opportunities .subapedia-listing p b{
+    font-weight: 600;
+}
+
+.opportunities .subapedia-listing p a, .opportunities .subapedia-listing ul li a, .opportunities .subapedia-listing ol li a{
+     color: #fc1c9a;
+}
+
+.opportunities .subapedia-listing p a:hover, .opportunities .subapedia-listing ul li a:hover, .opportunities .subapedia-listing ol li a:hover,
+.opportunities .subapedia-listing p a:focus, .opportunities .subapedia-listing ul li a:focus, .opportunities .subapedia-listing ol li a:focus{
+     color: #fc1c9a;
+    text-decoration: underline;
 }
 
 

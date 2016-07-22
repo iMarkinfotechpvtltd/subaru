@@ -63,18 +63,30 @@
 <div class="form-group make-it-full select-opt">
 <label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-9.png"> Vehicle Details </label>
 <select class="form-control" name="qmodel" id="qmodel">
-<option>Select Model</option>
-<option>Select Model</option>
-<option>Select Model</option>
+<option value="" selected>Select Model...</option>
+<option value="BRZ">BRZ</option>
+<option value="Exiga">Exiga</option>
+<option value="Forester">Forester</option>
+<option value="Impreza">Impreza</option>
+<option value="Liberty">Liberty</option>
+<option value="Outback">Outback</option>
+<option value="SVX">SVX</option>
+<option value="Tribeca">Tribeca</option>
+<option value="WRX">WRX</option>
+<option value="WRX STI">WRX STI</option>
+<option value="XV">XV</option>
 </select>
 </div>
 
 <div class="form-group make-it-full no-mar select-opt">
 <label>&nbsp;</label>
 <select class="form-control" name="qyear" id="qyear">
-<option>Select Year</option>
-<option>Select Year</option>
-<option>Select Year</option>
+<option value="" selected>Select Year...</option>    
+<?php for($year=2013;$year>=1989;$year--)
+{
+ echo '<option value="'.$year.'">'.$year.'</option>';   
+}
+?>    
 </select>
 </div>
 
@@ -83,9 +95,11 @@
 <textarea class="form-control" name="qinfo" id="qinfo"></textarea>
 </div>
 
+<div class="form-group submit-ajax">    
 <button class="popup-get-fm-btn" type="submit">Submit</button>
-<span id="success-quote"></span>
+<img class="ajax-loader" id="ajax-loader" src="/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="display: none;">
 </div>
+</div>    
 </form>
     
 

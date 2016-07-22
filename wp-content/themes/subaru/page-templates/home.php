@@ -162,7 +162,7 @@ else
 </div>
 <div class="news-art-list-right">
 <h5><?php the_title();?></h5>
-<?php the_excerpt(); ?>
+<?php echo get_excerpt(28,'...'); ?>
 <a href="<?php the_permalink(); ?>" class="news-art-btn">Read More <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>  
 </div>
 </div>
