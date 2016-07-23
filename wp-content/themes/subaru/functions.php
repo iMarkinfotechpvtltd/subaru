@@ -797,7 +797,7 @@ $body = '
 </html>
 ';
 $subject="Appointment Booked";
-$sent=wp_mail( 'akanksha.gupta@imarkinfotech.com', $subject, $body, $headers );
+$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
 // Return the String  
 die($sent);  
 }  
@@ -908,7 +908,7 @@ $body = '
 </html>
 ';
 $subject="Enquiry";
-$sent=wp_mail( 'akanksha.gupta@imarkinfotech.com', $subject, $body, $headers );
+$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
 // Return the String  
 die($sent);  
 }  
@@ -1025,11 +1025,13 @@ echo "</div>\n";
 //return $excerpt;
 //}
 
-function get_excerpt_test($new_length = 20, $id) {
+function get_excerpt_test($new_length = 20, $id,$parent) {
   add_filter('excerpt_length', function () use ($new_length) {
     return $new_length;
   }, 999);
-  $new_more="...<a class='link' href='javascript:void(0);' onclick='more_test($id)'>[+]</a>";
+ $par="'$parent'";
+$new_more= '...<a class="link" href="javascript:void(0);" onclick="more_test('.$id.','.$par.')">[+]</a>';
+
   add_filter('excerpt_more', function () use ($new_more) {
     return $new_more;
   });
@@ -1191,7 +1193,7 @@ $body = '
 </html>
 ';
 $subject="Quote Request";
-$sent=wp_mail( 'akanksha.gupta@imarkinfotech.com', $subject, $body, $headers );
+$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
 
   // Return the String  
    die($sent);  

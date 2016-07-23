@@ -1,37 +1,46 @@
 <?php
-/* Template Name: Testimonials
+/**
+ * The template for displaying archive pages
+ *
+ * Used to display archive-type pages if nothing more specific matches a query.
+ * For example, puts together date-based pages if no date.php file exists.
+ *
+ * If you'd like to further customize these archive views, you may create a
+ * new template file for each one. For example, tag.php (Tag archives),
+ * category.php (Category archives), author.php (Author archives), etc.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
  */
 get_header(); ?>
 
-<!-- Banner Section Start -->
-<?php 
-global $post;
-while (have_posts()) : the_post(); 
-$post_id= $post->ID;
-$banner = get_post_meta($post->ID,"banner_image",true);
-$image = wp_get_attachment_image_src($banner,'banner_image');
-$url = $image[0];
+<?php
+$term=get_queried_object();
+$url= get_field('banner_image', $term->taxonomy.'_'.$term->term_id);
+
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:72% 50%;">
+<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:center center;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div style="background-image:url(http://www.alldrivesubaru.com.au/wp-content/uploads/2016/07/testimonial-slide-1920x725.jpg);background-position:72% 50%;" class="banner">
 <?php 
 }
 ?>
 </div>
-<!-- Banner Section End -->
+
 <div class="clearfix"></div>
 
-<!-- Search Section Start -->
 <div class="main-search-sec">
 <div class="container">
-<div class="main-search wow bounceInUp" data-wow-duration="2s">
+<div class="main-search ">
 <form>
 <div class="form-group select-in">
 <select class="form-control">
@@ -45,14 +54,12 @@ else
 <input type="text" class="form-control" placeholder="Search website">
 </div>
 <button type="submit" class="main-search-btn">search</button>
-
 </form>
 </div>
 </div>
 </div>
-<!-- Search Section End -->
 
-<!-- Testimonials Section Start -->
+
 <div class="container">
 <div class="opportunities">
 <div class="testimonial-breadcrumb breadcrumb-container">
@@ -62,64 +69,20 @@ else
 </ol>
 </div>
 
+<h2><?php echo $term->name; ?></h2> 
+
 <div class="testimonial-main">
-<?php 
-$terms = get_terms( array(
-'taxonomy' => 'testimonial_categories',
-'hide_empty' => true,
-'orderby' => 'term_order'
-) );
-$noterms= sizeof($terms);
-foreach ( $terms as $term ) {
-$term_name[]= $term->name;
-$term_slug[]= $term->slug;
-}
-?>
-<ul class="nav nav-pills">
-<li class="active"><a data-toggle="pill" href="#menu0">all</a></li>
-<?php for($t=0; $t<$noterms; $t++) { ?>
-<li><a data-toggle="pill" href="#menu<?php echo $t+1; ?>"><?php echo $term_name[$t]; ?></a></li>
-<?php } ?>
-</ul>
-
-<div class="tab-content">
-<?php 
-for($k=0;$k<$noterms+1;$k++)    
-{  
-if($k==0){ $class="in active"; } 
-else{ $class=""; }
-?>
-<div id="menu<?php echo $k; ?>" class="tab-pane fade <?php echo $class; ?>">
-<?php 
-if($k==0)
-{
-$args = array(
-'post_type'   => 'testimonial',
-'posts_per_page' => -1,  
-);
-}
-else{
-$args = array(
-'post_type'   => 'testimonial',
-'posts_per_page' => -1,    
-'tax_query' => array(
-array(
-'taxonomy' => 'testimonial_categories',
-'field'    => 'slug',
-'terms'    => $term_slug[$k-1]
-)
-)    
-);
-}
-
-$the_query = new WP_Query( $args );
+<div class="tab-content">  
+<div id="menu0" class="tab-pane fade in active">    
+<?php
 $i=0;
-if ( $the_query->have_posts() ) {
-while ( $the_query->have_posts() ) {
-$the_query->the_post();
+$k=0;
+if ( have_posts() ) 
+{
+// Start the Loop.
+while ( have_posts() ) : the_post();
 $id=get_the_ID();
 ?>
-    
 <article>
 <div class="testimonial-inner">
 <div class="testimonial-slider">
@@ -189,21 +152,23 @@ echo get_excerpt_test(75,$test_id,$parent); ?>
 </div>
 </div>
 </article>
-<?php
+<?php 
+// End the loop.
 $i++;
-}
-}
-else {echo 'No Testimonials Found.';}
-/* Restore original Post Data */
+endwhile;
 wp_reset_postdata();
+}
+else{ // If no content, include the "No posts found" template.
+get_template_part( 'template-parts/content', 'none' );    
+}
 ?>
+ 
 </div>
-<?php } ?>
 </div>
+</div>    
+</div> <!--col-xs-12 col-md-7--->
 </div>
-</div> <!--opportunities Close-->
-</div> <!-- Testimonials Section End -->
-<?php endwhile; ?>
+
 <div class="clearfix"></div>
 
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->

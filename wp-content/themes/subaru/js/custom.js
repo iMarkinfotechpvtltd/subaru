@@ -545,7 +545,7 @@ if(data=='1')
 {
 jQuery("#quote_form").removeClass('loading');
 jQuery("#ajax-loader").hide();
-jQuery('<span id="success-quote">Your Enquiry has been Sent.</span>').insertAfter('#ajax-loader');
+jQuery('<span id="success-quote">Your Quote has been submitted, Will get back to you shortly.</span>').insertAfter('#ajax-loader');
 jQuery('#quote_form').find("input[type=text], textarea,select").val("");
 setTimeout(function(){ jQuery("#success-quote").hide(); }, 3000);
 }

@@ -81,10 +81,10 @@ echo '</ul>';}
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/liberary.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-<?php if(!is_page(85)){ ?>
+<?php //if(!is_page(85)){ ?>
 <script defer src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.flexslider.js"></script>
-<?php } 
-else{ ?>
+<?php// } 
+//else{ ?>
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">   
 <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
@@ -95,7 +95,7 @@ axis: "y"
 });
 })(jQuery);
 </script>
-<?php } ?>
+<?php //} ?>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.mCustomScrollbar.min.js"></script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap-date.css" type="text/css">

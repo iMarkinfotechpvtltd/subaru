@@ -50,8 +50,9 @@ jQuery(function() {
 jQuery('#qtime').timepicker();
 });
 
-function more_test(id)
+function more_test(id,parent)
 {
+var par="#"+parent;
 jQuery.ajax({
 type: "POST", 
 url:ajaxurl,
@@ -61,7 +62,8 @@ id:id},
 success:function(resp){
 if( resp !="") 
 {
-jQuery("#testimonial-cont"+id).html(resp);
+var mainid=par+" "+"#testimonial-cont"+id;
+jQuery(mainid).html(resp);
 }
 }
 });
