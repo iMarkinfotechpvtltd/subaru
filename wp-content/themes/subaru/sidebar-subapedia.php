@@ -40,7 +40,7 @@ echo '<li><a href="' . esc_url( get_term_link( $term ) ) .'">' . $term->name . '
 ?>
 </ul>
 </div>
-
+<?php /*
 <div class="category-post"> 
 <h3>Recent Comments</h3>
 <ul>
@@ -60,6 +60,6 @@ foreach($comments as $comment) :
 ?>
 </ul>
 </div>
-
+*/ ?>
 </div> <!--side-bar-section Close-->
 </div> <!--col-xs-12 col-md-4 col-md-offset-1-->

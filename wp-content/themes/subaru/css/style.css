@@ -526,7 +526,7 @@ textarea {
 
 .breadcrumb-container .breadcrumb li::before {
     color: #a50364;
-    content: "ÔÑÅ";
+    content: "ÔÑ?";
     font-family: 'FontAwesome';
 }
 
@@ -2362,7 +2362,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a.flex-prev:before {
-    content: "ÓÅπ";
+    content: "Ó?π";
 }
 
 .flex-direction-nav .flex-prev {
@@ -3312,7 +3312,7 @@ html[xmlns] .flexslider .slides {
 
 .playbtn::before {
     color: #e7008b;
-    content: "ÔÅã";
+    content: "Ô?ã";
     display: block;
     font-family: 'FontAwesome';
     font-style: normal;
@@ -3443,7 +3443,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .teams-section .panel-group .panel-heading a::after {
-    /**content: "ÔÅ®";
+    /**content: "Ô?®";
     float: right;
     font-family: "FontAwesome";
     font-size: 18px;
@@ -3451,7 +3451,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .teams-section .panel-group .panel-heading a.collapsed::after {
-    /**content: "ÔÅß";
+    /**content: "Ô?ß";
     float: right;
     font-family: "FontAwesome";
     font-size: 18px;
@@ -4033,7 +4033,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .product-page-container .flex-direction-nav a.flex-prev::before {
-    content: "ÓÅπ";
+    content: "Ó?π";
 }
 
 .product-page-container .flex-direction-nav a.flex-next::before {
@@ -13533,6 +13533,11 @@ ul.gear-tick-list li:before {
 }
 .footer-light-grey.foo-cont a {
     box-shadow: none;
+}
+.page-id-85 .tags-section {
+    clear: both;
+    display: block;
+    padding-top: 10px;
 }
 
 /*****************************************

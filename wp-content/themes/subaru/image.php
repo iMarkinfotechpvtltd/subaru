@@ -8,16 +8,17 @@
 */
 
 get_header(); ?>
-
-<div id="primary" class="content-area">
-<main id="main" class="site-main" role="main">
-
+<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+</div>
+<div class="clearfix"></div>
+<div class="container">
+<div class="opportunities">
 <?php
 // Start the loop.
 while ( have_posts() ) : the_post();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <nav id="image-navigation" class="navigation image-navigation">
 <div class="nav-links">
@@ -26,9 +27,9 @@ while ( have_posts() ) : the_post();
 </div><!-- .nav-links -->
 </nav><!-- .image-navigation -->
 
-<header class="entry-header">
+<div class="entry-header">
 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-</header><!-- .entry-header -->
+</div><!-- .entry-header -->
 
 <div class="entry-content">
 
@@ -63,7 +64,7 @@ wp_link_pages( array(
 ?>
 </div><!-- .entry-content -->
 
-<footer class="entry-footer">
+<div class="entry-footer">
 <?php twentysixteen_entry_meta(); ?>
 <?php
 // Retrieve attachment metadata.
@@ -88,25 +89,12 @@ get_the_title()
 '</span>'
 );
 ?>
-</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</div><!-- .entry-footer -->
+</div><!-- #post-## -->
 
 <?php
-// If comments are open or we have at least one comment, load up the comment template.
-if ( comments_open() || get_comments_number() ) {
-comments_template();
-}
-
-// Parent post navigation.
-the_post_navigation( array(
-'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentysixteen' ),
-) );
-// End the loop.
 endwhile;
 ?>
-
-</main><!-- .site-main -->
-</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
+</div>
+</div>
 <?php get_footer(); ?>

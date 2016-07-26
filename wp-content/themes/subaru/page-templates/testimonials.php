@@ -169,6 +169,7 @@ endif; ?>
 </ol>
 </div>
 </div>
+
 </div>
 <div class="testimonial-descp">
 <div class="tittle-date"><h3><?php echo get_the_title(); ?></h3> 
@@ -179,13 +180,18 @@ endif; ?>
 <?php $test_id=get_the_ID(); ?>
 <div id="testimonial-cont<?php echo $test_id; ?>">
 <?php 
-$parent="menu$k";
-echo get_excerpt_test(75,$test_id,$parent); ?>
-</div>
+//$parent="menu$k";
+//echo get_excerpt_test(75,$test_id,$parent); 
+echo get_the_content();
+?>
+<?php if(get_the_term_list( $id, 'tags_testimonial')) {  ?>
 <div class="tags-section">
 <h5>Tags :</h5>
 <?php echo get_the_term_list( $id, 'tags_testimonial', '<ul><li>', '</li><li>', '</li></ul>' ); ?>
-</div> 
+</div>  
+  <?php } ?>     
+</div>
+
 </div>
 </div>
 </article>

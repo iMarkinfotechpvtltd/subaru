@@ -161,23 +161,8 @@ get_template_part( 'template-parts/content', 'none' );
 <?php get_sidebar('subapedia_slider'); ?> <!-- Subapedia Slider -->
 <?php get_sidebar('departments'); ?> <!-- Four Listing Departments -->
 <?php get_sidebar('testimonials_slider'); ?> <!-- Testimonials Slider -->
+<?php get_sidebar('leave_reply'); ?>
 
-<div class="container">
-<div class="reply-form">
-<div class="row">
-<div class="col-md-8 col-md-offset-2">
-<h2>Leave a Reply</h2>
-<p>Your email address will not be published. Required fields are marked *</p>
-
-<input type="text" class="form-control pull-left" placeholder="Name">
-<input type="text" class="form-control pull-right" placeholder="Mail">
-<input type="text" class="form-control web" placeholder="Website">
-<textarea class="form-control " placeholder="Message"></textarea>
-<button type="button" class="btn btn-danger btn-submit">send</button>
-</div> 
-</div>
-</div> 
-</div>
 
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->
 

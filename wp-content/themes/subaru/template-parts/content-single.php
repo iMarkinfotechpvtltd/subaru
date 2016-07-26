@@ -1,56 +1,82 @@
 <?php
 /**
- * The template part for displaying single posts
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
+* The template part for displaying single posts
+*
+* @package WordPress
+* @subpackage Twenty_Sixteen
+* @since Twenty Sixteen 1.0
+*/
 ?>
+<?php 
+$post_id= get_the_ID();
+$banner = get_post_meta($post->ID,"banner_image",true);
+$image = wp_get_attachment_image_src($banner,'banner_image');
+$url = $image[0];
+if($url!="") 
+{
+?>
+<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:72% 50%;">
+<?php
+}
+else
+{
+?>
+<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<?php 
+}
+?>
+</div>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<!--- Banner Section End here ---->
+<div class="clearfix"></div>
 
-	<?php twentysixteen_excerpt(); ?>
+<div class="main-search-sec">
+<div class="container">
+<div class="main-search wow bounceInUp" data-wow-duration="2s">
+<form>
+<div class="form-group select-in">
+<select class="form-control">
+<option>Search by category</option>
+<option>Engine</option>
+<option>Gearbox</option>
+<option>Parts</option>
+</select>
+</div>
+<div class="form-group search-in">
+<input type="text" class="form-control" placeholder="Search website">
+</div>
+<button type="submit" class="main-search-btn">search</button>
 
-	<?php twentysixteen_post_thumbnail(); ?>
+</form>
+</div>
+</div>
+</div>
 
-	<div class="entry-content">
-		<?php
-			the_content();
-
-			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );
-
-			if ( '' !== get_the_author_meta( 'description' ) ) {
-				get_template_part( 'template-parts/biography' );
-			}
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php twentysixteen_entry_meta(); ?>
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<div class="container">
+<div class="opportunities">
+<div class="breadcrumb-container">
+<ol class="breadcrumb">
+<li><a href="<?php echo get_home_url(); ?>">Home</a></li>
+<li class="active"><?php the_title(); ?></li>
+</ol>
+</div>
+<div class="about-section">
+<h3><?php the_title(); ?></h3>    
+<?php the_content();?>
+<?php
+edit_post_link(
+sprintf(
+/* translators: %s: Name of current post */
+__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+get_the_title()
+),
+'<footer class="entry-footer"><span class="edit-link">',
+'</span></footer><!-- .entry-footer -->'
+);
+?>
+</div>
+</div> <!--opportunities Close-->
+</div>
 
 
 
