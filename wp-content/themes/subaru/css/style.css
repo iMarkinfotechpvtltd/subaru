@@ -526,7 +526,7 @@ textarea {
 
 .breadcrumb-container .breadcrumb li::before {
     color: #a50364;
-    content: "ï„?";
+    content: "\f101";
     font-family: 'FontAwesome';
 }
 
@@ -571,7 +571,7 @@ textarea {
 }
 
 .post-cmts li.author-name::before {
-    content: "î€ˆ";
+    content: "\e008";
     font-family: "Glyphicons Halflings";
     font-size: 12px;
     margin-left: 4px;
@@ -579,7 +579,7 @@ textarea {
 }
 
 .post-cmts li.folder-name::before {
-    content: "ï„•";
+    content: "\e118";
     font-family: 'FontAwesome';
     margin-right: 5px;
 }
@@ -682,7 +682,7 @@ textarea {
 
 .recenta-post ul li a::before {
     color: #fc1c9a;
-    content: "ï…œ";
+    content: "\f0f6";
     font-family: "FontAwesome";
     left: 0px;
     position: absolute;
@@ -696,7 +696,7 @@ textarea {
 
 .category-post ul li a::before {
     color: #fc1c9a;
-    content: "ï„•";
+    content: "\f115";
     font-family: "FontAwesome";
     left: 0px;
     position: absolute;
@@ -748,7 +748,7 @@ textarea {
 }
 
 .btn.btn-default.btn-quote.helpline::before {
-    content: "ï„‹";
+    content: "\f10b";
     font-family: 'FontAwesome';
     margin-right: 8px;
 }
@@ -1419,7 +1419,7 @@ textarea {
 }
 
 .timming::before {
-    content: "ï€—";
+    content: "\f017";
     font-family: 'FontAwesome';
     margin-right: 5px;
 }
@@ -2358,11 +2358,11 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a.flex-next:before {
-    content: "î‚€";
+    content: "\e258";
 }
 
 .flex-direction-nav a.flex-prev:before {
-    content: "î?¹";
+    content:"\e257";
 }
 
 .flex-direction-nav .flex-prev {
@@ -3083,7 +3083,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .breadcrumb-container .breadcrumb li:first-child a::before {
-    content: "ï€•";
+    content: "\f101";
     font-family: 'FontAwesome';
     margin-right: 4px;
 }
@@ -3312,7 +3312,7 @@ html[xmlns] .flexslider .slides {
 
 .playbtn::before {
     color: #e7008b;
-    content: "ï?‹";
+    content: "ï¿½?ï¿½";
     display: block;
     font-family: 'FontAwesome';
     font-style: normal;
@@ -3443,7 +3443,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .teams-section .panel-group .panel-heading a::after {
-    /**content: "ï?¨";
+    /**content: "ï¿½?ï¿½";
     float: right;
     font-family: "FontAwesome";
     font-size: 18px;
@@ -3451,7 +3451,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .teams-section .panel-group .panel-heading a.collapsed::after {
-    /**content: "ï?§";
+    /**content: "ï¿½?ï¿½";
     float: right;
     font-family: "FontAwesome";
     font-size: 18px;
@@ -4033,7 +4033,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .product-page-container .flex-direction-nav a.flex-prev::before {
-    content: "î?¹";
+    content: "ï¿½?ï¿½";
 }
 
 .product-page-container .flex-direction-nav a.flex-next::before {
@@ -5282,6 +5282,8 @@ li.dropdown-menu > li > a:hover {
     min-height: 481px;
     padding: 25px 20px;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .calender > h4 {
@@ -5883,6 +5885,7 @@ li.dropdown-menu > li > a:hover {
     font-family: 'AgencyBold';
     font-size: 22px;
     margin-bottom: 15px;
+        margin-top: 20px;
 
 }
 
@@ -11370,6 +11373,71 @@ button.close.red-close:hover {
     margin-right: 21px;
 }
 
+#myModalGetQuote .modal-form-body .form-group.urgent{
+	 width: 100%;
+    margin: 0 0 20px 0;
+    background: #dddddd;
+    text-align: center;
+    min-height: 100%;
+	padding:20px 40px;
+}
+
+#myModalGetQuote .modal-form-body .form-group.urgent label{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #6c6c6c;
+    letter-spacing: normal;
+    line-height: 1.6;
+	margin-bottom:0;
+}
+
+#myModalGetQuote .modal-form-body .form-group.urgent label a{
+	color:#e7008b;
+}
+
+#myModalGetQuote .modal-form-body .form-group.urgent .cust-quto-urgent{
+    background: #fff;
+    border: solid 1px #cfcece;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    margin-right: 7px;
+    cursor: pointer;
+    border-radius: 0px;
+    display: inline-block;
+    margin-left: 0px;
+    top: -1px;
+    position: relative;
+}
+
+#myModalGetQuote .modal-form-body .form-group.urgent input[type=checkbox]:checked + span.cust-quto-urgent{
+    background: #fff;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    border-color: #cfcece;
+}
+
+#myModalGetQuote .modal-form-body .form-group.urgent input[type=checkbox]:checked + span.cust-quto-urgent:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 7px;
+    background: transparent;
+    top: 5px;
+    left: 2px;
+    border: 2px solid #e7008b;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 #myModalGetQuote .modal-form-body .form-group.no-mar{
     margin-right: 0;
 }
@@ -13417,7 +13485,7 @@ ul.gear-tick-list li:before {
     }
     .clutch-norrie-andreson .col-md-3:last-child img {
         position: static;
-        width: 55%;
+        width:auto;
     }
     .price-grid.owl-carousel .owl-nav .owl-prev,
     .timing-belt-carosuel .owl-controls .owl-nav .owl-prev {
@@ -13558,4 +13626,12 @@ ul.gear-tick-list li:before {
         opacity: 1;
         right: 10px;
     }
+}
+
+/** 2-8-16 **/
+.single-subapedia ul.custom-list-style li {
+    list-style: unset;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    padding-left: 8px;
 }

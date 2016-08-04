@@ -68,3 +68,13 @@ jQuery(mainid).html(resp);
 }
 });
 }
+
+jQuery(document).ready(function () {
+jQuery(window).bind('scroll', function () {
+if (jQuery(window).scrollTop() > 10) {
+jQuery('header').addClass("fixed animated fadeInDown");
+} else {
+jQuery('header').removeClass("fixed animated fadeInDown");
+}
+});
+});

@@ -199,6 +199,7 @@ var engineother=jQuery("#engineother").val();
 var km= jQuery("#km").val();
 var serviceint= jQuery("#serviceint").val();   
 var kmother=jQuery("#kmother").val(); 
+var findus=jQuery("#findus").val(); 
 var refine=jQuery("#refine").val();
 var date=jQuery("#datepicker-example14").val();
 
@@ -208,14 +209,15 @@ jQuery("#fname").removeClass('error');
 jQuery("#lname").removeClass('error');  
 jQuery("#email").removeClass('error');  
 jQuery("#phone").removeClass('error');  
-jQuery("#vin").removeClass('error');  
+//jQuery("#vin").removeClass('error');  
 jQuery("#subaru").removeClass('error');  
 jQuery("#model").removeClass('error');  
 jQuery("#modyear").removeClass('error');  
-jQuery("#engine").removeClass('error');  
-jQuery("#transmission").removeClass('error');  
-jQuery("#km").removeClass('error');  
-jQuery("#serviceint").removeClass('error');  
+//jQuery("#engine").removeClass('error');  
+//jQuery("#transmission").removeClass('error');  
+//jQuery("#km").removeClass('error');  
+//jQuery("#serviceint").removeClass('error');  
+jQuery("#refine").removeClass('error');  
 
  if(fname=="" || fname==null)
  {
@@ -250,19 +252,12 @@ jQuery("#serviceint").removeClass('error');
 
  }
  
-  if(vin=="" || vin==null)
- {
-  jQuery("#vin").addClass('error');
-   r=false;
-  
- }
- 
-  if(subaru=="" || subaru==null)
- {
-      jQuery("#subaru").addClass('error');
-     r=false;
-    
- }
+//  if(vin=="" || vin==null)
+// {
+//  jQuery("#vin").addClass('error');
+//   r=false;
+//  
+// }
  
   if(model=="" || model==null)
  {
@@ -278,27 +273,33 @@ jQuery("#serviceint").removeClass('error');
  
  }
  
-  if(engine=="" || engine==null)
- {
-  jQuery("#engine").addClass('error');
-   r=false;
-
- }
-
-  if(transmission=="" || transmission==null)
- {
-   jQuery("#transmission").addClass('error');
-   r=false;
- }
-  if(km=="" || km==null)
- {
-   jQuery("#km").addClass('error');
-   r=false;
- }
+//  if(engine=="" || engine==null)
+// {
+//  jQuery("#engine").addClass('error');
+//   r=false;
+//
+// }
+//
+//  if(transmission=="" || transmission==null)
+// {
+//   jQuery("#transmission").addClass('error');
+//   r=false;
+// }
+//  if(km=="" || km==null)
+// {
+//   jQuery("#km").addClass('error');
+//   r=false;
+// }
  
-  if(serviceint=="" || serviceint==null)
+//  if(serviceint=="" || serviceint==null)
+// {
+//  jQuery("#serviceint").addClass('error');
+//   r=false;
+// }
+
+if(refine=="" || refine==null)
  {
-  jQuery("#serviceint").addClass('error');
+  jQuery("#refine").addClass('error');
    r=false;
  }
  
@@ -325,6 +326,7 @@ engineother: engineother,
 km: km,
 serviceint: serviceint,
 kmother: kmother,
+findus: findus,
 refine: refine,
 date: date,
 
@@ -336,6 +338,7 @@ jQuery(".appointment-form").addClass('loading');
 success: function(data){
     if(data=='1')
     {
+window.location.href = 'http://www.alldrivesubaru.com.au/thank-you-for-book-an-appointment/';        
 var msg="Your Appointment has been booked.";
 jQuery(".appointment-form").removeClass('loading');
 jQuery("#success-app").html('');  
@@ -377,6 +380,10 @@ var email1= jQuery("#email1").val();
 var atpos1 = email1.indexOf("@");
 var dotpos1 = email1.lastIndexOf(".");
 var phone1= jQuery("#phone1").val();
+var model1= jQuery("#model1").val();
+var modyear1= jQuery("#modyear1").val();
+var engine1= jQuery("#engine1").val();
+var vin1= jQuery("#vin1").val();
 var comments1=jQuery("#comments1").val();
 var r=true;
 
@@ -427,6 +434,10 @@ fname: fname1,
 lname: lname1,
 email: email1,
 phone: phone1,
+model: model1,
+modyear: modyear1,
+engine: engine1,
+vin: vin1,
 comments: comments1,
 },  
 beforeSend: function() {
@@ -464,6 +475,7 @@ return false;
 function quoteval(){
 
 var qname= jQuery("#qname").val();
+var qlname= jQuery("#qlname").val();
 var qphone= jQuery("#qphone").val();
 var qemail= jQuery("#qemail").val();
 var atpos1 = qemail.indexOf("@");
@@ -473,18 +485,31 @@ var qdate= jQuery("#qdate").val();
 var qtime=jQuery("#qtime").val();
 var qmodel=jQuery("#qmodel").val();
 var qyear=jQuery("#qyear").val();
+var locateus=jQuery("#locateus").val();
 var qinfo=jQuery("#qinfo").val();
+var urgent=jQuery("input[name='urgent']:checked").val();
+if(urgent=='yes')
+{ urgent='Yes'; }
+else{ urgent='No'; }
 var r=true;
 
 jQuery("#qname").removeClass('error');  
+jQuery("#qlname").removeClass('error');
 jQuery("#qphone").removeClass('error');  
 jQuery("#qemail").removeClass('error');  
-jQuery("#qdate").removeClass('error');  
-jQuery("#qtime").removeClass('error');  
+jQuery("#qmodel").removeClass('error'); 
+jQuery("#qyear").removeClass('error'); 
+jQuery("#qinfo").removeClass('error'); 
 
 if(qname=="" || qname==null)
 {
 jQuery("#qname").addClass('error');  
+r=false;
+}
+
+if(qlname=="" || qlname==null)
+{
+jQuery("#qlname").addClass('error');  
 r=false;
 }
 
@@ -507,15 +532,21 @@ r=false;
 }
 }
 
-if(qdate=="" || qdate==null)
+if(qmodel=="" || qmodel==null)
 {
-jQuery("#qdate").addClass('error');  
+jQuery("#qmodel").addClass('error');  
 r=false;
 }
 
-if(qtime=="" || qtime==null)
+if(qyear=="" || qyear==null)
 {
-jQuery("#qtime").addClass('error');  
+jQuery("#qyear").addClass('error');  
+r=false;
+}
+
+if(qinfo=="" || qinfo==null)
+{
+jQuery("#qinfo").addClass('error');  
 r=false;
 }
  
@@ -527,13 +558,16 @@ url: ajaxurl,
 data: {  
 action: 'quotemail',  
 qname: qname,
+qlname: qlname,
 qphone: qphone,
 qemail: qemail,
 qdate: qdate,
 qtime: qtime,
 qmodel: qmodel,
 qyear: qyear,
+locateus: locateus,
 qinfo: qinfo,
+urgent: urgent
 },  
 beforeSend: function() {
 // setting a timeout
@@ -545,8 +579,10 @@ if(data=='1')
 {
 jQuery("#quote_form").removeClass('loading');
 jQuery("#ajax-loader").hide();
+window.location.href = 'http://www.alldrivesubaru.com.au/thank-you-for-book-an-appointment/'; 
 jQuery('<span id="success-quote">Your Quote has been submitted, Will get back to you shortly.</span>').insertAfter('#ajax-loader');
-jQuery('#quote_form').find("input[type=text], textarea,select").val("");
+jQuery('#quote_form').find("input[type=text], textarea, select, input[type=checkbox]").val("");
+jQuery("#urgent").attr('checked', false); 
 setTimeout(function(){ jQuery("#success-quote").hide(); }, 3000);
 }
 },  

@@ -1,11 +1,11 @@
 <?php 
 /**
-* The template for displaying all single posts and attachments
-*
-* @package WordPress
-* @subpackage Twenty_Sixteen
-* @since Twenty Sixteen 1.0
-*/
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
 get_header(); ?>
 
 <!--- Banner Section start here ---->
@@ -16,11 +16,8 @@ $image = wp_get_attachment_image_src($banner,'full');
 $url = $image[0];
 if($url!="") 
 {
-if($post_id==100){$background="background-position:left center;";}
-else if($post_id==99 || $post_id==102 || $post_id==104 || $post_id==105 || $post_id==106 || $post_id==109){$background="background-position:center center;";}
-else{$background="background-position:72% 50%;";}
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);<?php echo $background; ?>">
+<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:center center;">
 <?php
 }
 else
@@ -59,16 +56,17 @@ else
 <!--- Search Section End here ---->
 
 <div class="container">
-<div class="opportunities clutch-repair-page thr-btn-main">
+<div class="opportunities thr-btn-main">
+    
 <!-- Breadcrumbs start here-->
 <div class="breadcrumb-container">
 <ol class="breadcrumb">
 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-<li>Services</li>
+<li><a href="<?php echo get_permalink(122); ?>">Services</a></li>
 <?php $cat=get_the_terms($post_id, 'categories_services'); 
 $cat11=$cat[0]; ?>
-<!--<li><a href="<?php //echo get_permalink(122); ?>"><?php //echo $cat11->name; ?></a></li>-->
 <li><?php echo $cat11->name; ?></li>
+<!--<li><a href="<?php //echo get_permalink(122); ?>"><?php //echo $cat11->name; ?></a></li>-->
 <li class="active"><?php echo get_the_title($post_id); ?></li>
 </ol>
 </div>    
@@ -84,7 +82,7 @@ echo '<h2>'.$term->name.'</h2>';
 $args = array(
 'post_type'   => 'services',
 'orderby' => 'title',
-'order'   => 'ASC',  
+'order'   => 'ASC',   
 'tax_query' => array(
 array(
 'taxonomy' => 'categories_services',
@@ -119,22 +117,7 @@ else{$main='';}
 <div class="row conditioning-repairs <?php echo $main; ?>">
 <div class="col-xs-12 col-md-8 ">
 <div class="tab-content">
-<?php 
-$contid[]=array(96 => "battery-services", 97 => "clutuch-replacement", 98 => "battery-services", 99 => "brake-repair", 100 => "wheel-bearing-repair", 101 => "cv-shaft-repair", 102 => "battery-services", 103 => "shock-absorbers", 104 => "bushes-and-links", 105 => "battery-services", 106 => "battery-services", 107 => "power-window-repair", 108 => "battery-services", 109 => "door-mirrors-repair", 110 => "air-re-gas");
-
-$contclass[]=array(95 => "subaru-air-conditioning-repairs", 96 => "subaru-air-conditioning-repairs", 98 => "clutch-repair transpCV", 101 => "clutch-repair transpCV", 103 => 'clutch-repair', 104 => "clutch-repair", 106 => "clutch-repair", 107 => "clutch-repair", 109 => "clutch-repair", 110 => "subaru-air-conditioning-repairs");
-
-if (array_key_exists($post_id, $contid[0])) {
-if($contid[0][$post_id]){$displayid=$contid[0][$post_id];}
-}
-else{$displayid='air-re-gas';}
-
-if (array_key_exists($post_id, $contclass[0])){
-if($contclass[0][$post_id]){$displaycls=$contclass[0][$post_id];}
-}
-else{$displaycls='clutch-repair';}
-?>
-<div id="<?php echo $displayid; ?>" class="tab-pane fade in active <?php echo $displaycls; ?>">
+<div id="battery-services" class="tab-pane fade in active clutch-repair">
 <?php echo get_the_content(); ?>
 </div> <!--subaru-air-conditioning-repairs Close-->
 </div>
@@ -148,38 +131,142 @@ else{$displaycls='clutch-repair';}
 </div> <!--opportunities Close-->
 </div>
 
-<?php
-$show= get_post_meta($post->ID,"show_info",true);
-if($show )
-{
-$auth_img=get_post_meta($post->ID,"author_image",true);
-$auth_dec=get_post_meta($post->ID,"author_info",true);
-$tool_img=get_post_meta($post->ID,"tool_image",true);
-?>
-<div class="clutch-norrie-andreson">
+
+<div class="subaroo-log-book">
 <div class="container">
-<div class="row">
-<div class="col-md-3">
-<?php  if($auth_img){ ?>
-<img alt="..." src="<?php echo wp_get_attachment_url($auth_img); ?>">
-<?php } ?>
-</div> <!--col-md-3-->
-<div class="col-md-6">
-<?php if($auth_dec){
-echo $auth_dec;
-}
-?>
-</div> <!--col-md-6-->
-<div class="col-md-3">
-<?php if($tool_img){ ?>
-<img alt="..." src="<?php echo wp_get_attachment_url($tool_img); ?>">
-<?php } ?>
+<h2><span style="color:#0080fd;">SUBARU</span><br>
+LOG BOOK <br>
+CHANGES
+</h2> 
+<?php echo get_post_meta($post->ID,"subaru_log_book_changes",true); ?>
+
+<div class="log-book-tabbing">
+
+<!-- Nav tabs -->
+<ul role="tablist" class="nav nav-tabs">
+<li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="Models1991" href="#Models1991">Subaru Models From 1991 to 2005</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="models-present" href="#models-present">Subaru Models From 2006 to present</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="Models1991" class="tab-pane active" role="tabpanel">
+<ul role="tablist" class="nav nav-tabs">
+<li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="general" href="#general">General <br> information </a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="log-flip" href="#log-flip">Log Flip <br> Book</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="suitable-models" href="#suitable-models">Suitable Models <br> &amp; Engines</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="manufacturer" href="#manufacturer">Manufacturer Suggested <br> servicing schedule</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="servicing-schedule" href="#servicing-schedule">ADS Suggested <br> servicing schedule</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="general" class="tab-pane active" role="tabpanel">
+<?php echo get_post_meta($post->ID,"general_information",true); ?>
+</div> <!--tab-pane-->
+
+<div id="log-flip" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"log_flip_book",true); ?>
 </div>
-</div> <!--row close-->
-</div> <!--container-fluid-->
+
+<div id="suitable-models" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"suitable_models_engines",true); ?>
 </div>
-<?php } ?>
-<div class="conditioning-service-package air-conditioning">
+
+<div id="manufacturer" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"manufacturer_suggested_servicing_schedule",true); ?>
+</div>
+
+<div id="servicing-schedule" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"ads_suggested_servicing_schedule",true); ?>
+</div>
+</div>
+
+
+</div> <!---tab-pane close--->
+<div id="models-present" class="tab-pane" role="tabpanel"> 
+<ul role="tablist" class="nav nav-tabs">
+<li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="general1" href="#general1">General <br> information </a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="log-flip1" href="#log-flip1">Log Flip <br> Book</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="suitable-models1" href="#suitable-models1">Suitable Models <br> &amp; Engines</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="manufacturer1" href="#manufacturer1">Manufacturer Suggested <br> servicing schedule</a></li>
+<li role="presentation"><a data-toggle="tab" role="tab" aria-controls="servicing-schedule" href="#servicing-schedule">ADS Suggested <br> servicing schedule</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div id="general1" class="tab-pane active" role="tabpanel">
+<?php echo get_post_meta($post->ID,"general_information_subaru",true); ?>
+
+</div> <!--tab-pane-->
+
+<div id="log-flip1" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"log_flip_book_subaru",true); ?>
+</div>
+
+<div id="suitable-models1" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"suitable_models_&_engines_subaru",true); ?>
+</div>
+
+<div id="manufacturer1" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"manufacturer_suggested_servicing_schedule_subaru",true); ?>  
+</div>
+
+<div id="servicing-schedule1" class="tab-pane" role="tabpanel">
+<?php echo get_post_meta($post->ID,"ads_suggested_servicing_schedule_subaru",true); ?>  
+</div>
+</div>
+
+</div> <!--tab-pane-->
+
+</div>
+
+</div> <!---log-book-tabbing-section--->
+
+</div>
+</div>
+
+
+<div class="subaroo-six-star">
+<h2>All Drive Subaroo Six Star Subaru Service</h2>
+<div class="container">  
+<div class="row subaroo-six-stars">
+<div class="col-sm-6 col-md-4 prevention"> 
+<h4><?php echo get_post_meta($post->ID,"prevention_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"prevention_description",true); ?>
+</div> <!---col-sm-6 col-md-4--->
+
+<div class="col-sm-6 col-md-4 independent"> 
+<h4><?php echo get_post_meta($post->ID,"independent_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"independent_description",true); ?>
+
+</div> <!---col-sm-6 col-md-4--->
+
+<div class="col-sm-6 col-md-4 good-servicing"> 
+<h4><?php echo get_post_meta($post->ID,"good_servicing_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"good_servicing_description",true); ?>
+</div> <!---col-sm-6 col-md-4--->
+
+<div class="col-sm-6 col-md-4 proactive"> 
+<h4><?php echo get_post_meta($post->ID,"proactive_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"proactive_description",true); ?>
+</div> <!---col-sm-6 col-md-4--->
+
+<div class="col-sm-6 col-md-4 best-admin"> 
+<h4><?php echo get_post_meta($post->ID,"best_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"best_description",true); ?>
+</div> <!---col-sm-6 col-md-4--->
+
+<div class="col-sm-6 col-md-4 knowledge-pool"> 
+<h4><?php echo get_post_meta($post->ID,"knowledge_title",true); ?></h4> 
+<?php echo get_post_meta($post->ID,"knowledge_description",true); ?>
+</div> <!---col-sm-6 col-md-4--->
+
+</div>  <!--row Close-->
+</div> <!--container-->
+</div>
+<!-- Appointment Form -->
+<div class="conditioning-service-package log-book">
 <div class="container">
 <?php
 $pack_title=get_post_meta($post->ID,"package_title",true);
@@ -187,13 +274,14 @@ $pack_desc=get_post_meta($post->ID,"package_desc",true);
 if($pack_title){   echo '<h2>'.$pack_title.'</h2>'; } 
 else{ ?><h2>CHOOSE <?php echo get_the_title(); ?> PACKAGE</h2> <?php }
 if($pack_desc){echo '<p>'.$pack_desc.'</p>';}
+else{ ?><p>Subaru replacement air conditioner compressors or evaporator  kits can be installed to most Subaru models within one (1) day at our Subaru workshop in Peakhurst. We can provide loan vehicles for your convenience. A complimentary car wash is included after a comprehensive Subaru quality inspection, conducted by a senior Subaru mechanic before you collect your Subaru vehicle. Check out our service packages.</p> <?php }
 ?>    
 
 <div class="row price-blocks">
 <div class="col-md-12 price-grid"> 
 <?php $packages= get_post_meta( $post_id, '_test_value', true); 
 $pack_uns=explode(',',$packages);
-$args = array( 'post__in'=>$pack_uns, 'post_type' =>'packages','order'=> 'ASC', 'posts_per_page'   => -1 );
+$args = array( 'post__in'=>$pack_uns, 'post_type' =>'packages','order'=> 'ASC','posts_per_page'   => -1 );
 $lastposts = get_posts( $args );
 foreach ( $lastposts as $post ) {
 
@@ -222,9 +310,6 @@ else{ echo 'POA'; }
 </div> <!--row-close-->
 </div>
 </div>
-<!--price -Tag-close-->
-
-<!-- Appointment Form -->
 <?php get_sidebar('appointment'); ?>
 
 <div class="srip-cose">
@@ -329,7 +414,10 @@ Repair Kits Supplied</h3>
 </div> <!--col-xs-6-->
 </div>
 </div>
+
 </div>
+
+
 </div> 
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->
 

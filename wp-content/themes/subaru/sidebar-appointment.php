@@ -40,10 +40,7 @@
 <input type="text" class="form-control" placeholder="" value="" id="afvin" name="afvin">
 </div> <!--col-md-6-->
 
-<div class="col-md-4">
-<input type="text" class="form-control" placeholder="SUBARU" value="" name="subaru" id="subaru">
-<span class="error" id="subaruerror"></span>
-</div> <!--col-md-6-->
+
 <div class="col-md-4">
 <select class="form-control" name="model" id="model">
 <option value="">Model</option>
@@ -94,12 +91,6 @@
 </div> <!--col-md-4-->
 
 <div class="col-md-4">
-<select class="form-control" name="engineother" id="engineother">
-<option value="Other">Other</option>
-</select>    
-</div> <!--col-md-4-->
-
-<div class="col-md-4">
 <input class="form-control" type="text" placeholder="KM" name="km" id="km">
 <span class="error" id="kmerror"></span>
 </div> <!--col-md-4-->
@@ -113,14 +104,21 @@
 <span class="error" id="serviceinterror"></span>    
 </div> <!--col-md-4-->
 
-<div class="col-md-4">
-<select class="form-control" name="kmother" id="kmother">
+<div class="col-xs-12">
+<select class="form-control" name="findus" id="findus">
+<option value="">How did you find us?</option>
+<option value="Google Web">Google Web</option>
+<option value="Google Ad">Google Ad</option>
+<option value="Friend Referral">Friend Referral</option>
+<option value="Flyer">Flyer</option>
+<option value="Newspaper">Newspaper</option>
+<option value="I'm a customer">I'm a customer</option>
 <option value="Other">Other</option>
 </select>
-</div> <!--col-md-4-->
+</div> <!--col-xs-12-->
 
 <div class="col-xs-12">
-<textarea class="form-control" placeholder="Refine with keywords" name="refine" id="refine"></textarea>
+<textarea class="form-control" placeholder="Additional Quote Information" name="refine" id="refine"></textarea>
 </div> <!--col-xs-12-->
 
 <div class="appointment-date">

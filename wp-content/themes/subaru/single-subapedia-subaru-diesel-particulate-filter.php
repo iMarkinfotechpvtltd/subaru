@@ -89,7 +89,7 @@ echo $fname.' '.$lname;
 </div>  
     
 <div class="row mk00">
-<div class="col-xs-12 col-md-7 diesel">
+<div class="col-xs-12 col-md-7 news-section">
  <div class="author-post-headding">
 <?php $post_title=get_post_meta($post->ID,"author_post_heading",true);  
 if($post_title){echo $post_title;}
@@ -109,7 +109,7 @@ if($post_title){echo $post_title;}
 <div class="repair-dpf">
 <div class="container">
 <div class="row">
-<?php /*<div class="col-xs-12 col-md-4"> 
+<div class="col-xs-12 col-md-4"> 
 <?php 
 $imgsrc11= get_post_meta($post_id,"pdf_image",true); 
 $pdf_src = wp_get_attachment_image_src($imgsrc11,'full');
@@ -123,31 +123,10 @@ else{ ?>
 <?php }
 ?>
     
-</div> */ ?>
-<div class="col-xs-12 col-md-12">
+</div>
+<div class="col-xs-12 col-md-8">
 <?php echo get_post_meta($post_id,"pdf_description",true); ?>
 </div>
-
-<?php /* <div class="col-xs-12 air">
-<!--<h2><?php //echo get_post_meta($post->ID,"hide_title",true); ?></h2>-->
-<div class="row">
-<?php
-if( have_rows('sections') ):
-while ( have_rows('sections') ) : the_row();
-$sections=get_sub_field('section'); 
-?>
-<div class="col-xs-12 col-sm-4">
-<?php echo $sections; ?>    
-</div>   
-
-<?php 
-endwhile;
-endif; ?>   
-
-       
-</div>
-</div>    */ ?>
-    
 <div class="col-xs-12">
 <div class="row">
 <div class="col-xs-12 col-sm-4">
@@ -169,6 +148,7 @@ endif; ?>
 <?php get_sidebar('subapedia_slider'); ?> <!-- Subapedia Slider -->
 <?php get_sidebar('departments'); ?> <!-- Four Listing Departments -->
 <?php get_sidebar('testimonials_slider'); ?> <!-- Testimonials Slider -->
+
 <?php get_sidebar('leave_reply'); ?>
 
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->

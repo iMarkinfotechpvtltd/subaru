@@ -33,7 +33,8 @@ else
 <div class="banner-inner">
 <?php the_field('banner_title'); ?> 
 <div class="banner-text wow slideInLeft" data-wow-duration="1.5s">
-<?php echo substr(($post->post_content), 0, 610);?>
+<?php //echo substr(($post->post_content), 0, 610);
+echo get_the_content(); ?>
 </div>
 </div>
 </div>
@@ -81,7 +82,7 @@ $post_id=$post->ID;
 <div class="why-choose-subaru-list-left"> 
 <?php
 $post_id= $post->ID;
-$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'whychoosesubaroo_image' );
+$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) );
 $urlas = $thumb['0'];
 if(!empty($urlas)) 
 {
@@ -125,11 +126,17 @@ $args=array(
 'order'         => 'desc',
 'post_type'     => 'subapedia',
 'showposts' =>6,    
-'tax_query' => array(
+//'tax_query' => array(
+//array(
+//'taxonomy' => 'subapedia_categories',
+//'field'    => 'term_id',
+//'terms'    => array( 40 ),
+//),
+'meta_query' => array(
 array(
-'taxonomy' => 'subapedia_categories',
-'field'    => 'term_id',
-'terms'    => array( 40 ),
+'key' => 'show_on_home_page',
+'value' => '1',
+'compare' => '=='
 ),
 ),    
 );
@@ -161,8 +168,14 @@ else
 ?>
 </div>
 <div class="news-art-list-right">
+<?php $unique_title = get_post_meta($post_id,"unique_title_for_home_page",true); 
+if($unique_title==1){ ?>
+<h5><?php echo get_post_meta($post_id,"tilte_for_home_page",true); ?></h5>    
+<?php }
+else{
+?>
 <h5><?php the_title();?></h5>
-<?php echo get_excerpt(28,'...'); ?>
+<?php } echo get_excerpt(28,'...'); ?>
 <a href="<?php the_permalink(); ?>" class="news-art-btn">Read More <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>  
 </div>
 </div>

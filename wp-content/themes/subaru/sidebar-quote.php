@@ -35,9 +35,16 @@
 <form novalidate="novalidate" id="quote_form" role="form" class="form-inline" onsubmit="return quoteval();">
 <div class="form-outer">
 <div class="form-group">
-<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-5.png"> Your Name (required) </label>
+<div class="make-it-half">    
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-5.png"> Name (required) </label>
 <input type="text" id="qname" name="qname" class="form-control">
 </div>
+
+<div class="make-it-half no-mar">    
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-5.png"> Sur Name (required) </label>
+<input type="text" id="qlname" name="qname" class="form-control">
+</div>
+</div>    
 
 <div class="form-group no-mar">
 <label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-2.png"> Your Contact Number (required) </label>
@@ -51,17 +58,17 @@
 
 <div class="form-group no-mar ">
 <div class="make-it-half">
-<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-10.png"> Prefer date (required) </label>
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-10.png"> Prefer date </label>
 <input type="text" id="qdate" name="qdate" class="form-control">
 </div>
 <div class="make-it-half no-mar">
-<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-11.png"> Prefer time (required) </label>
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-11.png"> Prefer time </label>
 <input type="text" id="qtime" name="qtime" class="form-control">
 </div>
 </div>
 
 <div class="form-group make-it-full select-opt">
-<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-9.png"> Vehicle Details </label>
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-9.png"> Vehicle Details (required) </label>
 <select class="form-control" name="qmodel" id="qmodel">
 <option value="" selected>Select Model...</option>
 <option value="BRZ">BRZ</option>
@@ -75,11 +82,12 @@
 <option value="WRX">WRX</option>
 <option value="WRX STI">WRX STI</option>
 <option value="XV">XV</option>
+<option value="other">other</option>
 </select>
 </div>
 
 <div class="form-group make-it-full no-mar select-opt">
-<label>&nbsp;</label>
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-10.png"> Select Year (required) </label>
 <select class="form-control" name="qyear" id="qyear">
 <option value="" selected>Select Year...</option>    
 <?php for($year=2013;$year>=1989;$year--)
@@ -89,11 +97,34 @@
 ?>    
 </select>
 </div>
+    
+    
+<div class="form-group make-it-full no-mar select-opt">
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-12.png"> How did you find us? </label>
+<select class="form-control" name="locateus" id="locateus">
+<option value="">Select Option...</option>
+<option value="Google Web">Google Web</option>
+<option value="Google Ad">Google Ad</option>
+<option value="Friend Referral">Friend Referral</option>
+<option value="Flyer">Flyer</option>
+<option value="Newspaper">Newspaper</option>
+<option value="I'm a customer">I'm a customer</option>
+<option value="Other">Other</option>    
+</select>
+</div>
+    
 
 <div class="form-group textarea">
-<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-3.png"> Additional Quote Information </label>
+<label><img src="/wp-content/themes/subaru/images/engine/pricing-icon-3.png"> Additional Quote Information (required) </label>
 <textarea class="form-control" name="qinfo" id="qinfo"></textarea>
 </div>
+    
+<div class="form-group urgent">
+<label>    
+<input type="checkbox" id="urgent" name="urgent" value="yes"><span class="cust-quto-urgent"></span>Please tick if your quote is urgent and we will contact you asap, otherwise we will be in touch within 1 business day, alternativelly if you wish 
+to talk to an ADS consultant, please call us on <a href="tel:0420 319 049">0420 319 049</a>
+</label>
+</div>    
 
 <div class="form-group submit-ajax">    
 <button class="popup-get-fm-btn" type="submit">Submit</button>

@@ -73,11 +73,19 @@ $class = $item->classes[0].' '.$item->classes[1];
 </a>
 <?php endif; ?>
 <?php 
+if($parent_id == 833) // If parent is service
+{ ?>
+<ul class="submenu">
+<li><a href="<?php echo get_the_permalink(65); ?>"><?php echo get_the_title(65); ?></a></li>    
+<li><a href="<?php echo get_the_permalink(85); ?>"><?php echo get_the_title(85); ?></a></li>
+</ul>   
+<?php }
 if($parent_id == 795) // If parent is service
 { 
 $taxonomy = 'categories_services';  
 $post_type= 'services';
 $img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.jpg';
+$order="ASC";
 }
 
 if($parent_id == 796) // If parent is Subapedia
@@ -85,6 +93,7 @@ if($parent_id == 796) // If parent is Subapedia
 $taxonomy = 'subapedia_categories';  
 $post_type= 'subapedia';
 $img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.jpg';
+//$order="DESC";
 }
 ?>
 <?php //if ( $taxonomy && $post_type ): 
@@ -101,7 +110,9 @@ if ( $parent_id == 795 || $parent_id == 796):
 
 <?php
 $argv = array(      
-'orderby' => 'term_order',             
+'orderby' => 'term_order',    
+'hide_empty' => false,  
+'exclude'   => array(42),     
  );   
 $terms = get_terms($taxonomy, $argv);
 //print_r($terms);
@@ -110,6 +121,9 @@ $i=1;
 
 foreach($terms as $term) {
 $term_id_loop=$term->term_id;
+if($term_id_loop==40)
+{ $abc=array(419); }
+else{$abc=array();}
 if($i==1){
 echo '<div class="mega-inner-row">';     
 }
@@ -117,9 +131,11 @@ echo '<div class="mega-inner-row">';
 <div class="mega-menu-item">
 <?php  echo '<h5>'.$term->name.'</h5>';
 $args = array(
-'post_type'   => $post_type,
-'orderby' => 'title',
-'order'   => 'ASC',     
+'post_type'   => $post_type, 
+'post__in'   => $abc,   
+'orderby' => 'menu_order',
+//'order'   => $order,   
+'showposts' => -1,    
 'tax_query' => array(
 array(
 'taxonomy' => $taxonomy,
@@ -139,9 +155,11 @@ if($post_id==get_the_ID()){$class='active';}else{$class='';}
 //echo '<li class=""><a aria-controls="battery-services" role="tab" data-toggle="tab" href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
 echo '<li class="'.$class.'"><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
 }
-}
 ?>
-</ul>
+</ul> 
+<?php }
+?>
+
 </div>
 <?php  
 $i++;
@@ -193,7 +211,7 @@ if($parent_id==296)
 <div class="mega-inner-row">
 <div class="mega-menu-item">
 <h5><a href="#">Subaru Engine Configuration</a></h5>
-<p>Three levels of engine build. Learn what “short” “long” and  “long dressed” mean. </p>
+<p>Three levels of engine build. Learn what “short�? “long�? and  “long dressed�? mean. </p>
 </div>
 
 <div class="mega-menu-item">

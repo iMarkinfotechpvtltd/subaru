@@ -1,5 +1,5 @@
 <?php
-add_image_size( 'Home_page_banner', 1883,900, true );
+add_image_size( 'Home_page_banner', 1883,900, false );
 require_once( get_stylesheet_directory() . '/inc/class_options.php');
 
 
@@ -60,10 +60,10 @@ $args = array(
 register_taxonomy( 'departments_categories', array( 'departments' ), $args );
 }
 add_action( 'init', 'create_departments_taxonomies', 0 );
-add_image_size( 'departments_image', 287,188, true );  
-add_image_size( 'latest_posts', 461,255, true ); 
-add_image_size( 'team_slider', 599,541, true ); 
-add_image_size( 'adds_img', 192,113, true ); 
+add_image_size( 'departments_image', 287,188, false );  
+add_image_size( 'latest_posts', 461,255, false ); 
+add_image_size( 'team_slider', 599,541, false ); 
+add_image_size( 'adds_img', 192,113, false ); 
 /* End DEPARTMENTS Section Home Page */
 
 /* WHY CHOOSE ALL DRIVE SUBAROO */
@@ -335,7 +335,7 @@ $args = array(
 register_taxonomy( 'team_categories', array( 'team' ), $args );
 }
 add_action( 'init', 'create_team_taxonomies', 0 ); 
-add_image_size( 'team_image', 270,270, true );   
+add_image_size( 'team_image', 270,270, false );   
 
 /* End Meet the team Section about Page */
 
@@ -624,16 +624,16 @@ add_action( 'save_post', 'myplugin_save_meta_box_data' );
 End -> Add the custom Meta box to show packages under Services
  */
 
-add_image_size( 'whychoosesubaroo_image', 74,54, true );  
-add_image_size( 'subapedia_images', 828,341, true ); 
+add_image_size( 'whychoosesubaroo_image', 74,54, false );  
+add_image_size( 'subapedia_images', 850,350, false ); 
 add_image_size( 'news_image', 276,245, true ); 
-add_image_size( 'news_inner_image', 828,341, true );  
-add_image_size( 'news_banner_image', 1920,725, true );   
-add_image_size( 'latestnews_image', 461,255, true );  
-add_image_size( 'service_head_gasket', 705,242, true );  
-add_image_size( 'brand_image', 169,59, true ); 
-add_image_size( 'banner_image', 1920,895, true );
-add_image_size( 'about_inner_image', 562,681, true ); 
+add_image_size( 'news_inner_image', 828,341, false );  
+add_image_size( 'news_banner_image', 1920,725, false );   
+add_image_size( 'latestnews_image', 461,255, false );  
+add_image_size( 'service_head_gasket', 705,242, false );  
+add_image_size( 'brand_image', 169,59, false ); 
+add_image_size( 'banner_image', 1920,895, false );
+add_image_size( 'about_inner_image', 562,681, false ); 
 
 
 /*-- Used on Single service Page For Appointment Form (Used to send Email to Admin) --*/
@@ -653,6 +653,7 @@ $engineother=$_POST['engineother'];
 $km=$_POST['km'];
 $serviceint=$_POST['serviceint'];
 $kmother=$_POST['kmother'];
+$findus=$_POST['findus'];
 $refine=$_POST['refine'];
 $date=$_POST['date'];
 
@@ -721,18 +722,13 @@ $body = '
 </tr>
 
 <tr>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Subaru :</strong></td>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">".$subaru."</td>
-</tr>
-
-<tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Model :</strong></td>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$model.'</td>
 </tr>
 
 <tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Model Year :</strong></td>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">".$modyear."</td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$modyear.'</td>
 </tr>
 
 <tr>
@@ -746,11 +742,6 @@ $body = '
 </tr>
 
 <tr>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Other :</strong></td>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$engineother.'</td>
-</tr>
-
-<tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>KM :</strong></td>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$km.'</td>
 </tr>
@@ -761,8 +752,8 @@ $body = '
 </tr>
 
 <tr>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Other :</strong></td>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$kmother.'</td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>How did you find us? </strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$findus.'</td>
 </tr>
 
 <tr>
@@ -821,6 +812,10 @@ $fname=$_POST['fname'];
 $lname=$_POST['lname'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
+$model=$_POST['model'];
+$modyear=$_POST['modyear'];
+$engine=$_POST['engine'];
+$vin=$_POST['vin'];
 $comments=$_POST['comments'];
 
 $headers = "From: $fname <$email>\r\n";
@@ -883,6 +878,26 @@ $body = '
 </tr>
 
 <tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Model :</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$model.'</td>
+</tr>
+
+<tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Year :</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$modyear.'</td>
+</tr>
+
+<tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Engine :</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$engine.'</td>
+</tr>
+
+<tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>VIN :</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$vin.'</td>
+</tr>
+
+<tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Comments :</strong></td>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$comments.'</td>
 </tr>
@@ -939,7 +954,7 @@ array(
 
 'public' => true,
 'menu_position' => 15,
-'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
+'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields', 'excerpt' ),
 'taxonomies' => array( '' ),
 
 'has_archive' => true
@@ -1079,13 +1094,16 @@ add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom' );
 /*-- Used In Header for "Get A Quote" Form (Used to send Email to Admin) --*/
 function quotemail(){  
 $qname=$_POST['qname'];
+$qlname=$_POST['qlname'];
 $qphone=$_POST['qphone'];
 $qemail=$_POST['qemail'];
 $qdate=$_POST['qdate'];
 $qtime=$_POST['qtime'];
 $qmodel=$_POST['qmodel'];
 $qyear=$_POST['qyear'];
+$locateus=$_POST['locateus'];
 $qinfo=$_POST['qinfo'];
+$urgent=$_POST['urgent'];
 
 
 $headers = "From: $qname <$qemail>\r\n";
@@ -1134,7 +1152,7 @@ $body = '
 <table cellspacing="5" border="0" cellpadding="0" width="100%" style="margin-top:15px;">
 <tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Name :</strong></td>
-<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9;padding:8px 15px;">'.$qname.'</td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9;padding:8px 15px;">'.$qname.' '.$qlname.'</td>
 </tr>
 
 <tr>
@@ -1168,8 +1186,18 @@ $body = '
 </tr>
 
 <tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>How did you find us? </strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$locateus.'</td>
+</tr>
+
+<tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Additional Quote Information :</strong></td>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$qinfo.'</td>
+</tr>
+
+<tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Is Quote Urgent?</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$urgent.'</td>
 </tr>
 </table>
 </td>
@@ -1194,6 +1222,7 @@ $body = '
 ';
 $subject="Quote Request";
 $sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
+
 
   // Return the String  
    die($sent);  

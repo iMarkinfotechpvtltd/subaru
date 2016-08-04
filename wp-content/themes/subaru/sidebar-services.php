@@ -21,7 +21,12 @@ $term_id_main[]=$term11->term_id;
 
 $taxonomy = 'categories_services';
 $queried_term = get_query_var($taxonomy);
-$terms = get_terms($taxonomy, 'slug='.$queried_term);
+$argv1 = array(      
+'orderby' => 'term_order',    
+'hide_empty' => false,  
+'slug'   => $queried_term,     
+ );   
+$terms = get_terms($taxonomy, $argv1);
 if ($terms) {
 $i=0;
 foreach($terms as $term) {
@@ -38,8 +43,7 @@ $panel='panel-collapse collapse';
 echo '<div class="panel-heading" role="tab" id="heading'.$i.'"><h4 class="panel-title"><a class="'.$coll_class.'" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapse'.$i.'" href="#collapse'.$i.'"><span class="'.$icon[$term_id_loop].'"></span>'.$term->name.'</h4></div>';
 $args = array(
 'post_type'   => 'services',
-'orderby' => 'title',
-'order'   => 'ASC',     
+'orderby' => 'menu_order',     
 'tax_query' => array(
 array(
 'taxonomy' => 'categories_services',
