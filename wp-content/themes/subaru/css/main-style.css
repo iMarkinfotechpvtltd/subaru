@@ -83,7 +83,7 @@ header {
     right: 0;
     z-index: 999;
     padding: 23px 0;
-    background: #010101 url(../images/navbar-back.jpg) repeat-x;
+    background: #010101 url(../images/navbar-back-new.jpg) repeat-x;
     transition: all 0.6s ease-in-out;
     -webkit-transition: all 0.6s ease-in-out;
 }
@@ -173,7 +173,7 @@ header ul.nav.navbar-nav {
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a:hover, .single-services .navbar-nav li.services a:focus, .single-services .navbar-nav li.services a:hover, .single-subapedia .navbar-nav li.subapedia a:focus, .single-subapedia .navbar-nav li.subapedia a:hover, .page-template-about .navbar-nav li.about>a:hover, .page-template-about .navbar-nav li.about>a:focus   {
     color: #fff;
     background-color: transparent;
 }
@@ -192,7 +192,7 @@ header ul.nav.navbar-nav {
 .navbar-nav>li.active.home>a,
 .navbar-nav>li.active.contact>a,
 .navbar-nav>li.active.subapedia>a,
-.navbar-nav>li.active.about>a {
+.navbar-nav>li.active.about>a, .single-subapedia .navbar-nav li.subapedia a, .single-subapedia .navbar-nav li.subapedia .mega-menu-item li.active a, .page-template-about .navbar-nav li.about>a {
     color: #df0185;
 }
 
@@ -200,7 +200,7 @@ header ul.nav.navbar-nav {
     display: none;
 }
 
-.navbar-nav>li.active.services>a {
+.navbar-nav>li.active.services>a, .single-services .navbar-nav li.services a, .single-services .navbar-nav li.services .mega-menu-item li.active a {
     color: #055ea3;
 }
 
@@ -214,9 +214,8 @@ header ul.nav.navbar-nav {
 
 .call-sec {
     float: right;
-    margin: 5px 0 5px;
+    margin: 5px -15px 5px 0;
     padding: 0;
-    margin-right: -15px;
     transition: all 0.6s ease-in-out;
     -webkit-transition: all 0.6s ease-in-out;
 }
@@ -306,8 +305,7 @@ header ul.nav.navbar-nav {
     border-color: #ec008c;
 }
 
-
-header.fixed{
+header.fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -324,6 +322,7 @@ header.fixed .navbar>.container-fluid .navbar-brand {
     transition: all 0.6s ease-in-out;
     -webkit-transition: all 0.6s ease-in-out;
 }
+
 
 /**header.fixed .call-sec{
     display: none;
@@ -350,7 +349,6 @@ header.fixed .navbar-nav>li.has-mm:hover .custm-mega-cvr {
     opacity: 1;
     visibility: visible;
 }
-
 
 .banner {
     height: 100%;
@@ -1030,6 +1028,9 @@ header.fixed .navbar-nav>li.has-mm:hover .custm-mega-cvr {
 
 .engine-testi-cvr.home-testi-cvr .engine-testi-name h4 {
     color: #dd0b84;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-style: normal;
 }
 
 .engine-testi-cvr.home-testi-cvr .testi-btn {
@@ -1234,7 +1235,7 @@ footer .footer-list.subapedia-list:after {
 
 .enq-form .enq-gray-cvr .form-group:nth-child(3),
 .enq-form .enq-gray-cvr .form-group:nth-child(5),
-.enq-form .enq-gray-cvr .form-group:nth-child(7){
+.enq-form .enq-gray-cvr .form-group:nth-child(7) {
     margin-right: 0;
 }
 
@@ -1290,7 +1291,6 @@ footer .footer-list.subapedia-list:after {
 .enq-form .enq-gray-cvr .form-group select.form-control {
     background: #fff url(../images/form-arrow.png) no-repeat;
     background-position: 96% 50%;
-    
 }
 
 .enq-form .enq-gray-cvr .form-group textarea.form-control {
@@ -1316,7 +1316,6 @@ footer .footer-list.subapedia-list:after {
 .enq-form .enq-gray-cvr .form-group .form-control::-webkit-input-placeholder {
     color: #c2c2c2;
     font-weight: normal;
-    
 }
 
 .enq-form .enq-gray-cvr .form-group .form-control:-moz-placeholder {
@@ -1844,7 +1843,6 @@ div.wpcf7 img.ajax-loader {
     padding-bottom: 180px;
 }
 
-
 .testimonial-main .testimonial-slider .carousel-inner {
     float: left;
     width: 81%;
@@ -2146,7 +2144,8 @@ div.wpcf7 img.ajax-loader {
     position: relative;
 }
 
-.navbar-nav>li.has-mm>a:before, .navbar-nav>li.about>a:before {
+.navbar-nav>li.has-mm>a:before,
+.navbar-nav>li.about>a:before {
     content: "";
     width: 0;
     height: 0;
@@ -2209,7 +2208,7 @@ div.wpcf7 img.ajax-loader {
     -webkit-transition: all 0.4s ease-in-out 0s;
 }
 
-.custm-mega-cvr .mega-inner .mega-inner-right .mega-menu-ad a img{
+.custm-mega-cvr .mega-inner .mega-inner-right .mega-menu-ad a img {
     max-height: 500px;
 }
 
@@ -2267,10 +2266,10 @@ div.wpcf7 img.ajax-loader {
 .mega-inner-left .mega-inner-row .mega-menu-item h5 {
     color: #045da2;
     font-family: "AgencyBold";
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
-    margin: 0 0 10px;
-    letter-spacing: 1px;
+    margin: 10px 0;
+    letter-spacing: normal;
 }
 
 .mega-inner-left .mega-inner-row .mega-menu-item h5 a {
@@ -2293,8 +2292,6 @@ div.wpcf7 img.ajax-loader {
     display: inline-block;
     margin: 0 auto;
 }
-
-
 
 .mega-inner-left .mega-inner-row .mega-menu-item p {
     font-family: 'Open Sans', sans-serif;
@@ -2349,7 +2346,8 @@ div.wpcf7 img.ajax-loader {
     visibility: visible;
 }
 
-.navbar-nav>li.has-mm:hover>a:before, .navbar-nav>li.about:hover>a:before {
+.navbar-nav>li.has-mm:hover>a:before,
+.navbar-nav>li.about:hover>a:before {
     opacity: 1;
     margin-top: 0;
     visibility: visible;
@@ -2418,15 +2416,15 @@ ul.submenu {
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-ul.submenu li{
+ul.submenu li {
     border-bottom: solid 1px #ccc;
 }
 
-ul.submenu li:last-child{
+ul.submenu li:last-child {
     border-bottom: none;
 }
 
-ul.submenu li a{
+ul.submenu li a {
     padding-left: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -2436,7 +2434,7 @@ ul.submenu li a{
     display: block;
 }
 
-ul.submenu li a:hover{
+ul.submenu li a:hover {
     background: #df0185;
     color: #fff;
 }
@@ -2450,11 +2448,11 @@ header .navbar-nav li.about:hover .submenu {
 
 /** Footer Sticky Popup  **/
 
-.popup-content{
+.popup-content {
     height: 410px;
 }
 
-.popup-content-pad{
+.popup-content-pad {
     position: relative;
 }
 
@@ -2474,7 +2472,7 @@ header .navbar-nav li.about:hover .submenu {
     float: right;
 }
 
-.sticky-popup .popup-header:before{
+.sticky-popup .popup-header:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -2496,8 +2494,6 @@ header .navbar-nav li.about:hover .submenu {
     background: #dd0b84;
     z-index: -1;
 }
-
-
 
 .sticky-popup .popup-title {
     position: relative;
@@ -2525,7 +2521,7 @@ header .navbar-nav li.about:hover .submenu {
     color: #000;
 }
 
-.sticky-popup.open .popup-title:after{
+.sticky-popup.open .popup-title:after {
     content: "\f078";
 }
 
@@ -2533,7 +2529,8 @@ header .navbar-nav li.about:hover .submenu {
     display: none;
 }
 
-.sticky-popup .wpcf7-form-control.wpcf7-text, .sticky-popup .wpcf7-form-control.wpcf7-captchar{
+.sticky-popup .wpcf7-form-control.wpcf7-text,
+.sticky-popup .wpcf7-form-control.wpcf7-captchar {
     width: 100%;
     height: 41px;
     border: solid 1px #cfcece;
@@ -2548,13 +2545,13 @@ header .navbar-nav li.about:hover .submenu {
     margin-bottom: 10px;
 }
 
-.sticky-popup .wpcf7-form-control.wpcf7-textarea{
+.sticky-popup .wpcf7-form-control.wpcf7-textarea {
     height: 80px;
     padding: 6px 12px;
     border: solid 1px #cfcece;
 }
 
-.sticky-popup .wpcf7-form-control.wpcf7-submit{
+.sticky-popup .wpcf7-form-control.wpcf7-submit {
     background: #dd0b84;
     border: solid 1px transparent;
     height: 41px;
@@ -2571,13 +2568,14 @@ header .navbar-nav li.about:hover .submenu {
     -webkit-transition: all 0.6s ease-in-out;
 }
 
-.sticky-popup .wpcf7-form-control.wpcf7-submit:hover, .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
+.sticky-popup .wpcf7-form-control.wpcf7-submit:hover,
+.sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
     background: #fff;
     color: #dd0b84;
     border-color: #dd0b84;
 }
 
-.sticky-popup span.wpcf7-not-valid-tip{
+.sticky-popup span.wpcf7-not-valid-tip {
     display: none !important;
 }
 
@@ -2585,13 +2583,13 @@ header .navbar-nav li.about:hover .submenu {
     display: none !important;
 }
 
-.sticky-popup .wpcf7-form-control.wpcf7-text.wpcf7-not-valid, .sticky-popup .wpcf7-form-control.wpcf7-captchar.wpcf7-not-valid{
+.sticky-popup .wpcf7-form-control.wpcf7-text.wpcf7-not-valid,
+.sticky-popup .wpcf7-form-control.wpcf7-captchar.wpcf7-not-valid {
     border-color: #f00;
 }
 
-.popup-content p{
+.popup-content p {
     position: relative;
-    
 }
 
 .sticky-popup div.wpcf7 img.ajax-loader {
@@ -2603,7 +2601,7 @@ header .navbar-nav li.about:hover .submenu {
     top: 50%;
 }
 
-.sticky-popup div.wpcf7-mail-sent-ok{
+.sticky-popup div.wpcf7-mail-sent-ok {
     border: 2px solid #398f14;
     position: absolute;
     top: 15px;
@@ -2616,39 +2614,49 @@ header .navbar-nav li.about:hover .submenu {
     font-size: 13px;
 }
 
-.service .sticky-popup .popup-header:after, .service .sticky-popup .popup-header:before, .service .sticky-popup .popup-header, .service .sticky-popup .wpcf7-form-control.wpcf7-submit{
+.service .sticky-popup .popup-header:after,
+.service .sticky-popup .popup-header:before,
+.service .sticky-popup .popup-header,
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit {
     background: #027ffd;
 }
 
-.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover, .service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover,
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
     background: #fff;
     color: #027ffd;
     border-color: #027ffd;
 }
 
-.service .sticky-popup .popup-header:after, .service .sticky-popup .popup-header:before, .service .sticky-popup .popup-header, .service .sticky-popup .wpcf7-form-control.wpcf7-submit{
+.service .sticky-popup .popup-header:after,
+.service .sticky-popup .popup-header:before,
+.service .sticky-popup .popup-header,
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit {
     background: #027ffd;
 }
 
-.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover, .service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:hover,
+.service .sticky-popup .wpcf7-form-control.wpcf7-submit:focus {
     background: #fff;
     color: #027ffd;
     border-color: #027ffd;
 }
 
-.opportunities .subapedia-listing{
+.opportunities .subapedia-listing {
     background: #e1e1e1;
     border-left: 3px double #ec008c;
     padding: 40px 60px;
     position: relative;
 }
 
-.opportunities .subapedia-listing ul, .opportunities .subapedia-listing ol{
+.opportunities .subapedia-listing ul,
+.opportunities .subapedia-listing ol {
     margin: 0;
     padding: 0;
 }
 
-.opportunities .subapedia-listing ul li, .opportunities .subapedia-listing ol li{
+.opportunities .subapedia-listing ul li,
+.opportunities .subapedia-listing ol li {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 600;
@@ -2660,9 +2668,10 @@ header .navbar-nav li.about:hover .submenu {
     position: relative;
 }
 
-.opportunities .subapedia-listing ul li:before, .opportunities .subapedia-listing ol li:before {
+.opportunities .subapedia-listing ul li:before,
+.opportunities .subapedia-listing ol li:before {
     content: counter(step-counter)".";
-   font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #000;
     position: absolute;
@@ -2673,7 +2682,7 @@ header .navbar-nav li.about:hover .submenu {
     left: -18px;
 }
 
-.opportunities .subapedia-listing p{
+.opportunities .subapedia-listing p {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 600;
@@ -2682,26 +2691,32 @@ header .navbar-nav li.about:hover .submenu {
     line-height: 1.6;
 }
 
-.opportunities .subapedia-listing p b{
+.opportunities .subapedia-listing p b {
     font-weight: 600;
 }
 
-.opportunities .subapedia-listing p a, .opportunities .subapedia-listing ul li a, .opportunities .subapedia-listing ol li a{
-     color: #fc1c9a;
+.opportunities .subapedia-listing p a,
+.opportunities .subapedia-listing ul li a,
+.opportunities .subapedia-listing ol li a {
+    color: #fc1c9a;
 }
 
-.opportunities .subapedia-listing p a:hover, .opportunities .subapedia-listing ul li a:hover, .opportunities .subapedia-listing ol li a:hover,
-.opportunities .subapedia-listing p a:focus, .opportunities .subapedia-listing ul li a:focus, .opportunities .subapedia-listing ol li a:focus{
-     color: #fc1c9a;
+.opportunities .subapedia-listing p a:hover,
+.opportunities .subapedia-listing ul li a:hover,
+.opportunities .subapedia-listing ol li a:hover,
+.opportunities .subapedia-listing p a:focus,
+.opportunities .subapedia-listing ul li a:focus,
+.opportunities .subapedia-listing ol li a:focus {
+    color: #fc1c9a;
     text-decoration: underline;
 }
 
-.reply-form span.wpcf7-not-valid-tip{
+.reply-form span.wpcf7-not-valid-tip {
     display: none;
 }
 
-.reply-form .form-control.wpcf7-not-valid{
-    border-color:red;
+.reply-form .form-control.wpcf7-not-valid {
+    border-color: red;
 }
 
 .reply-form div.wpcf7-response-output {
@@ -2713,7 +2728,7 @@ header .navbar-nav li.about:hover .submenu {
     line-height: 2.5;
 }
 
-.reply-form  div.wpcf7-response-output.wpcf7-mail-sent-ok {
+.reply-form div.wpcf7-response-output.wpcf7-mail-sent-ok {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
@@ -2727,20 +2742,22 @@ header .navbar-nav li.about:hover .submenu {
     position: relative;
 }
 
-.testimonial-descp .tags-section{
+.testimonial-descp .tags-section {
     position: absolute;
     bottom: 0;
 }
 
-.date-calender:before{
+.date-calender:before {
     margin-right: 10px;
 }
 
+
 /** Footer Sticky Popup End **/
+
 
 /** Pre Purchase Page **/
 
-.chk-icon.chk-icon-half li{
+.chk-icon.chk-icon-half li {
     width: 50%;
     vertical-align: top;
     padding-right: 15px;
@@ -2749,7 +2766,7 @@ header .navbar-nav li.about:hover .submenu {
     margin-bottom: 0px !important;
 }
 
-.service .opportunities ul.big-chk-icon li{
+.service .opportunities ul.big-chk-icon li {
     background: url(../images/service/big-chk--list-icon.png) !important;
     background-repeat: no-repeat !important;
     background-position: left 8px !important;
@@ -2758,13 +2775,18 @@ header .navbar-nav li.about:hover .submenu {
     line-height: 28px;
 }
 
-.service .opportunities ul.no-chk li{
-    background:transparent;
+.service .opportunities ul.no-chk li {
+    background: transparent;
     position: relative;
     padding-left: 22px;
+    margin: 10px 0;
 }
 
-.service .opportunities ul.no-chk li:before{
+.service .opportunities ul.no-chk {
+    margin-bottom: 30px;
+}
+
+.service .opportunities ul.no-chk li:before {
     content: "";
     position: absolute;
     left: 0px;
@@ -2773,6 +2795,40 @@ header .navbar-nav li.about:hover .submenu {
     height: 4px;
     border-radius: 100%;
     background: #000;
+}
+
+.footer-light-grey {
+    min-height: 260px;
+}
+
+.footer-map {
+    min-height: 259px;
+}
+
+.execphpwidget img {
+    height: auto;
+    min-height: 260px;
+}
+
+.Zebra_DatePicker td.dp_today,
+.Zebra_DatePicker td.dp_clear {
+    background: #DEDEDE;
+}
+
+.Zebra_DatePicker td.dp_hover {
+    background: #039 !important;
+    color: #fff !important;
+}
+
+.Zebra_DatePicker .dp_footer {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+.clutch-nonturboo img+div.clutch-turbo-content {
+    float: none;
+    width: auto;
+    margin-left: 20px;
 }
 
 @media(min-width:1600px) {
@@ -2828,27 +2884,63 @@ header .navbar-nav li.about:hover .submenu {
     .enq-form .enq-gray-cvr .form-group.full-wd .form-control.half-wd-in {
         width: 48.8%;
     }
-    
-    .custm-mega-cvr .mega-heading{
+    .custm-mega-cvr .mega-heading {
         margin-bottom: 35px;
     }
-    
     .navbar-nav>li.has-mm:hover .mega-menu-item ul li,
-.navbar-nav>li.has-mm:hover .mega-menu-item p {
-    margin-bottom: 10px
-}
-    
-    .mega-inner-left .mega-inner-row .mega-menu-item{
-            padding-bottom: 20px;
+    .navbar-nav>li.has-mm:hover .mega-menu-item p {
+        margin-bottom: 10px
     }
-    
+    .mega-inner-left .mega-inner-row .mega-menu-item {
+        padding-bottom: 20px;
+    }
     .mega-inner-left .mega-inner-row {
-    margin-bottom: 20px;
-}
-    .custm-mega-cvr .mega-inner .mega-inner-right .mega-menu-ad a img{
-    max-height: 100%;
-}
-    
-    
-    
+        margin-bottom: 10px;
+    }
+    .custm-mega-cvr .mega-inner .mega-inner-right .mega-menu-ad a img {
+        max-height: 100%;
+    }
+    .clutch-repair h3 {
+        font-size: 35px;
+    }
+    .service .opportunities h4 {
+        font-size: 26px;
+    }
+    .thr-btn-main {
+        position: relative;
+        padding-bottom: 110px;
+    }
+    .subaru-air-conditioning-repairs h5 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .appointment-section h2 {
+        font-size: 36px;
+    }
+    .appointment-section p {
+        font-size: 16px;
+    }
+    .font-s {
+        font-size: 22px;
+        margin-top: 20px;
+        display: block;
+    }
+    .tab-pane h6 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin: 20px 0 10px;
+    }
+    .internal-head-gasket-leaks h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .internal-head-gasket-leaks.advanced-warning ul {
+        margin-bottom: 30px;
+    }
+    header .navbar>.container-fluid .navbar-brand {
+        margin-left: 20px;
+    }
+    .call-sec {
+        margin-right: 20px;
+    }
 }

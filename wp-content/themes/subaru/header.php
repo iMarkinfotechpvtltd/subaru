@@ -27,6 +27,15 @@
 var ajaxurl = '<?php echo admin_url('admin-ajax.php');?>'; 
 var cdate='<?php echo date('m/d/Y'); ?>';
 </script>
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="//v2.zopim.com/?47A8yi7FwHL101Ika8COnqTyoxA04aUV";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zopim Live Chat Script-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -47,6 +56,17 @@ var cdate='<?php echo date('m/d/Y'); ?>';
 <?php //wp_nav_menu( array( 'menu_class' => 'nav navbar-nav', 'theme_location' => 'primary', 'walker' => new ik_walker() ) );
 ?> 
 <?php
+//get the current page,post ids
+
+if(is_page())
+{
+$current=get_the_id();    
+}
+if(is_single())
+{
+$current=get_the_id();     
+}
+
  $menu_name = 27;
  $menu = wp_get_nav_menu_object( $menu_name );
  $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
@@ -59,11 +79,22 @@ $submenu = true;
 foreach( $menuitems as $item ):
 $link = $item->url;
 $title = $item->title;
+$loopid= $item->object_id;
+
 // item does not have a parent so menu_item_parent equals 0 (false)
 if ( !$item->menu_item_parent ):
 // save this id for later comparison with sub-menu items
 $parent_id = $item->ID;
-$class = $item->classes[0].' '.$item->classes[1];
+
+if($loopid==$current){$active="active";} 
+else{$active="";}
+
+if($active){
+  $class = $active.' '.$item->classes[0].' '.$item->classes[1];  
+}
+else{
+ $class = $item->classes[0].' '.$item->classes[1];     
+}
 
 ?>
 
@@ -73,13 +104,14 @@ $class = $item->classes[0].' '.$item->classes[1];
 </a>
 <?php endif; ?>
 <?php 
-if($parent_id == 833) // If parent is service
+if($parent_id == 833) // If parent is about us page
 { ?>
 <ul class="submenu">
 <li><a href="<?php echo get_the_permalink(65); ?>"><?php echo get_the_title(65); ?></a></li>    
 <li><a href="<?php echo get_the_permalink(85); ?>"><?php echo get_the_title(85); ?></a></li>
 </ul>   
 <?php }
+
 if($parent_id == 795) // If parent is service
 { 
 $taxonomy = 'categories_services';  
@@ -151,8 +183,10 @@ if ( $the_query->have_posts() ) {
 <?php
 while ( $the_query->have_posts() ) {
 $the_query->the_post();
-if($post_id==get_the_ID()){$class='active';}else{$class='';}
+$loopid= get_the_ID();
+if($loopid==$current){$class='active';} else{$class='';}
 //echo '<li class=""><a aria-controls="battery-services" role="tab" data-toggle="tab" href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
+
 echo '<li class="'.$class.'"><a href="'.get_the_permalink().'">'.get_the_title().'</a></li>';
 }
 ?>
@@ -211,7 +245,7 @@ if($parent_id==296)
 <div class="mega-inner-row">
 <div class="mega-menu-item">
 <h5><a href="#">Subaru Engine Configuration</a></h5>
-<p>Three levels of engine build. Learn what “short�? “long�? and  “long dressed�? mean. </p>
+<p>Three levels of engine build. Learn what "short" "long" and "long dressed" mean. </p>
 </div>
 
 <div class="mega-menu-item">
@@ -264,7 +298,7 @@ if($parent_id==296)
 
 </div>    
 <?php }
-if($parent_id==138)
+if($parent_id==863)
 { ?>
 <div class="custm-mega-cvr">
 <div class="mega-heading">

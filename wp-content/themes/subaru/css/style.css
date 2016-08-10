@@ -3,7 +3,6 @@
 /* CSS Document */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,600italic,700);
-
 @font-face {
     font-family: 'AgencyRegular';
     src: url('../fonts/agency-font/regular/agencyregular.eot?#iefix') format('embedded-opentype'), url('../fonts/agency-font/regular/agencyregular.woff') format('woff'), url('../fonts/agency-font/regular/agencyregular.ttf') format('truetype'), url('../fonts/agency-font/regular/agencyregular.svg#AgencyRegular') format('svg');
@@ -544,7 +543,7 @@ textarea {
     font-family: "AgencyBold";
     font-size: 60px;
     padding: 0 0 12px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .author-post-headding h3 {
@@ -753,11 +752,12 @@ textarea {
     margin-right: 8px;
 }
 
-.service .main-search-btn{
+.service .main-search-btn {
     background: #027ffd;
 }
 
-.service .main-search-btn:hover, .service .main-search-btn:focus{
+.service .main-search-btn:hover,
+.service .main-search-btn:focus {
     color: #027ffd;
     border-color: #027ffd;
     background: #fff;
@@ -769,12 +769,12 @@ textarea {
     top: 0;
 }
 
-.thr-btn-main{
+.thr-btn-main {
     position: relative;
     padding-bottom: 60px;
 }
 
-.thr-btns{
+.thr-btns {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -782,12 +782,13 @@ textarea {
     width: 69%;
 }
 
-.thr-btns ul{
+.thr-btns ul {
     padding: 0;
     margin: 0;
 }
 
-.thr-btns ul li, .service .opportunities .thr-btns ul li{
+.thr-btns ul li,
+.service .opportunities .thr-btns ul li {
     width: 30%;
     display: inline-block;
     margin-right: -4px;
@@ -797,7 +798,7 @@ textarea {
     margin-right: 15px;
 }
 
-.thr-btns ul li:last-child{
+.thr-btns ul li:last-child {
     margin-right: 0;
 }
 
@@ -2362,7 +2363,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav a.flex-prev:before {
-    content:"\e257";
+    content: "\e257";
 }
 
 .flex-direction-nav .flex-prev {
@@ -3111,7 +3112,7 @@ html[xmlns] .flexslider .slides {
 
 .about-section p {
     color: #535253;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 26px;
     margin: 0 0 20px;
 }
@@ -3334,8 +3335,11 @@ html[xmlns] .flexslider .slides {
 }
 
 .teams-section p {
-    color: #3a3a3a;
-    font-size: 18px;
+    color: #535253;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 20px;
     text-align: center;
     padding: 0 10%;
 }
@@ -3421,8 +3425,9 @@ html[xmlns] .flexslider .slides {
     -webkit-transition: all 0.6s ease-in-out;
 }
 
-.plus-sign:hover, .plus-sign:focus{
-    background:  #e7008b;
+.plus-sign:hover,
+.plus-sign:focus {
+    background: #e7008b;
     color: #e2e2e2;
 }
 
@@ -4637,7 +4642,6 @@ li.dropdown-menu > li > a:hover {
 
 .row.conditioning-repairs {
     margin-top: 40px;
-    
 }
 
 .subaru-air-conditioning-repairs h3 {
@@ -4677,7 +4681,6 @@ li.dropdown-menu > li > a:hover {
     clear: left;
     /* float: left; */
     margin-right: 25px;
-    
     padding: 0;
     text-align: center;
     width: 30%;
@@ -4685,9 +4688,8 @@ li.dropdown-menu > li > a:hover {
     vertical-align: middle;
 }
 
-.img-serive-image img:nth-child(2){
+.img-serive-image img:nth-child(2) {
     margin-top: 30px;
-    
 }
 
 .midddle-sevice-section > p {
@@ -4788,8 +4790,7 @@ li.dropdown-menu > li > a:hover {
 
 .panel-group.servcemenu .panel-collapse.collapse .panel-body ul,
 .panel-group.servcemenu .panel-collapse.collapsing .panel-body ul,
-.panel-body ul.inner-list
-{
+.panel-body ul.inner-list {
     margin: 0 34px;
 }
 
@@ -4800,7 +4801,8 @@ li.dropdown-menu > li > a:hover {
 }
 
 .panel-group.servcemenu .panel-collapse.collapse .panel-body ul li a,
-.panel-group.servcemenu .panel-collapse.collapsing .panel-body ul li a, .panel-body ul.inner-list li a {
+.panel-group.servcemenu .panel-collapse.collapsing .panel-body ul li a,
+.panel-body ul.inner-list li a {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
     border-radius: 0;
@@ -4812,9 +4814,8 @@ li.dropdown-menu > li > a:hover {
 }
 
 .panel-group.servcemenu .panel-collapse.collapse .panel-body ul li a::before,
-.panel-group.servcemenu .panel-collapse.collapsing .panel-body ul li a::before ,
-.panel-body ul.inner-list li a::before
-{
+.panel-group.servcemenu .panel-collapse.collapsing .panel-body ul li a::before,
+.panel-body ul.inner-list li a::before {
     content: "-";
     font-family: "Open Sans", sans-serif;
     margin-right: 8px;
@@ -5108,16 +5109,17 @@ li.dropdown-menu > li > a:hover {
 
 .price-circle {
     background: #027ffd;
-    border: 4px solid #0769cb;
-    border-radius: 50%;
+    border: none;
+    border-radius: 0;
     color: #fff;
     font-family: "AgencyBold";
     font-size: 30px;
-    height: 140px;
-    line-height: 116px;
-    margin: 43px auto 0;
+    height: 63px;
+    line-height: 63px;
+    margin: 65px auto 0;
     position: relative;
-    width: 140px;
+    z-index: 11;
+    width: 218px;
 }
 
 .price-circle::before {
@@ -5131,7 +5133,7 @@ li.dropdown-menu > li > a:hover {
     margin: auto;
     position: absolute;
     right: 0;
-    top: -50px;
+    top: -68px;
     width: 20px;
 }
 
@@ -5151,7 +5153,7 @@ li.dropdown-menu > li > a:hover {
     background: #fff none repeat scroll 0 0;
     margin-top: -54px;
     min-height: 500px;
-    padding: 30px 0 60px;
+    padding: 65px 0 60px;
     position: relative;
     z-index: 4;
     transition: 0.5s;
@@ -5388,20 +5390,23 @@ li.dropdown-menu > li > a:hover {
     border: 1px solid #bbbbbb;
     border-radius: 0;
     box-shadow: none;
-    color:#333;
+    color: #333;
 }
 
 .appointment-form .row .form-control::-webkit-input-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .appointment-form .row .form-control:-moz-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .appointment-form .row .form-control::-moz-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .appointment-form .row .form-control:-ms-input-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
 
 .appointment-form .row .form-control:focus {
@@ -5421,6 +5426,10 @@ li.dropdown-menu > li > a:hover {
     -moz-appearance: none;
     -webkit-appearance: none;
     -ms-appearance: none;
+}
+
+.appointment-form .row select#findus {
+    background-position: 98% center;
 }
 
 .appointment-date {
@@ -5542,6 +5551,9 @@ li.dropdown-menu > li > a:hover {
     font-family: "AgencyBold";
     font-size: 20px;
     margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    width: 100%;
 }
 
 .row-span-3 > span {
@@ -5551,7 +5563,8 @@ li.dropdown-menu > li > a:hover {
     float: left;
     margin-right: 16px;
     height: 40px;
-    width: 40px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .packagedeals .row-span-3:last-child {
@@ -5572,6 +5585,7 @@ li.dropdown-menu > li > a:hover {
     display: block;
     margin-top: 40px;
     padding: 18px 0;
+    text-align: center;
 }
 
 .online-section {
@@ -5816,7 +5830,7 @@ li.dropdown-menu > li > a:hover {
     font-weight: 700;
 }
 
-.manufactuer-no p{
+.manufactuer-no p {
     margin-bottom: 0;
 }
 
@@ -5836,9 +5850,8 @@ li.dropdown-menu > li > a:hover {
     float: none;
 }
 
-
-
-.service .opportunities ul.floating-list li, .service .opportunities .clutch-repair ul li{
+.service .opportunities ul.floating-list li,
+.service .opportunities .clutch-repair ul li {
     position: relative;
     background-repeat: no-repeat;
     background-position: left 4px;
@@ -5847,9 +5860,8 @@ li.dropdown-menu > li > a:hover {
     line-height: 1.6;
 }
 
-
-
-.service .opportunities ul.floating-list li:before, .service .opportunities .clutch-repair ul li:before{
+.service .opportunities ul.floating-list li:before,
+.service .opportunities .clutch-repair ul li:before {
     content: "";
     position: absolute;
     top: 9px;
@@ -5860,18 +5872,18 @@ li.dropdown-menu > li > a:hover {
     border-radius: 100%;
 }
 
-.service .opportunities ul.chk-icon li{
+.service .opportunities ul.chk-icon li {
     background: url(../images/service/chkl.png);
     background-repeat: no-repeat;
     background-position: left 4px;
 }
 
-
-.service .opportunities ul.chk-icon li:before, .service .opportunities ul.chk-icon li:before{
+.service .opportunities ul.chk-icon li:before,
+.service .opportunities ul.chk-icon li:before {
     display: none;
 }
 
-.lubri-main ul li{
+.lubri-main ul li {
     background: url(../images/service/chkl.png);
     background-repeat: no-repeat;
     background-position: left 2px;
@@ -5879,17 +5891,15 @@ li.dropdown-menu > li > a:hover {
     padding-left: 22px;
 }
 
-
 .service .opportunities h4 {
     color: #414242;
     font-family: 'AgencyBold';
     font-size: 22px;
     margin-bottom: 15px;
-        margin-top: 20px;
-
+    margin-top: 20px;
 }
 
-.service .opportunities .lubri-main h4{
+.service .opportunities .lubri-main h4 {
     margin-top: 20px;
 }
 
@@ -5904,6 +5914,7 @@ li.dropdown-menu > li > a:hover {
     font-family: 'AgencyBold';
     font-size: 28px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .srip-cose::after {
@@ -5935,7 +5946,7 @@ li.dropdown-menu > li > a:hover {
     margin-bottom: 20px;
 }
 
-.clutch-repair .clutch-nonturboo p{
+.clutch-repair .clutch-nonturboo p {
     color: #414242;
     font-size: 14px;
     line-height: 28px;
@@ -5943,7 +5954,6 @@ li.dropdown-menu > li > a:hover {
     display: inline-block;
     width: 65%;
     vertical-align: middle;
-    
 }
 
 .clutch-turbo-content::after,
@@ -5962,29 +5972,29 @@ li.dropdown-menu > li > a:hover {
     float: right;
 }
 
-.clutch-repair .clutch-nonturboo .clutch-turbo-content p, .cooling-sys .clutch-repair .clutch-nonturboo p{
+.clutch-repair .clutch-nonturboo .clutch-turbo-content p,
+.cooling-sys .clutch-repair .clutch-nonturboo p {
     width: 100%;
 }
 
-.cooling-sys .clutch-repair .clutch-nonturboo p{
+.cooling-sys .clutch-repair .clutch-nonturboo p {
     margin-bottom: 20px;
 }
 
-
-.clutch-repair.transpCV .clutch-nonturboo.border-img img{
+.clutch-repair.transpCV .clutch-nonturboo.border-img img {
     margin-bottom: 30px;
     float: left;
     width: auto;
     margin-right: 30px;
 }
 
-.clutch-repair.transpCV .clutch-nonturboo.border-img p{
+.clutch-repair.transpCV .clutch-nonturboo.border-img p {
     display: block;
 }
 
 .clutch-nonturboo {
     display: block;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 .clutch-repair h5 {
@@ -6000,12 +6010,11 @@ li.dropdown-menu > li > a:hover {
 }
 
 .opportunities.clutch-repair-page .clutch-repair ul li {
-   /* background: url(../images/service/bulletsf.png);
+    /* background: url(../images/service/bulletsf.png);
     background-repeat: no-repeat;
     background-position: left 10px;
     line-height: 25px;*/
 }
-
 
 .clutch-norrie-andreson::after,
 .clutch-norrie-andreson::before {
@@ -6013,10 +6022,12 @@ li.dropdown-menu > li > a:hover {
     content: "";
     display: table;
 }
+
 .clutch-norrie-andreson .container {
     max-width: 1800px;
     width: 100%;
 }
+
 .clutch-norrie-andreson {
     background: url(../images/service/Clutch-Replacement-BG.jpg);
     background-repeat: no-repeat;
@@ -6036,7 +6047,7 @@ li.dropdown-menu > li > a:hover {
     vertical-align: top;
 }
 
-.clutch-norrie-andreson .col-md-3{
+.clutch-norrie-andreson .col-md-3 {
     vertical-align: bottom;
 }
 
@@ -6145,12 +6156,13 @@ li.dropdown-menu > li > a:hover {
 }
 
 .early-section ul li {
-   /** background-image: url(../images/service/r-dots.png);
+    /** background-image: url(../images/service/r-dots.png);
     background-repeat: no-repeat;
     background-position: 0 6px;**/
 }
 
-.service .opportunities .clutch-repair ul.chk-icon li, .chk-icon li{
+.service .opportunities .clutch-repair ul.chk-icon li,
+.chk-icon li {
     background: url(../images/service/chkl.png) !important;
     background-repeat: no-repeat !important;
     background-position: 0 8px !important;
@@ -6159,7 +6171,7 @@ li.dropdown-menu > li > a:hover {
     line-height: 28px;
 }
 
-.service .opportunities .clutch-repair ul.check-list li:before{
+.service .opportunities .clutch-repair ul.check-list li:before {
     display: none;
 }
 
@@ -6182,6 +6194,7 @@ li.dropdown-menu > li > a:hover {
     margin: 0;
     width: 100%;
 }
+
 
 /**.clutch-nonturboo img {
     float: left;
@@ -6255,38 +6268,38 @@ li.dropdown-menu > li > a:hover {
 }
 
 .conditioning-service-package.timing-belt .absorvers {
-    min-height: 460px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.air-conditioning .absorvers,
 .conditioning-service-package.lubricants .absorvers,
 .conditioning-service-package.CV-shaft .absorvers,
 .conditioning-service-package.battery-service .absorvers {
-    min-height: 470px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.ecu-service .absorvers {
-    min-height: 440px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.power-window .absorvers {
-    min-height: 480px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.vehicle-security .absorvers {
-    min-height: 420px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.brake-price .absorvers {
-    min-height: 430px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.door-morror-price .absorvers {
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .conditioning-service-package.log-book .absorvers {
-    min-height: 470px;
+    min-height: 500px;
 }
 
 .early-signs-of-wear:last-child::before {
@@ -6746,13 +6759,13 @@ li.dropdown-menu > li > a:hover {
     font-style: italic;
 }
 
-.black-bar h4 a{
+.black-bar h4 a {
     color: #fff;
 }
 
-
-.black-bar h4 a:hover, .black-bar h4 a:focus{
-    color:#ff7c07;
+.black-bar h4 a:hover,
+.black-bar h4 a:focus {
+    color: #ff7c07;
 }
 
 .over-heating-content img {
@@ -6838,7 +6851,7 @@ li.dropdown-menu > li > a:hover {
 
 .internal-service-section h3 {
     border-bottom: 1px solid #c4c4c4;
-    color: #323232;
+    color: #027ffd;
     font-family: "AgencyBold";
     font-size: 45px;
     margin: 0 0 20px;
@@ -7018,7 +7031,7 @@ li.dropdown-menu > li > a:hover {
     display: block;
 }
 
-.internal-head-gasket-leaks.advanced-warning p{
+.internal-head-gasket-leaks.advanced-warning p {
     margin-bottom: 20px;
 }
 
@@ -7178,6 +7191,7 @@ li.dropdown-menu > li > a:hover {
     float: right;
     margin: 0 0 20px 15px !important;
     clear: both;
+    width: auto !important;
 }
 
 .internal-head-gasket-leaks h4 {
@@ -7351,28 +7365,37 @@ li.dropdown-menu > li > a:hover {
     -moz-box-shadow: none;
 }
 
+.enquire-form select.form-control {
+    background-image: url(../images/form-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
 .enquire-form .form-control::-webkit-input-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .enquire-form .form-control:-moz-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .enquire-form .form-control::-moz-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
+
 .enquire-form .form-control:-ms-input-placeholder {
-     color: #aeaeae;
+    color: #aeaeae;
 }
 
 .enquire-form textarea {
     height: 125px;
 }
 
-.enquire-form .form-control.error{
+.enquire-form .form-control.error {
     border-color: red;
 }
 
-#success-msg{
+#success-msg {
     background: green;
     color: white;
     z-index: 1;
@@ -11192,11 +11215,11 @@ a.add-quote-btn {
 }
 
 .modal-open header {
-   right: 17px;
+    right: 17px;
 }
 
 #landingGetQuote .modal-dialog,
-#engfeaGetQuote .modal-dialog{
+#engfeaGetQuote .modal-dialog {
     width: 90%;
     margin: 60px auto;
     top: 0;
@@ -11206,7 +11229,7 @@ a.add-quote-btn {
     position: absolute;
 }
 
-#myModalGetQuote .modal-dialog{
+#myModalGetQuote .modal-dialog {
     width: 90%;
     margin: 60px auto;
     top: 0;
@@ -11216,10 +11239,9 @@ a.add-quote-btn {
     position: absolute;
 }
 
-
 #landingGetQuote .modal-content,
 #engfeaGetQuote .modal-content,
-#myModalGetQuote .modal-content{
+#myModalGetQuote .modal-content {
     background: #fafafa;
     border-radius: 0;
     border-bottom-left-radius: 6px;
@@ -11232,7 +11254,7 @@ a.add-quote-btn {
 
 #landingGetQuote .modal-header,
 #engfeaGetQuote .modal-header,
-#myModalGetQuote .modal-header{
+#myModalGetQuote .modal-header {
     padding: 0;
     background: #0b0b0b;
     border: none;
@@ -11362,41 +11384,41 @@ button.close.red-close:hover {
     margin-bottom: 30px;
 }
 
-.modal-form-body .form-group div.make-it-half{
+.modal-form-body .form-group div.make-it-half {
     width: 48.6%;
     margin-right: 7px;
     display: inline-block;
     vertical-align: top;
 }
 
-#myModalGetQuote .modal-form-body .form-group{
+#myModalGetQuote .modal-form-body .form-group {
     margin-right: 21px;
 }
 
-#myModalGetQuote .modal-form-body .form-group.urgent{
-	 width: 100%;
+#myModalGetQuote .modal-form-body .form-group.urgent {
+    width: 100%;
     margin: 0 0 20px 0;
     background: #dddddd;
     text-align: center;
     min-height: 100%;
-	padding:20px 40px;
+    padding: 20px 40px;
 }
 
-#myModalGetQuote .modal-form-body .form-group.urgent label{
-	font-family: 'Open Sans', sans-serif;
+#myModalGetQuote .modal-form-body .form-group.urgent label {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #6c6c6c;
     letter-spacing: normal;
     line-height: 1.6;
-	margin-bottom:0;
+    margin-bottom: 0;
 }
 
-#myModalGetQuote .modal-form-body .form-group.urgent label a{
-	color:#e7008b;
+#myModalGetQuote .modal-form-body .form-group.urgent label a {
+    color: #e7008b;
 }
 
-#myModalGetQuote .modal-form-body .form-group.urgent .cust-quto-urgent{
+#myModalGetQuote .modal-form-body .form-group.urgent .cust-quto-urgent {
     background: #fff;
     border: solid 1px #cfcece;
     width: 23px;
@@ -11411,7 +11433,7 @@ button.close.red-close:hover {
     position: relative;
 }
 
-#myModalGetQuote .modal-form-body .form-group.urgent input[type=checkbox]:checked + span.cust-quto-urgent{
+#myModalGetQuote .modal-form-body .form-group.urgent input[type=checkbox]:checked + span.cust-quto-urgent {
     background: #fff;
     position: relative;
     width: 23px;
@@ -11438,16 +11460,16 @@ button.close.red-close:hover {
     transform: rotate(-45deg);
 }
 
-#myModalGetQuote .modal-form-body .form-group.no-mar{
+#myModalGetQuote .modal-form-body .form-group.no-mar {
     margin-right: 0;
 }
 
-.modal-form-body .form-group.make-it-full select.form-control{
+.modal-form-body .form-group.make-it-full select.form-control {
     width: 100%;
     margin-right: 0;
 }
 
-.modal-form-body .form-group div.make-it-half.no-mar{
+.modal-form-body .form-group div.make-it-half.no-mar {
     margin-right: 0;
 }
 
@@ -11478,7 +11500,7 @@ button.close.red-close:hover {
     top: -1px;
 }
 
-#myModalGetQuote .modal-form-body label{
+#myModalGetQuote .modal-form-body label {
     font-size: 14px;
     letter-spacing: 0.01em;
 }
@@ -11516,7 +11538,7 @@ button.close.red-close:hover {
     margin-right: 0;
 }
 
-.modal-form-body .select-opt .make-it-half select.form-control{
+.modal-form-body .select-opt .make-it-half select.form-control {
     width: 100%;
     margin-right: 0;
 }
@@ -11647,7 +11669,8 @@ button.close.red-close:hover {
 }
 
 .modal-form-body .sel-add-on .form-group.textarea,
-.modal-form-body .eng-type-four .form-group.textarea, #myModalGetQuote .form-group.textarea {
+.modal-form-body .eng-type-four .form-group.textarea,
+#myModalGetQuote .form-group.textarea {
     width: 100%;
     padding: 0;
 }
@@ -11657,7 +11680,7 @@ button.close.red-close:hover {
     min-height: 220px;
 }
 
-#myModalGetQuote .form-group.textarea textarea.form-control{
+#myModalGetQuote .form-group.textarea textarea.form-control {
     min-height: 150px;
 }
 
@@ -11786,11 +11809,11 @@ button.close.red-close:hover {
     color: #787878;
 }
 
-#myModalGetQuote .pop-heading h1{
+#myModalGetQuote .pop-heading h1 {
     color: #e7008b;
 }
 
-#myModalGetQuote button.close.red-close{
+#myModalGetQuote button.close.red-close {
     background: #e7008b;
 }
 
@@ -11798,22 +11821,23 @@ button.close.red-close:hover {
     background: #c50175;
 }
 
-#myModalGetQuote .popup-get-fm-btn{
-    background:#e7008b;
+#myModalGetQuote .popup-get-fm-btn {
+    background: #e7008b;
     border: solid 1px transparent;
 }
 
-#myModalGetQuote .popup-get-fm-btn:hover, #myModalGetQuote .popup-get-fm-btn:focus {
+#myModalGetQuote .popup-get-fm-btn:hover,
+#myModalGetQuote .popup-get-fm-btn:focus {
     background: #fff;
     border-color: #e7008b;
     color: #e7008b;
 }
 
-#myModalGetQuote .modal-form-body .form-control.error{
+#myModalGetQuote .modal-form-body .form-control.error {
     border-color: #f00;
 }
 
-#myModalGetQuote #success-quote{
+#myModalGetQuote #success-quote {
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
@@ -11822,18 +11846,18 @@ button.close.red-close:hover {
     line-height: 2.5;
     padding: 0.2em 1em;
     width: 100%;
-        display: block;
+    display: block;
     float: left;
 }
 
-#myModalGetQuote .modal-form-body .form-group.submit-ajax{
+#myModalGetQuote .modal-form-body .form-group.submit-ajax {
     width: 100%;
     margin: 0;
     min-height: 100%;
     position: relative;
 }
 
-#myModalGetQuote .modal-form-body .form-group.submit-ajax .ajax-loader{
+#myModalGetQuote .modal-form-body .form-group.submit-ajax .ajax-loader {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -12280,7 +12304,8 @@ button.close.red-close:hover {
 
 .engine-testi-cvr .engine-testi-tab-btn .nav>li>a {
     font-family: 'AgencyBold';
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 1px;
     color: #000;
     text-transform: uppercase;
     border: solid 1px transparent;
@@ -12324,7 +12349,8 @@ button.close.red-close:hover {
     left: 0;
 }
 
-.engine-testi-text p, .engine-testi-text{
+.engine-testi-text p,
+.engine-testi-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #444444;
@@ -12344,10 +12370,10 @@ button.close.red-close:hover {
 
 .engine-testi-text .engine-testi-name p {
     font-family: 'AgencyBold';
-    font-size: 16px;
+    font-size: 18px;
     color: #444444;
     font-style: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .testi-btn {
@@ -13401,9 +13427,11 @@ ul.gear-tick-list li:before {
 .engine-search-cvr button:focus {
     color: red;
 }
+
 .appointment-form .row .form-control.error {
-   border-color: red;
+    border-color: red;
 }
+
 #datepicker-example14 {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
@@ -13413,9 +13441,11 @@ ul.gear-tick-list li:before {
     letter-spacing: 2px;
     padding: 2px 1px 2px 19px;
 }
+
 .footer-light-grey.foo-cont a {
     box-shadow: none;
 }
+
 
 /*************************************************
   MEDIA QUERY START HERE
@@ -13475,7 +13505,6 @@ ul.gear-tick-list li:before {
     .srip-cose {
         background-size: 44% 100%;
     }
-    
     .clutch-norrie-andreson .col-md-3,
     .clutch-norrie-andreson .col-md-6 {
         height: 380px;
@@ -13485,7 +13514,7 @@ ul.gear-tick-list li:before {
     }
     .clutch-norrie-andreson .col-md-3:last-child img {
         position: static;
-        width:auto;
+        width: auto;
     }
     .price-grid.owl-carousel .owl-nav .owl-prev,
     .timing-belt-carosuel .owl-controls .owl-nav .owl-prev {
@@ -13599,14 +13628,17 @@ ul.gear-tick-list li:before {
         line-height: 1;
     }
 }
+
 .footer-light-grey.foo-cont a {
     box-shadow: none;
 }
+
 .page-id-85 .tags-section {
     clear: both;
     display: block;
     padding-top: 10px;
 }
+
 
 /*****************************************
  MEDIA 1600  END HERE
@@ -13628,7 +13660,9 @@ ul.gear-tick-list li:before {
     }
 }
 
+
 /** 2-8-16 **/
+
 .single-subapedia ul.custom-list-style li {
     list-style: unset;
     margin-left: 25px;

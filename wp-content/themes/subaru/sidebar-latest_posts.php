@@ -2,8 +2,8 @@
 <div class="container">
     
 <h2>Latest Posts</h2>
-<p>Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris sit ex <br>
-no has. Has ex deonsul vivendum ullamcorper et his.</p>
+<!--<p>Soluta consequat no has. Has ex deleniti consulatu, tamquam interpretaris sit ex <br>
+no has. Has ex deonsul vivendum ullamcorper et his.</p>-->
 <div class="row latestfirst">
 <?php 
 $k=1;

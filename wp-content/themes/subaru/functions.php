@@ -1242,3 +1242,34 @@ die($content);
 // creating Ajax call for WordPress  
 add_action( 'wp_ajax_nopriv_moretest', 'moretest' );  
 add_action( 'wp_ajax_moretest', 'moretest' );
+
+/* Subaru Malfunction Section Home Page */
+add_action( 'init', 'create_malfunction' );
+function create_malfunction() {
+register_post_type( 'malfunction',
+array(
+'labels' => array(
+'name' => 'Subaru Malfunction',
+'singular_name' => 'malfunction',
+'add_new' => 'Add New',
+'add_new_item' => 'Add New Malfunction',
+'edit' => 'Edit',
+'edit_item' => 'Edit New Malfunction ',
+'new_item' => 'New  Malfunction',
+'view' => 'View',
+'view_item' => 'View  Malfunction',
+'search_items' => 'Search  Malfunction',
+'not_found' => 'No  Malfunction Found',
+'not_found_in_trash' => 'No Malfunction found in Trash',
+'parent' => 'Parent Main Malfunction'
+),
+
+'public' => true,
+'menu_position' => 15,
+'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
+'taxonomies' => array( '' ),
+
+'has_archive' => true
+)
+);
+} 
