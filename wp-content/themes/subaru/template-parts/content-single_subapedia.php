@@ -10,31 +10,35 @@
 
 <!--- Banner Section start here ---->
 <?php 
+if(has_term( 41, 'subapedia_categories', $post_id ))
+{ 
 $post_id= get_the_ID();
-$banner = get_post_meta($post->ID,"banner_image",true);
+$banner = get_post_meta($post->ID,"banner_caption_banner_background",true);
 $image = wp_get_attachment_image_src($banner,'full');
 $url = $image[0];
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position: center center;">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(<?php echo $url;?>);background-position: center center;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
 }
-if(has_term( 41, 'subapedia_categories', $post_id ))
-{ ?>
+?>
 <div class="banner-caption">
 <div style="position:static;" class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <?php echo get_post_meta($post->ID,"banner_caption_text",true); ?>
 </div> <!--col-sm-->
-<div class="col-sm-5">
+</div> 
+</div>
+</div>
+<div class="rob-chris-img"> 
 <?php 
 $banner_cap= get_post_meta($post->ID,"banner_caption_image",true);
 $bann_image = wp_get_attachment_image_src($banner_cap,'full');
@@ -46,15 +50,36 @@ if($cap_url)
 <?php } 
 ?>
 </div>
-</div> 
+</div>    
+<?php }
+else{ 
+$post_id= get_the_ID();
+$banner = get_post_meta($post->ID,"banner_background_image",true);
+$image = wp_get_attachment_image_src($banner,'full');
+$url = $image[0];
+if($url!="") 
+{
+?>
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(<?php echo $url;?>);background-position: center center;">
+<?php
+}
+else
+{
+?>
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<?php 
+}   
+    ?>
+<div class="container-fluid">
+<div class="banner-left">
+<h1><?php echo get_post_meta($post->ID,"main_title_subapedia",true); ?></h1>
+<h2><?php echo get_post_meta($post->ID,"sub_title_subapedia",true); ?></h2>
 </div>
+</div>  
 </div>
 <?php }
-
 ?>
-</div>
 
-<div class="clearfix"></div>
 
 <div class="main-search-sec">
 <div class="container">
@@ -111,7 +136,7 @@ echo $fname.' '.$lname;
 </div>  
     
 <div class="row mk00">
-<div class="col-xs-12 col-md-7 news-section">
+<div class="col-xs-12 col-md-7 col-sm-8 news-section">
  <div class="author-post-headding">
 <?php $post_title=get_post_meta($post->ID,"author_post_heading",true);  
 if($post_title){echo $post_title;}

@@ -15,22 +15,39 @@ $banner = get_post_meta($post->ID,"banner_image",true);
 $image = wp_get_attachment_image_src($banner,'full');
 $url = $image[0];
 if($url!="") 
-{
-?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:center center;">
+{ ?>
+<div class="banner banner-inner-service banner-head-gaskets" style="background-image:url(<?php echo $url;?>);background-position:center center;">
+<?php }
+else{ ?>
+<div class="banner banner-inner-service banner-head-gaskets" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<?php } ?>
+<div class="container-fluid">
+<div class="banner-left">
+<h1><?php echo get_post_meta($post_id,"banner_title",true); ?></h1>
+<ul class="banner-thr-box">
 <?php
+for($i=1;$i<=3;$i++){
+ $bann= "small_banner_image_".$i;
+$banner_small = get_post_meta($post_id,$bann,true);
+if($banner_small){
+$small_image = wp_get_attachment_image_src($banner_small,'banner_small');
+$image_alt = get_post_meta( $banner_small, '_wp_attachment_image_alt', true);
+$small_url = $small_image[0]; ?>
+<li><img class="img-responsive" src="<?php echo $small_url; ?>" alt="<?php echo $image_alt; ?>">
+<h2><?php echo get_the_title($banner_small); ?></h2>
+</li>
+
+<?php }
 }
-else
-{
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
-<?php 
-}
-?>
+
+</ul>
 </div>
+    
 </div>
+    
+</div> 
 <!--- Banner Section End here ---->
-<div class="clearfix"></div>
 
 <!--- Search Section start here ---->
 <div class="main-search-sec">
@@ -81,8 +98,9 @@ echo '<h2>'.$term->name.'</h2>';
 <?php 
 $args = array(
 'post_type'   => 'services',
-'orderby' => 'title',
-'order'   => 'ASC',     
+//'orderby' => 'title',
+//'order'   => 'ASC',
+'orderby' => 'menu_order',    
 'tax_query' => array(
 array(
 'taxonomy' => 'categories_services',
@@ -108,17 +126,20 @@ echo '<li class="'.$class.'"><a href="'.get_the_permalink().'">'.get_the_title()
 wp_reset_postdata();
 ?>
 </ul> 
+ <ul class="services-top-buttons">
+<li><a href="#appointment">Book Your Service</a></li>    
+</ul>     
 </div>
 </div> <!-- End Show the Category Name and it's posts -->
 
 <div class="row conditioning-repairs">
-<div class="col-xs-12 col-md-8 ">
+<div class="col-xs-12 col-md-8 col-sm-8">
 <div class="tab-pane active clutch-repair transpCV" id="head-gasket-repairs">
 <?php echo get_the_content(); ?>
 </div> <!--subaru-air-conditioning-repairs Close-->
 </div> <!--col-md-8--->
 
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-4 col-sm-4">
 <?php get_sidebar('services'); ?>
 </div> <!--col-md-4--->
 </div>
@@ -181,9 +202,10 @@ wp_reset_postdata();
 <?php
 $rightimg = get_post_meta($post->ID,"main_image_right",true);
 $img = wp_get_attachment_image_src($rightimg,'full');
+$image_alt = get_post_meta( $rightimg, '_wp_attachment_image_alt', true);
 $url1 = $img[0];
 ?>
-<img alt="subaro" src="<?php echo $url1; ?>">
+<img alt="subaro" src="<?php echo $url1; ?>" alt="<?php echo $image_alt; ?>">
 <p><?php echo get_post_meta($post->ID,"image_caption",true); ?></p>
 </div> <!--internal-service-section-image-->
 <?php echo get_post_meta($post->ID,"main_description_right",true); ?>
@@ -255,15 +277,15 @@ $url1 = $img[0];
 <div class="container">
 <h3>you can rely on all Drive subaroo</h3>
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <span class="rely-00"></span>
 <?php echo get_post_meta($post->ID,"section1",true); ?>
 </div>  <!--col-md-4-->
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <span class="rely-01"></span>
 <?php echo get_post_meta($post->ID,"section2",true); ?>
 </div>  <!--col-md-4-->
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <span class="rely-02"></span>
 <?php echo get_post_meta($post->ID,"section3",true); ?> 
 </div>  <!--col-md-4-->
@@ -301,13 +323,14 @@ if( have_rows('faq') ):
 <?php echo get_post_meta($post->ID,"contact_details",true); ?> 
 <div class="two-coloumns">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <?php    
 $img1 = get_post_meta($post->ID,"image1",true);
 $contimg1 = wp_get_attachment_image_src($img1,'service_head_gasket');
+$image_alt = get_post_meta( $img1, '_wp_attachment_image_alt', true);
 $conturl1 = $contimg1[0];
 ?>
-<img alt="..." src="<?php echo $conturl1; ?>">
+<img alt="..." src="<?php echo $conturl1; ?>" alt="<?php echo $image_alt; ?>">
 <div class="system-cooling-caption">
 <h3><?php echo get_post_meta($post->ID,"image_1_caption",true); ?></h3>
 <?php $img_link_1 = get_post_meta($post->ID,"image_1_link",true); ?>
@@ -315,13 +338,14 @@ $conturl1 = $contimg1[0];
 </div>
 </div> <!--col-md-6-->
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <?php    
 $img2 = get_post_meta($post->ID,"image2",true);
 $contimg2 = wp_get_attachment_image_src($img2,'service_head_gasket');
+$image_alt = get_post_meta( $img2, '_wp_attachment_image_alt', true);
 $conturl2 = $contimg2[0];
 ?>
-<img alt="..." src="<?php echo $conturl2; ?>">
+<img alt="..." src="<?php echo $conturl2; ?>" alt="<?php echo $image_alt; ?>">
 <div class="system-cooling-caption">
 <h3><?php echo get_post_meta($post->ID,"image_2_caption",true); ?></h3>
 <?php $img_link_2 = get_post_meta($post->ID,"image_2_link",true); ?>
@@ -337,110 +361,7 @@ $conturl2 = $contimg2[0];
 <!-- Appointment Form -->
 <?php get_sidebar('appointment'); ?>
 
-<div class="srip-cose">
-<div class="container">
-<h2>ALL DRIVE SUBAROO PARTS ONLINE STORE</h2>
-<a class="btn btn-default btn-mm" href="">VISIT OUR ONLINE STORE</a>   
-</div> 
-</div> <!--srip-cose-->
-
-<div class="online-section"> 
-<div class="container">
-<p>If you're good with tools and want to replace the Subaru air compressor or evaporator kit yourself then we can supply you with all the necessary Subaru air conditioning parts, compressors, TX valves, evaporators and hoses. Our Subaru parts online website also offers a comprehensive range of new, pre-loved and reconditioned Subaru parts sourced locally and internationally. Our skilled technical staff will match you to the best part, at the best price. We will also provide technical advice and assistance in the installation of your parts.</p>
-<div class="packagedeals">
-<div clasas="row">
-<div class="row-span-3">
-<span class="package-0" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package00.png);"></span>
-<h3>Package Deals <br>
-Saving You $$$$</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-1" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package01.png);"></span>
-
-<h3>Customer Support <br>
-For All Subaru Parts</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-2" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package02.png);"></span>
-<h3>Hard To Find Subaru <br>
-Parts</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-3" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package03.png);"></span>
-
-<h3>New and Used  <br>
-Subaru Part Options</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-4" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package04.png);"></span>
-
-<h3>Exclusive Subaru <br>
-Repair Kits Supplied</h3>
-</div> <!--row-span-3-->
-</div>
-</div>
-
-<div class="row timing-belt">
-<div class="col-md-12 timing-belt-carosuel">
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images00.jpg">
-<div class="price-tags"> <small>ONLY</small> $349 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images01.jpg">
-<div class="price-tags"> <small>ONLY</small> $549 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images02.jpg">
-<div class="price-tags"> <small>ONLY</small> $749 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images03.jpg">
-<div class="price-tags"> <small>ONLY</small> $949 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-</div>
-</div>
-</div>
-</div> 
+<?php get_sidebar('online_store'); ?> <!-- Show products-->
 <?php get_sidebar('brands'); ?><!-- Client logo's Section -->
 
 

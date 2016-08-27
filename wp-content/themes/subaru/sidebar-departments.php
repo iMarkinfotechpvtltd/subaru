@@ -1,6 +1,6 @@
 <div class="all-subro-operates">
 <div class="container">
-<h2><?php the_field('four_departments_title',4); ?></h2>
+<h3><?php the_field('four_departments_title',4); ?></h3>
 
 <div class="row">
 <?php 
@@ -18,17 +18,19 @@ $post_id=$post->ID;
 <div class="all-subro-operates-list-img"> 
 <?php
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'departments_image' );
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+
 $url = $thumb['0'];
 if(!empty($url)) 
 {
 ?>
-<img src="<?php echo $url;?>" class="img-responsive">
+<img src="<?php echo $url;?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
 <?php
 }
 else
 {
 ?>
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/all-subro-operates-img-1.jpg" class="img-responsive">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/all-subro-operates-img-1.jpg" class="img-responsive" alt="subaru-engine">
 <?php    
 }
 ?>

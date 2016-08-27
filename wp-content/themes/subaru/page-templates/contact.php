@@ -11,8 +11,8 @@ get_header();
 <!--- Banner Section start here ---->
 <?php 
 $post_id= get_the_ID();
-$banner = get_post_meta($post->ID,"banner_image",true);
-$image = wp_get_attachment_image_src($banner,'full');
+$banner = get_post_meta($post->ID,"banner_background_image",true);
+$image = wp_get_attachment_image_src($banner,'banner_image');
 $url = $image[0];
 if($url!="") 
 { ?>
@@ -21,8 +21,14 @@ if($url!="")
 else{ ?>
 <div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php } ?>
+
+<div class="container-fluid">
+<div class="banner-inner banner-text-new">
+<?php echo get_post_meta($post->ID,"banner_background_text",true); ?>
 </div>
 </div>
+</div>     
+
 <!--- Banner Section End here ---->
 
 <div class="clearfix"></div>
@@ -52,7 +58,7 @@ else{ ?>
 <div class="contact-main">
 <div class="container">
 <div class="row">
-<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="col-md-6 col-sm-12 col-xs-12">
 <div class="enq-form wow fadeInUp" data-wow-duration="1.2s">
 <h2>Enquiry Form</h2>
 <div class="enq-gray-cvr">
@@ -61,7 +67,7 @@ else{ ?>
 </div>
 </div>
 
-<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="col-md-6 col-sm-12 col-xs-12">
 <div class="loca-info wow fadeInUp" data-wow-duration="1.5s">
 <h2>Contact & Location</h2>
 
@@ -131,11 +137,12 @@ Fax +61 <span><?php echo get_post_meta($post->ID,"cont_fax",true); ?></span>
 <div class="col-md-4 col-sm-4 col-xs-12 wow zoomIn" data-wow-duration="2s">
 <?php $left_image = get_post_meta($post->ID,"left_image",true);
 $left_image_src = wp_get_attachment_image_src($left_image,'full');
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 $url1 = $left_image_src[0];
 if($url1!="") { ?>    
-<img src="<?php echo $url1; ?>" class="img-responsive">
+<img src="<?php echo $url1; ?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
 <?php } else{ ?>
-<img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=414&h=778" class="img-responsive">
+<img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=414&h=778" class="img-responsive" alt="subaru-engine">
 <?php } ?> 
 </div>
 

@@ -632,7 +632,7 @@ textarea {
 
 .banner-caption {
     position: relative;
-    height: 100%;
+    height: auto;
 }
 
 .btn.btn-default.btn-read:hover,
@@ -844,6 +844,7 @@ textarea {
     background: #121215;
     padding: 20px 25px;
     text-align: left;
+    min-height: 250px;
 }
 
 .blog-tittles > h3 {
@@ -3131,7 +3132,8 @@ html[xmlns] .flexslider .slides {
     padding: 40px 0;
 }
 
-.promise-section h3 {
+.promise-section h3,
+.promise-section h4 {
     color: #000;
     font-family: "AgencyBold";
     font-size: 50px;
@@ -3421,6 +3423,7 @@ html[xmlns] .flexslider .slides {
     width: 45px;
     font-weight: 300;
     border: none;
+    padding: 0;
     transition: all 0.6s ease-in-out;
     -webkit-transition: all 0.6s ease-in-out;
 }
@@ -3440,7 +3443,8 @@ html[xmlns] .flexslider .slides {
     padding: 0;
 }
 
-.img-box > h4 {
+.img-box > h4,
+.img-box > h5 {
     color: #6b6b6b;
     font-family: "AgencyBold";
     font-size: 30px;
@@ -4706,6 +4710,7 @@ li.dropdown-menu > li > a:hover {
 
 .service .btn.btn-default.btn-quote {
     border-bottom: 7px solid #027ffd;
+    padding: 0 10px;
 }
 
 .service .get-in-touch {
@@ -5693,7 +5698,7 @@ li.dropdown-menu > li > a:hover {
     -moz-transition: 0.5s;
 }
 
-.price-grid.owl-carousel .owl-nav .owl-prev {
+.price-grid.owl-carousel .owl-nav .owl-prev, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-prev {
     background: url(../images/service/price-pre-btn.png);
     background-repeat: no-repeat;
     background-size: 100% 90px;
@@ -5708,7 +5713,7 @@ li.dropdown-menu > li > a:hover {
     width: 118px;
 }
 
-.price-grid.owl-carousel .owl-nav .owl-next {
+.price-grid.owl-carousel .owl-nav .owl-next, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-next {
     background: url(../images/service/price-nex-btn-d.png);
     background-position: center 0;
     background-repeat: no-repeat;
@@ -5724,17 +5729,17 @@ li.dropdown-menu > li > a:hover {
     width: 118px;
 }
 
-.price-grid.owl-carousel .owl-nav .owl-next:hover {
+.price-grid.owl-carousel .owl-nav .owl-next:hover, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
     background-position: center -51px;
     background-repeat: no-repeat;
 }
 
-.price-grid.owl-carousel .owl-nav .owl-prev:hover {
+.price-grid.owl-carousel .owl-nav .owl-prev:hover, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-prev:hover {
     background-position: center -51px;
     background-repeat: no-repeat;
 }
 
-.price-blocks .owl-controls {
+.price-blocks .owl-controls, .price-grid.owl-theme .owl-controls{
     margin-top: 28px;
 }
 
@@ -5765,11 +5770,11 @@ li.dropdown-menu > li > a:hover {
     display: block;
 }
 
-.timing-belt-carosuel .owl-controls {
+.timing-belt-carosuel .owl-controls, .timing-belt-carosuel.owl-theme .owl-controls {
     margin-top: 20px;
 }
 
-.timing-belt-carosuel .owl-controls .owl-nav .owl-prev {
+.timing-belt-carosuel .owl-controls .owl-nav .owl-prev, .timing-belt-carosuel.owl-theme .owl-controls .owl-buttons div.owl-prev {
     background: url(../images/service/prev.png);
     background-repeat: no-repeat;
     background-size: 100% 90px;
@@ -5784,7 +5789,7 @@ li.dropdown-menu > li > a:hover {
     width: 118px;
 }
 
-.timing-belt-carosuel .owl-controls .owl-nav .owl-next {
+.timing-belt-carosuel .owl-controls .owl-nav .owl-next, .timing-belt-carosuel.owl-theme .owl-controls .owl-buttons div.owl-next  {
     background: url(../images/service/next.png);
     background-position: center 0;
     background-repeat: no-repeat;
@@ -5800,12 +5805,12 @@ li.dropdown-menu > li > a:hover {
     width: 118px;
 }
 
-.timing-belt-carosuel .owl-controls .owl-nav .owl-next:hover {
+.timing-belt-carosuel .owl-controls .owl-nav .owl-next:hover, .timing-belt-carosuel.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
     background-position: center -51px;
     background-repeat: no-repeat;
 }
 
-.timing-belt-carosuel .owl-controls .owl-nav .owl-prev:hover {
+.timing-belt-carosuel .owl-controls .owl-nav .owl-prev:hover, .timing-belt-carosuel.owl-theme .owl-controls .owl-buttons div.owl-prev:hover {
     background-position: center -51px;
     background-repeat: no-repeat;
 }
@@ -7510,6 +7515,9 @@ li.dropdown-menu > li > a:hover {
     font-size: 25px;
     letter-spacing: 1px;
     margin: 0;
+    position: relative;
+    padding-left: 59px;
+    margin-bottom: 10px;
 }
 
 .question-faq h3::before {
@@ -7525,6 +7533,9 @@ li.dropdown-menu > li > a:hover {
     text-align: center;
     vertical-align: middle;
     width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 .answer-faq {
@@ -11340,7 +11351,8 @@ button.close.red-close:hover {
     padding-top: 25px;
 }
 
-.pop-heading h1 {
+.pop-heading h1,
+.pop-heading h3 {
     font-family: 'AgencyBold';
     font-size: 45px;
     color: #e70506;
@@ -11366,7 +11378,8 @@ button.close.red-close:hover {
     float: left;
 }
 
-.popup-form-heading h2 {
+.popup-form-heading h2,
+.popup-form-heading h4 {
     font-family: 'AgencyBold';
     font-size: 30px;
     color: #434343;
@@ -11809,7 +11822,8 @@ button.close.red-close:hover {
     color: #787878;
 }
 
-#myModalGetQuote .pop-heading h1 {
+#myModalGetQuote .pop-heading h1,
+#myModalGetQuote .pop-heading h3 {
     color: #e7008b;
 }
 
@@ -12283,7 +12297,8 @@ button.close.red-close:hover {
     background-position: center center;
 }
 
-.engine-testi-cvr h1 {
+.engine-testi-cvr h1,
+.engine-testi-cvr h4 {
     font-family: 'AgencyBold';
     font-size: 45px;
     text-transform: uppercase;
@@ -12304,6 +12319,7 @@ button.close.red-close:hover {
 
 .engine-testi-cvr .engine-testi-tab-btn .nav>li>a {
     font-family: 'AgencyBold';
+    font-weight: normal;
     font-size: 20px;
     letter-spacing: 1px;
     color: #000;

@@ -67,7 +67,8 @@ echo '</ul>';}
 <?php wp_nav_menu( array( 'theme_location' => 'footer-subpedia-menu' ) ); ?>
 <h3 style="margin:20px 0 15px;">aBOUT ADS</h3>
 <ul>
-<li><a href="<?php echo get_permalink(85); ?>">Testimonials</a></li>
+<li><a href="<?php echo get_permalink(65); ?>"><?php echo get_the_title(65); ?></a></li>    
+<li><a href="<?php echo get_permalink(85); ?>"><?php echo get_the_title(85); ?></a></li>
 </ul>
 <h3 style="margin:20px 0 15px;">cONTACT US</h3>
 <ul>
@@ -80,7 +81,8 @@ echo '</ul>';}
 <?php wp_footer(); ?>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/liberary.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/owl.carousel.min.js"></script>
+<!--<script src="<?php //echo get_stylesheet_directory_uri(); ?>/js/owl.carousel.min.js"></script>-->
+<script src="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.js"></script>
 <?php //if(!is_page(85)){ ?>
 <script defer src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.flexslider.js"></script>
 <?php// } 
@@ -103,7 +105,14 @@ axis: "y"
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/core.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/wow.min.js"></script>
 <script>
-new WOW().init();
+ wow = new WOW(
+                      {
+                      
+                      mobile:       false, 
+                
+                    }
+                    )
+                    wow.init();
 </script>
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/jquery-ui.css" type="text/css">
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-ui.js"></script>

@@ -9,9 +9,16 @@ theme: "minimal-dark"
 $(document).ready(function () {
 $("#engine-testi").owlCarousel({
 autoPlay: 3000, //Set AutoPlay to 3 seconds
-items: 2,
-itemsDesktop: [1199, 2],
-itemsDesktopSmall: [979, 1]
+//items: 2,
+//itemsDesktop: [1199, 2],
+//itemsDesktopSmall: [979, 1],
+//    itemsTablet:	[768,1],
+//itemsMobile: [600, 1]
+items : 2,
+itemsDesktop : [1199,2],
+itemsDesktopSmall : [980,2],
+itemsTablet: [768,2],
+itemsMobile : [479,1],
 });
 
 jQuery('#datepicker-example14').Zebra_DatePicker({

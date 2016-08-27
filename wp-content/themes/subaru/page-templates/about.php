@@ -12,27 +12,31 @@ get_header(); ?>
 global $post;
 while (have_posts()) : the_post(); 
 $post_id= $post->ID;
-$image3 = get_post_meta($post->ID,"banner_image",true);
+$image3 = get_post_meta($post->ID,"banner_background_image",true);
 $aggregate_image = wp_get_attachment_image_src($image3,'banner_image');
 $url = $aggregate_image[0];
-
+$background="background-position:center center;";
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>">
+<div class="banner banner-inner-service" style="background-image:url(<?php echo $url;?>);<?php echo $background; ?>">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
 }
 ?>
+<div class="container-fluid">
+<div class="banner-inner banner-text-new banner-text-full">
+<?php echo get_post_meta($post->ID,"banner_background_text",true); ?>
 </div>
+</div>
+   </div>    
 <?php endwhile; ?>
 <div class="clearfix"></div>
-
 <div class="main-search-sec">
 <div class="container">
 <div class="main-search wow bounceInUp" data-wow-duration="2s">
@@ -80,17 +84,18 @@ else
 <?php
 $post_id= $post->ID;
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'about_inner_image' );
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 $urs = $thumb['0'];
 if(!empty($urs)) 
 {
 ?>
-<img alt="<?php the_title();?>" src="<?php echo $urs;?>" class="img-responsive">
+<img alt="<?php the_title();?>" src="<?php echo $urs;?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
 <?php
 }
 else
 {
 ?>
-<img alt="<?php the_title();?>" src="https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=562&h=681" class="img-responsive">
+<img alt="<?php the_title();?>" src="https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=562&h=681" class="img-responsive" alt="subaru-engine">
 <?php
 }
 ?>
@@ -148,17 +153,18 @@ foreach($posts as $post)
 <?php
 $post_id= $post->ID;
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'team_image' );
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 $urlv = $thumb['0'];
 if(!empty($urlv)) 
 {
 ?>
-<img src="<?php echo $urlv;?>" alt="<?php the_title();?>" />
+<img src="<?php echo $urlv;?>" alt="<?php the_title();?>" alt="<?php echo $image_alt; ?>"/>
 <?php
 }
 else
 {
 ?>
-<img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=No Image&w=270&h=270" alt="<?php the_title();?>">		
+<img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=No Image&w=270&h=270" alt="subaru-engine">		
 <?php
 }
 ?>
@@ -193,7 +199,7 @@ else{ ?>
 </div>
 </div>
 </div> 
-<h4><?php the_title();?></h4>
+<h5><?php the_title();?></h5>
 <p><?php the_field('designation');?></p>
 </div>
 <?php

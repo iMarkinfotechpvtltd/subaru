@@ -91,12 +91,21 @@ if( have_rows('engine_adds') ):
 <?php    
 while ( have_rows('engine_adds') ) : the_row();
 ?>
-<div class="col-lg-6">
+<div class="col-lg-6 col-sm-6 col-xs-12">
 <?php $add_id=get_sub_field('image'); 
 $add_image = wp_get_attachment_image_src($add_id,'adds_img');
+$image_alt = get_post_meta( $add_id, '_wp_attachment_image_alt', true);
+
 $add_url = $add_image[0];
+$add_link=get_sub_field('add_link');
+if($add_link)
+{ ?>
+<a href="<?php echo $add_link; ?>"><img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>"></a>    
+<?php }
+else{ ?>
+<img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>">  
+<?php }
 ?>
-<img src="<?php echo $add_url; ?>">
 </div>
 <?php endwhile; ?>
 </div> 
@@ -115,12 +124,20 @@ if( have_rows('gearbox_adds') ): ?>
 <div class="row mb00">
 <?php while ( have_rows('gearbox_adds') ) : the_row();
 ?>
-<div class="col-lg-6">
+<div class="col-lg-6 col-sm-6 col-xs-12">
 <?php $add_id=get_sub_field('image'); 
 $add_image = wp_get_attachment_image_src($add_id,'full');
+$image_alt = get_post_meta( $add_id, '_wp_attachment_image_alt', true);
 $add_url = $add_image[0];
+$add_link=get_sub_field('add_link');
+if($add_link)
+{ ?>
+<a href="<?php echo $add_link; ?>"><img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>"></a>    
+<?php }
+else{ ?>
+<img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>">  
+<?php }
 ?>
-<img src="<?php echo $add_url; ?>">
 </div>
 <?php endwhile; ?>
 </div> 
@@ -141,12 +158,20 @@ if( have_rows('subapedia_adds') ):
 <?php    
 while ( have_rows('subapedia_adds') ) : the_row();
 ?>
-<div class="col-lg-6">
+<div class="col-lg-6 col-sm-6 col-xs-12">
 <?php $add_id=get_sub_field('image'); 
 $add_image = wp_get_attachment_image_src($add_id,'full');
+$image_alt = get_post_meta( $add_id, '_wp_attachment_image_alt', true);
 $add_url = $add_image[0];
+$add_link=get_sub_field('add_link');
+if($add_link)
+{ ?>
+<a href="<?php echo $add_link; ?>"><img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>"></a>    
+<?php }
+else{ ?>
+<img src="<?php echo $add_url; ?>" alt="<?php echo $image_alt; ?>">  
+<?php }
 ?>
-<img src="<?php echo $add_url; ?>">
 </div>
 <?php endwhile;
 ?>

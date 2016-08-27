@@ -1,7 +1,8 @@
 <div class="client-logo-sec">
 <div class="container">
 <?php 
-$args = array('post_type' => 'brand', 'posts_per_page' => 15);
+$args = array('post_type' => 'brand', 'posts_per_page' => 15, 'orderby' => 'menu_order'
+);
 $the_query = new WP_Query( $args );
 // The Loop
 if ( $the_query->have_posts() ) {

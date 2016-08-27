@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-md-4 col-md-offset-1">
+<div class="col-xs-12 col-md-4 col-sm-4 col-md-offset-1">
 <div class="side-bar-section">
 <div class="recenta-post"> 
 <h3>Recent Posts</h3> 

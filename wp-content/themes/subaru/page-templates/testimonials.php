@@ -8,22 +8,29 @@ get_header(); ?>
 global $post;
 while (have_posts()) : the_post(); 
 $post_id= $post->ID;
-$banner = get_post_meta($post->ID,"banner_image",true);
+$banner = get_post_meta($post->ID,"banner_background_image",true);
 $image = wp_get_attachment_image_src($banner,'banner_image');
 $url = $image[0];
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:72% 50%;">
+<div class="banner banner-inner-service" style="background-image:url(<?php echo $url;?>);background-position:72% 50%;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
 }
 ?>
+
+
+<div class="container-fluid">
+<div class="banner-inner banner-text-new banner-text-testi">
+<?php echo get_post_meta($post->ID,"banner_background_text",true); ?>
+</div>
+</div>
 </div>
 <!-- Banner Section End -->
 <div class="clearfix"></div>
@@ -179,11 +186,13 @@ endif; ?>
 <h4><?php echo get_post_meta($id,"client_role",true); ?></h4>
 <?php $test_id=get_the_ID(); ?>
 <div id="testimonial-cont<?php echo $test_id; ?>">
+<p>    
 <?php 
 //$parent="menu$k";
 //echo get_excerpt_test(75,$test_id,$parent); 
 echo get_the_content();
 ?>
+</p>    
 <?php if(get_the_term_list( $id, 'tags_testimonial')) {  ?>
 <div class="tags-section">
 <h5>Tags :</h5>

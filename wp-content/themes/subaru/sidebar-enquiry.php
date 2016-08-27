@@ -3,19 +3,19 @@
 <div class="enquire-form">
 <div class="row">
 <div id="loader"></div>
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" placeholder="First Name" class="form-control" name="first-name" id="fname1">
 </div> <!---col-md-6--->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" placeholder="Last Name" class="form-control" name="last-name" id="lname1">
 </div> <!---col-md-6--->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" placeholder="E mail" class="form-control" name="email" id="email1">
 </div> <!---col-md-6--->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" placeholder="Phone" class="form-control" name="phone" id="phone1">
 </div> <!---col-md-6--->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <select class="form-control" name="model1" id="model1">
 <option value="">Model</option>
 <option value="" selected>Model</option>
@@ -33,7 +33,7 @@
 </select>   
 </div> <!--col-md-4-->
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <select class="form-control" name="modyear1" id="modyear1">
 <option value="" selected>Year</option>    
 <?php for($year=2013;$year>=1989;$year--)
@@ -44,7 +44,7 @@
 </select>
 </div> <!--col-md-4-->
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <select class="form-control" name="engine1" id="engine1">
 <option value="">Engine</option>
 <option value="Short Block">Short Block</option>
@@ -55,17 +55,17 @@
 </select> 
 </div> <!--col-md-4-->
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="VIN" value="" id="vin1" name="vin1">
 </div> <!--col-md-6-->
 
-<div class="col-md-12">
+<div class="col-md-12 col-sm-12 col-xs-12">
 <textarea placeholder="Comments" class="form-control" name="comments" id="comments1"></textarea>
 </div> <!---col-md-12--->
-<div class="col-md-12">
+<div class="col-md-12 col-sm-6 col-xs-12">
 <input type="submit" value="Submit" class="btn btn-danger btn-enquirre" name="submit">
 </div>
-<div class="col-md-12"><span id="success-msg" style="display:none;"></span></div>
+<div class="col-md-12 col-sm-12 col-xs-12"><span id="success-msg" style="display:none;"></span></div>
 </div>   <!---row--->      
 </div> <!---enquire-form--->
 </form>

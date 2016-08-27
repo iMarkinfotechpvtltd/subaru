@@ -17,13 +17,25 @@ if($k==1){$active='active';}else{$active='';}
 <div class="item <?php echo $active; ?>">
 <div class="container">
 <div class="row">
-<div class="col-md-5">
-<?php if(get_the_post_thumbnail()){ echo get_the_post_thumbnail(get_the_ID(),'team_slider');}
+<div class="col-md-5 col-sm-4 col-xs-12">
+<?php $team_id= get_the_ID();
+$meta_id = get_post_meta($team_id,"team_member_slider",true);
+
+$image = wp_get_attachment_image_src($meta_id ,'full');
+$image_alt = get_post_meta( $meta_id, '_wp_attachment_image_alt', true);
+
+$url = $image[0];
+if($url!="") 
+{
+?>
+<img src="<?php echo $url ; ?>" alt="<?php echo $image_alt; ?>">
+<?php
+}
 else{ ?>
 <img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=No Image&w=350&h=300" alt="<?php the_title();?>">
 <?php } ?>
 </div>
-<div class="col-md-7 col-md-offset-5">
+<div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
 <h2><?php the_title(); ?></h2>
 <h4><?php the_field('designation'); ?></h4>
 <?php the_content(); ?>

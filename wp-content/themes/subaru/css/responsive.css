@@ -1,0 +1,2649 @@
+@media (max-width:1370px) {
+    .home .banner {
+        background-position: 0px 5px;
+        background-size: 111%;
+    }
+    .why-choose-subaru-list:before {
+        transform: rotate(0deg) skewY(435deg);
+        -webkit-transform: rotate(0deg) skewY(435deg);
+    }
+}
+
+@media (max-width:1300px) {
+    header {
+        padding: 10px 0;
+    }
+    header .navbar > .container-fluid .navbar-brand {
+        width: 150px;
+    }
+    header ul.nav.navbar-nav {
+        margin-top: 30px;
+        margin-left: 5%;
+    }
+    .navbar-nav > li > a {
+        font-size: 18px;
+        padding-bottom: 15px;
+        font-weight: normal;
+    }
+    .call-sec li a {
+        font-size: 18px;
+        line-height: 1;
+    }
+    .call-sec li:first-child a:before,
+    .call-sec li:nth-child(2) a:before {
+        width: 20px;
+        height: 20px;
+        margin-right: -30px;
+        position: relative;
+        left: -40px;
+    }
+    .call-sec li a.get-quote-btn {
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .call-sec li a.get-quote-btn i {
+        font-size: 13px;
+    }
+    header.fixed {
+        padding: 3px 0 5px;
+    }
+    header.fixed .navbar > .container-fluid .navbar-brand,
+    header .navbar > .container-fluid .navbar-brand {
+        margin-top: 15px;
+    }
+    header.fixed ul.nav.navbar-nav {
+        margin-top: 30px;
+    }
+    .custm-mega-cvr {
+        width: 95%;
+        padding: 5px;
+    }
+    .custm-mega-cvr .mega-heading {
+        margin-bottom: 5px;
+    }
+    .custm-mega-cvr .mega-heading h4 {
+        font-size: 20px;
+        line-height: 2;
+    }
+    .custm-mega-cvr .mega-inner .mega-inner-left {
+        width: 72%;
+    }
+    .mega-inner-left .mega-inner-row .mega-menu-item h5 {
+        margin: 0 0 10px;
+    }
+    .mega-inner-left .mega-inner-row .mega-menu-item ul li {
+        font-size: 13px;
+    }
+    .custm-mega-cvr .mega-inner .mega-inner-right {
+        width: 18%;
+    }
+    .custm-mega-cvr .mega-inner .mega-inner-right .mega-menu-ad a {
+        margin: 0px auto 0;
+    }
+    .mega-menu-ad img {
+        width: 100%;
+    }
+    .mega-inner-left .mega-inner-row .mega-menu-item {
+        margin-right: 3%;
+    }
+    .banner-text-bottom h2 {
+        font-size: 28px;
+        text-align: right;
+    }
+}
+
+@media (max-width:1199px) {
+    .modal-open header {
+        right: 0px;
+    }
+    .mega-inner-left .mega-inner-row .mega-menu-item ul li,
+    .mega-inner-left .mega-inner-row .mega-menu-item p {
+        font-size: 12px;
+    }
+    .navbar-nav > li > a {
+        padding: 0 6px 20px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .call-sec li a {
+        font-size: 17px;
+        line-height: 1;
+    }
+    header ul.nav.navbar-nav {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .home .banner {
+        background-position: 0px 5px;
+        background-size: cover;
+    }
+    .banner .container .banner-inner {
+        top: 40%;
+    }
+    .banner .banner-inner h1 {
+        font-size: 55px;
+    }
+    .banner .banner-inner h1:before {
+        height: 42px;
+    }
+    .banner .banner-inner h1:after {
+        margin: 2px 0 7px;
+    }
+    .banner .banner-inner h2.pink {
+        font-size: 35px;
+    }
+    .banner .banner-inner h2 {
+        font-size: 36px;
+    }
+    .banner .banner-inner .banner-text p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .banner .banner-inner .banner-text {
+        margin-top: 5px;
+    }
+    .main-search {
+        padding: 15px;
+    }
+    .main-search .form-group.search-in {
+        width: 51%;
+    }
+    .all-subro-operates h3 {
+        font-size: 36px;
+    }
+    .all-subro-operates-list h4 {
+        font-size: 26px;
+    }
+    .all-subro-operates-list h4::before {
+        height: 21px;
+        width: 7px;
+    }
+    .all-subro-operates-list-img {
+        min-height: 150px;
+        line-height: 150px;
+    }
+    .all-subro-operates-list {
+        min-height: 700px;
+    }
+    .all-subro-operates-list p,
+    .all-subro-operates-list ul li {
+        font-size: 13px;
+    }
+    .all-subro-operates-list ul {
+        margin: 20px 0 0;
+    }
+    .operates-btn {
+        font-size: 19px;
+    }
+    .why-choose-subaru {
+        padding: 40px 0 20px;
+    }
+    .why-choose-subaru h4,
+    .news-art-left-hd h4,
+    .engine-testi-cvr h4 {
+        font-size: 32px;
+    }
+    .why-choose-subaru h4:after {
+        width: 200px;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-left {
+        width: 18%;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-right {
+        width: 80%;
+        padding: 20px 5px;
+        padding-left: 5px;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-right p,
+    .news-art-list-right p {
+        font-size: 13px;
+    }
+    .why-choose-subaru-list::before {
+        transform: rotate(0deg) skewY(0deg);
+        -webkit-transform: rotate(0deg) skewY(0deg);
+        left: -8px;
+        top: 0;
+        width: 20%;
+    }
+    .news-art-right-hd a {
+        font-size: 24px;
+    }
+    .news-art-list-right h5 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .news-art-list {
+        padding: 20px 15px;
+        min-height: 240px;
+    }
+    .engine-testi-cvr.home-testi-cvr {
+        padding: 40px 0;
+    }
+    .engine-testi-text p,
+    .engine-testi-text {
+        font-size: 14px;
+    }
+    .engine-testi-text .engine-testi-name p {
+        line-height: 1.4;
+        font-size: 16px;
+    }
+    .footer-up {
+        padding: 50px 0;
+    }
+    .footer-up .footer-item.footer-vdo {
+        width: 30%;
+    }
+    .footer-up .footer-item {
+        width: 22.2%;
+        margin-right: 10px;
+    }
+    .footer-up h3 {
+        font-size: 19px;
+    }
+    .footer-light-grey {
+        padding: 10px;
+    }
+    .footer-light-grey .timming {
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+    .footer-light-grey.foo-cont p {
+        font-size: 12px;
+    }
+    footer {
+        padding: 50px 0 10px;
+    }
+    footer .footer-list {
+        padding-right: 8px;
+        margin-right: 9px;
+    }
+    .modal-form-body .form-group div.make-it-half {
+        width: 48.4%;
+    }
+    /** Contact Page **/
+    .banner-inner.banner-text-new {
+        top: 64%;
+    }
+    .enq-form .enq-gray-cvr {
+        padding: 20px 30px;
+    }
+    .enq-form .enq-gray-cvr .form-group {
+        width: 48%;
+        margin-right: 3%;
+    }
+    .enq-form .enq-gray-cvr .form-group label {
+        font-size: 16px;
+    }
+    .enq-form .enq-gray-cvr .form-group label i {
+        font-size: 14px;
+    }
+    .enq-form .enq-gray-cvr .form-group label i.fa-envelope {
+        font-size: 13px;
+        top: -1px;
+    }
+    .enq-form .enq-gray-cvr .form-group label i.fa-mobile {
+        font-size: 19px;
+        top: 0;
+    }
+    .contact-main h2 {
+        font-size: 36px;
+    }
+    .loca-info-cvr {
+        padding: 15px 0 5px;
+    }
+    .loca-info-cvr ul.add-sec li {
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        padding-left: 20px;
+    }
+    .loca-info-cvr ul.add-sec li:nth-child(1):before,
+    .loca-info-cvr ul.add-sec li:nth-child(2):before {
+        width: 13px;
+        top: 1px;
+    }
+    .loca-info-cvr ul.add-sec li:nth-child(3):before {
+        width: 13px;
+        top: 6px;
+    }
+    .loca-info-cvr ul.add-sec li:nth-child(4):before {
+        width: 13px;
+        top: 5px;
+    }
+    .loca-info-cvr ul.add-sec li:nth-child(5)::before,
+    .loca-info-cvr ul.add-sec li:nth-child(6)::before {
+        top: 4px;
+        left: 0;
+        font-size: 13px;
+    }
+    .follow-cvr ul li {
+        font-size: 24px;
+    }
+    .follow-cvr ul li a {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .enq-form .enq-gray-cvr .form-group {
+        margin-bottom: 16px;
+    }
+    .enq-form .enq-gray-cvr .form-group.full-wd .form-control {
+        margin-bottom: 0px;
+    }
+    .my-map-loc iframe {
+        height: 500px;
+    }
+    .five-res-cvr {
+        margin-top: 30px;
+    }
+    .five-res-list-cvr ul li {
+        font-size: 14px;
+        padding: 14px 14px 14px 50px;
+    }
+    /** About page **/
+    .about-section h3,
+    .teams-section h3 {
+        font-size: 40px;
+    }
+    .about-section {
+        margin-bottom: 0;
+    }
+    .promise-section p {
+        font-size: 20px;
+    }
+    .about-section p,
+    .promise-section p ~ p,
+    .teams-section p,
+    .image-section .modal-content .right-modal p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0 0 10px;
+    }
+    .promise-section h4 {
+        font-size: 36px;
+    }
+    .promise-section .col-xs-12.col-sm-4 {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+    }
+    .promise-section {
+        padding-bottom: 0;
+    }
+    .teams-section .panel-group .panel-heading a {
+        font-size: 26px;
+        padding: 10px 25px;
+    }
+    .img-box {
+        margin-right: 2%;
+        width: 18.4%;
+    }
+    .img-box > h5 {
+        font-size: 22px;
+    }
+    .img-box p {
+        font-size: 16px;
+    }
+    .teams-section .panel-group .panel.panel-default .panel-collapse .panel-body {
+        padding-bottom: 0;
+    }
+    .plus-sign {
+        width: 35px;
+        height: 35px;
+        line-height: 38px;
+        font-size: 16px;
+    }
+    .call-to-act-btn ul li a.cta-btn {
+        font-size: 22px;
+    }
+    .teams-section {
+        padding-bottom: 5px;
+    }
+    /** Testimonial Page **/
+    .page-template-testimonials .banner.banner-inner-service {
+        background-position: 5% 50% !important;
+    }
+    .banner-inner.banner-text-new.banner-text-testi {
+        width: 50%;
+        left: auto;
+        right: 0;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-slider {
+        width: 50%;
+    }
+    .testimonial-main .testimonial-slider .carousel-inner {
+        width: 78%;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp {
+        width: 48%;
+    }
+    .testimonial-main .testimonial-slider .carousel-inner .item {
+        height: 400px;
+    }
+    .testimonial-main .testimonial-slider .content {
+        float: right;
+        width: 20%;
+        height: 400px;
+    }
+    .testimonial-main .testimonial-slider .carousel-indicators li {
+        height: 70px;
+    }
+    .tittle-date h3 {
+        font-size: 22px;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp h4 {
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp h4 br {
+        display: none;
+    }
+    .testimonial-descp .tags-section {
+        position: relative;
+        bottom: 0;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp {
+        padding-bottom: 0;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+    .tags-section ul li {
+        margin-right: 8px;
+        margin-bottom: 4px;
+    }
+    .tags-section ul li a {
+        font-size: 13px;
+    }
+    .testimonial-main .testimonial-slider .right.carousel-control {
+        right: 30px;
+    }
+    .testimonial-main .testimonial-slider .left.carousel-control {
+        left: 30px;
+    }
+    /** Subapedia **/
+    .opportunities h2,
+    .carousel.slide.team-carousel .item .col-md-7 h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .opportunities .particular-steo h2 {
+        margin-bottom: 6px;
+    }
+    .col-xs-12.col-md-7.diesel h4,
+    .col-xs-12.col-md-7.news-section h4 {
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    .col-xs-12.col-md-7.news-section p,
+    .repair-dpf p,
+    .single-subapedia ul.custom-list-style li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .side-bar-section h3 {
+        font-size: 28px;
+    }
+    .recenta-post ul li a,
+    .category-post ul li a {
+        font-size: 14px;
+        padding: 12px 0 12px 24px;
+    }
+    .subapedia-latest-posts {
+        height: 170px;
+    }
+    .blog-tittles {
+        min-height: 310px;
+    }
+    .blog-tittles > h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .blog-tittles p,
+    .carousel.slide.team-carousel .item .col-md-7 p,
+    .repair-dpf ul li {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    #carousel-example-generic .item .col-md-7.col-md-offset-5 {
+        min-height: 390px;
+    }
+    .repair-dpf h2 {
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+    .repair-dpf h5 {
+        margin-bottom: 10px;
+    }
+    .repair-dpf p {
+        margin-bottom: 15px;
+    }
+    .repair-dpf h3 {
+        font-size: 25px;
+    }
+    .repair-dpf ul li:before {
+        top: -13px;
+    }
+    .banner-caption h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .banner-caption p {
+        font-size: 18px;
+    }
+    .btn.btn-default.btn-more {
+        font-size: 16px;
+        padding: 15px 35px;
+    }
+    /** Service Pages **/
+    .banner-thr-box {
+        width: 400px;
+    }
+    .banner-black-btn {
+        font-size: 28px;
+    }
+    .banner-inner-service h1 {
+        font-size: 60px;
+    }
+    .banner-inner-service h1 small {
+        font-size: 30px;
+    }
+    .banner-text-bottom {
+        bottom: 20px;
+        width: 100%;
+    }
+    .subaroo-log-book .container h2 {
+        font-size: 55px;
+    }
+    .subaroo-log-book .container > p {
+        padding-left: 4%;
+        text-align: justify;
+        width: 78%;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li {
+        margin-right: 11px;
+        width: 19%;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li a {
+        font-size: 16px;
+    }
+    .row.subaroo-six-stars .col-md-4 h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .row.subaroo-six-stars .col-md-4 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    ul.services-top-buttons {
+        width: 218px;
+        right: 34px;
+    }
+    .row.air-conditioning .col-md-12 ul.services-top-buttons li a {
+        font-size: 18px;
+    }
+    .row.air-conditioning .col-md-12 {
+        padding-right: 265px;
+    }
+    .absorvers > h4 {
+        font-size: 20px;
+    }
+    .row.price-blocks .col-md-4 ul li {
+        background-position: 27px 15px;
+        background-size: 16px;
+        padding: 10px 20px 10px 55px;
+        font-size: 14px;
+    }
+    .srip-cose {
+        background-size: 49% 100%;
+    }
+    .srip-cose h2 {
+        font-size: 32px;
+    }
+    .srip-cose .btn.btn-mm {
+        margin: 2px 58px 0 0;
+    }
+    .srip-cose:after {
+        border-width: 0 70px 57px 30px;
+    }
+    .products-description h4 {
+        font-size: 19px;
+        text-align: center;
+    }
+    .products-description p {
+        color: #414242;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .early-signs-of-wear > span {
+        width: 70px;
+        height: 70px;
+        background-size: 42px;
+    }
+    .early-signs-of-wear > span.icon-log-book1 {
+        background-size: 32px;
+    }
+    .early-signs-of-wear:before {
+        left: -10px;
+    }
+    .early-signs-of-wear {
+        padding-left: 90px;
+    }
+    .malf-search .form-control {
+        width: 210px;
+        height: 42px;
+    }
+    .malfunction-search-cover .malf-list ul li {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .subaru-air-conditioning-repairs h5 {
+        font-size: 23px;
+    }
+    .img-serive-image {
+        margin-right: 3%;
+    }
+    .subaru-air-conditioning-repairs h3,
+    .clutch-repair h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .conditioning-service-package {
+        padding: 40px 0;
+    }
+    .conditioning-service-package .container > h2 {
+        font-size: 36px;
+        margin: 0 0 20px;
+    }
+    .row.price-blocks {
+        margin-top: 20px;
+    }
+    .clutch-norrie-andreson .col-md-6 h2 {
+        font-size: 36px;
+    }
+    .clutch-norrie-andreson .col-md-6 h3 {
+        font-size: 20px;
+    }
+    .clutch-norrie-andreson .col-md-6 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .clutch-norrie-andreson .col-md-6 {
+        padding-bottom: 30px;
+    }
+    .clutch-norrie-andreson {
+        padding: 30px 0 0;
+    }
+    .row.air-conditioning .col-md-12 ul li a,
+    .row.air-conditioning .col-md-12 ul li.active a {
+        font-size: 16px;
+    }
+    .row.air-conditioning .col-md-12 ul li {
+        margin-right: 18px;
+        margin-bottom: 10px;
+    }
+    .row.air-conditioning .col-md-12 ul.services-top-buttons li {
+        margin-bottom: 0;
+    }
+    .clutch-nonturboo img + div.clutch-turbo-content {
+        margin-left: 0;
+    }
+    .white-block {
+        padding: 4px 10px;
+    }
+    .white-block h4 {
+        font-size: 18px;
+        min-height: 50px;
+    }
+    .white-block p {
+        font-size: 13px;
+    }
+    .advice-and-warnings h5 {
+        font-size: 20px;
+    }
+    .gasket-headding h3 {
+        font-size: 28px;
+    }
+    .internal-head-gasket-leaks.advanced-warning img {
+        width: 40% !important;
+    }
+    .internal-service-section h3 {
+        font-size: 36px;
+    }
+    .forms-steps-section-internal h3 {
+        font-size: 28px;
+    }
+    .basic-head-gasket-repair-option h3 {
+        padding-left: 145px;
+    }
+    .question-faq h3 {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+    .two-coloumns .system-cooling-caption h3 {
+        font-size: 20px;
+    }
+    .banner-head-gaskets .banner-left h1 {
+        font-size: 32px;
+        padding-bottom: 0;
+        line-height: 60px;
+    }
+    .banner-head-gaskets .banner-left .banner-thr-box {
+        margin-top: 8px;
+    }
+    .banner-thr-box li h2 {
+        font-size: 22px;
+    }
+    .banner.banner-inner-service.banner-head-gaskets.banner-cooling {
+        background-position: left center !important;
+    }
+    .cooling-system-comprises {
+        padding: 15px;
+    }
+    .cooling-system-comprises .row h3 {
+        margin: 0 0 5px;
+    }
+    .white-box span {
+        margin: 0 auto 5px;
+    }
+    .white-box p {
+        font-size: 13px;
+    }
+    .overheating-diagnosis-section h2 {
+        font-size: 36px;
+    }
+    .system-cooling .system-cooling-caption h4 {
+        font-size: 18px;
+    }
+    .service .btn.btn-default.btn-quote {
+        border-bottom: 7px solid #027ffd;
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .btn.btn-default.btn-quote.quote::before {
+        width: 14px;
+    }
+    .btn.btn-default.btn-appointment {
+        padding: 11px 40px;
+    }
+}
+
+@media(max-width:1040px) {
+    header.fixed .navbar > .container-fluid .navbar-brand,
+    header .navbar > .container-fluid .navbar-brand {
+        margin-top: 0;
+    }
+    header ul.nav.navbar-nav {
+        display: none;
+    }
+    .call-sec li {
+        display: inline-block !important;
+        margin-left: 15px !important;
+    }
+    .call-sec li a.get-quote-btn {
+        padding: 0 15px;
+    }
+    .call-sec {
+        margin: 11px -15px 11px 0;
+    }
+    header,
+    header.fixed {
+        padding: 10px 0;
+        -webkit-animation-name: none !important;
+        animation-name: none !important;
+        position: absolute;
+    }
+    html {
+        margin-top: -42px !important;
+    }
+    body.admin-bar header,
+    body.admin-bar header.fixed {
+        top: 32px;
+    }
+    body header,
+    body header.fixed {
+        top: 0;
+    }
+    body.admin-bar #wprmenu_bar {
+        top: 113px !important;
+    }
+    #wprmenu_bar {
+        position: absolute !important;
+        top: 80px !important;
+    }
+    #wprmenu_menu.left {
+        top: 0px !important;
+    }
+    body.admin-bar #wprmenu_menu.left {
+        top: 32px !important;
+    }
+}
+
+@media (max-width:991px) {
+    .banner {
+        background-position: -120px 0px;
+    }
+    .banner .container .banner-inner {
+        width: 64%;
+    }
+    .banner .container .banner-inner {
+        top: 48%;
+    }
+    .home .banner {
+        background-position: -70px 35px;
+    }
+    .page-template-contact .banner-inner.banner-text-new {
+        width: 100%;
+    }
+    .main-search .form-group.select-in {
+        width: 30%;
+    }
+    .main-search .form-group.search-in {
+        width: 43%;
+    }
+    .main-search .form-group .form-control {
+        font-size: 14px;
+    }
+    .all-subro-operates h3 {
+        font-size: 28px;
+    }
+    .all-subro-operates-list.subaru-engines-sec:after {
+        display: none;
+    }
+    .all-subro-operates-list {
+        min-height: 660px;
+    }
+    .all-subro-operates-list-img {
+        min-height: 190px;
+        width: 100%;
+        display: inline-block;
+    }
+    .all-subro-operates-list-img img {
+        vertical-align: bottom;
+        position: relative;
+        line-height: 190px;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-left {
+        width: 20%;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-left img {
+        width: 100%;
+    }
+    .why-choose-subaru-list:before {
+        width: 73px;
+    }
+    .news-art-list {
+        padding: 10px 0;
+        min-height: 250px;
+    }
+    .news-art-list-right h5 {
+        font-size: 14px;
+    }
+    .client-logo-list {
+        width: 20%;
+    }
+    .client-logo-list img {
+        width: 100%;
+    }
+    .footer-up {
+        padding: 20px 0px;
+    }
+    .footer-up .footer-item.footer-vdo,
+    .footer-up .footer-item {
+        width: 48%;
+        margin-right: 2%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .footer-up .footer-item:nth-child(3) {
+        clear: both;
+    }
+    .footer-up .footer-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .footer-list.service-list {
+        width: 65.1%;
+    }
+    .footer-list.engines-list {
+        width: 32%;
+        margin-right: 0;
+    }
+    .footer-list.parts-list,
+    .footer-list.gearbox-list,
+    footer .footer-list.subapedia-list {
+        width: 32%;
+    }
+    footer .footer-list {
+        padding-right: 10px;
+        margin-right: 13px;
+    }
+    .modal-form-body .form-group div.make-it-half {
+        width: 48%;
+    }
+    .modal-form-body .form-group {
+        width: 48.2%;
+        min-height: 78px;
+        margin-bottom: 15px;
+    }
+    #myModalGetQuote .modal-form-body label {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+    .modal-form-body label img {
+        margin-right: 4px;
+    }
+    .pop-call-cvr {
+        padding-right: 0;
+    }
+    .pop-call-cvr ul li i {
+        width: 22px;
+        height: 22px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .pop-call-cvr ul li a {
+        font-size: 18px;
+        letter-spacing: normal;
+    }
+    .pop-call-cvr ul li:last-child .fa-envelope-o::before {
+        top: 0px;
+        left: 0;
+    }
+    .pop-call-cvr ul li:first-child a {
+        font-size: 18px;
+    }
+    .pop-heading {
+        padding-top: 14px;
+    }
+    /** Contact page **/
+    .enq-form .enq-gray-cvr {
+        margin-bottom: 30px;
+    }
+    .my-map-loc iframe {
+        height: 230px;
+    }
+    /** Testimonial Page **/
+    .page-template-testimonials .banner.banner-inner-service {
+        background-position: 20% 50% !important;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-slider {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .testimonial-main .testimonial-slider .carousel-inner {
+        width: 78%;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    /** About Us **/
+    .banner-inner-service .banner-inner.banner-text-new h1 {
+        font-size: 54px;
+    }
+    .banner-inner.banner-text-new.banner-text-full ul li {
+        font-size: 32px;
+    }
+    /** Subapedia **/
+    .rob-chris-img {
+        width: 60%;
+    }
+    .banner-pedia .banner-left {
+        margin-left: 30px;
+    }
+    .latestposts {
+        margin-top: 40px;
+        padding: 30px 0 20px;
+    }
+    .latestposts .row .col-md-4 {
+        margin-top: 30px;
+    }
+    .blog-tittles {
+        padding: 10px 15px;
+    }
+    .blog-tittles > h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+    .blog-tittles p,
+    .carousel.slide.team-carousel .item .col-md-7 p,
+    .repair-dpf ul li {
+        font-size: 14px;
+        line-height: 1.6;
+        font-style: normal;
+    }
+    .opportunities h2,
+    .carousel.slide.team-carousel .item .col-md-7 h2 {
+        font-size: 36px;
+        margin: 30px 0 15px;
+    }
+    .col-xs-12.col-md-7.news-section .row.mk11 .btn.btn-default.btn-quote.quote:before {
+        height: 15px;
+        width: 23px;
+    }
+    .col-xs-12.col-md-7.news-section .row.mk11 .btn.btn-default.btn-quote.quote,
+    .col-xs-12.col-md-7.news-section .row.mk11 .btn.btn-default.btn-quote.helpline,
+    .opportunities .col-xs-12.col-md-7 .row.mk11 .btn.btn-default.btn-quote.helpline,
+    .opportunities .col-xs-12.col-md-7 .row.mk11 .btn.btn-default.btn-quote.quote,
+    .repair-dpf .btn.btn-default.btn-quote.quote,
+    .repair-dpf .btn.btn-default.btn-quote.helpline,
+    .repair-dpf .btn.btn-default.btn-quote.helpline,
+    .repair-dpf .btn.btn-default.btn-quote.quote{
+        font-size: 17px;
+        padding: 4px 0;
+    }
+    .banner.banner-inner-service.banner-pedia {
+        background-position: 50% 50% !important;
+    }
+    /** Service **/
+    .banner.banner-inner-service {
+        background-position: 24% 50% !important;
+    }
+    .row.air-conditioning .col-md-12 h2,
+    .subaroo-log-book .container h2,
+    .conditioning-service-package .container > h2 {
+        margin-top: 0;
+        font-size: 34px;
+    }
+    .row.air-conditioning .col-md-12 ul.services-top-buttons li a {
+        font-size: 16px;
+    }
+    .row.air-conditioning .col-md-12:after {
+        margin-top: 0;
+        bottom: 0;
+    }
+    .row.conditioning-repairs {
+        margin-top: 20px;
+    }
+    .img-serive-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .clutch-repair.transpCV img {
+        margin: 0;
+        width: auto;
+    }
+    .clutch-turbo-content {
+        width: 100%;
+    }
+    .thr-btns ul li,
+    .service .opportunities .thr-btns ul li {
+        margin-right: 9px;
+    }
+    .row.conditioning-repairs .col-md-8 {
+        padding-right: 15px;
+    }
+    .subaru-air-conditioning-repairs h3,
+    .clutch-repair h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        letter-spacing: normal;
+    }
+    .subaroo-log-book .container h2 {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .subaroo-log-book .container h2 br {
+        display: none;
+    }
+    .subaroo-log-book .container > p {
+        width: 100%;
+        padding-left: 0;
+    }
+    .log-book-tabbing {
+        margin: 40px 0 40px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li {
+        margin-right: 11px;
+        width: 32.2%;
+        margin-bottom: 16px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li:nth-child(3) {
+        margin-right: 0;
+    }
+    .log-book-tabbing ul.nav-tabs {
+        margin: 15px 15px 1px;
+    }
+    .log-book-tabbing ul li a {
+        font-size: 22px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .tab-content .tab-pane img {
+        margin-bottom: 15px;
+    }
+    .row.subaroo-six-stars .col-sm-6.col-md-4.proactive {
+        clear: none;
+    }
+    .subaroo-six-stars .col-sm-6.col-md-4:nth-child(2n+1) {
+        clear: both;
+    }
+    .subaroo-log-book .container > p,
+    .conditioning-service-package .container > p,
+    .online-section p,
+    .malfunction-gray p,
+    .answer-faq ul li {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .subaroo-log-book {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+    .subaroo-six-star {
+        padding: 20px 0 0;
+    }
+    .conditioning-service-package {
+        padding: 40px 0 20px;
+    }
+    .calender {
+        padding: 15px 10px;
+        margin-bottom: 28px;
+    }
+    .row.coloumn-form {
+        margin-top: 30px;
+    }
+    .srip-cose {
+        margin: 15px 0 0;
+    }
+    .srip-cose h2 {
+        font-size: 25px;
+    }
+    .srip-cose .btn.btn-mm {
+        margin: 0px 58px 0 0;
+        font-size: 18px;
+    }
+    .srip-cose::after {
+        border-width: 0 24px 47px 30px;
+    }
+    .row-span-3 {
+        padding: 0 5px;
+    }
+    .row-span-3 h3 {
+        font-size: 18px;
+    }
+    .row.timing-belt {
+        margin-top: 30px;
+    }
+    .row.conditioning-repairs .col-md-4 {
+        padding-left: 15px;
+    }
+    .panel-group.servcemenu .panel.panel-default .panel-heading .panel-title a,
+    .panel-group.servcemenu .panel.panel-default .panel-heading .panel-title a.collapsed {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .service .opportunities h4.panel-title {
+        margin-bottom: -1px;
+    }
+    .panel-group.servcemenu .panel-collapse.collapse .panel-body ul,
+    .panel-group.servcemenu .panel-collapse.collapsing .panel-body ul,
+    .panel-body ul.inner-list {
+        margin: 0;
+    }
+    .panel-group.servcemenu .panel-collapse.collapse .panel-body ul li a,
+    .panel-group.servcemenu .panel-collapse.collapsing .panel-body ul li a,
+    .panel-body ul.inner-list li a {
+        font-size: 16px;
+    }
+    ul.malf-icons li {
+        width: 12%;
+        margin-right: 20px;
+    }
+    ul.malf-icons li img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .malf-icons {
+        margin: 20px 0;
+    }
+    .malf-search label {
+        font-size: 14px;
+    }
+    .malf-search .form-group {
+        margin-right: 10px;
+    }
+    .malf-search .form-control {
+        width: 140px;
+        height: 40px;
+    }
+    .malfunction-search-cover .malf-list {
+        margin-bottom: 0;
+    }
+    .malfunction-search-cover .malf-list ul li a {
+        padding-right: 28px;
+    }
+    .midddle-sevice-section > p {
+        width: 100%;
+    }
+    .chk-icon.chk-icon-half li {
+        font-size: 13px;
+        margin: 0 !important;
+        line-height: 1.8;
+        margin-right: -4px !important;
+        background-position: 0 5px !important;
+    }
+    .clutch-norrie-andreson .col-md-3,
+    .clutch-norrie-andreson .col-md-6 {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        width: 50%;
+        vertical-align: bottom;
+        padding-bottom: 0;
+    }
+    .clutch-norrie-andreson .col-md-3 {
+        margin-right: -4px;
+    }
+    .clutch-norrie-andreson .col-md-3:last-child {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .clutch-norrie-andreson .col-md-3 img {
+        bottom: 0;
+        position: relative;
+    }
+    .clutch-norrie-andreson .col-md-3:last-child img {
+        width: 60%;
+    }
+    .row.air-conditioning .col-md-12 ul li {
+        margin-right: 15px;
+    }
+    .clutch-nonturboo.head-gasket-panel img {
+        margin-top: 18px !important;
+        width: auto;
+    }
+    .white-block {
+        padding: 4px 10px;
+        margin-bottom: 30px;
+    }
+    .advice-and-warnings h5 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .internal-service-section {
+        padding: 20px 15px 40px;
+    }
+    .forms-steps-section-internal {
+        padding: 0 15px;
+    }
+    .basic-head-gasket-repair-option {
+        background: #f2f2f2;
+        margin: 30px 0px;
+    }
+    .two-coloumns .system-cooling-caption {
+        padding: 6px 55px 6px 5px;
+    }
+    .clutch-repair h5 {
+        font-size: 20px;
+    }
+    .row.air-conditioning .col-md-12 {
+        padding-right: 200px;
+        min-height: 100px;
+    }
+    ul.services-top-buttons {
+        width: 166px;
+        right: 27px;
+    }
+    .clutch-norrie-andreson .container .row {
+        display: block;
+        width: auto;
+    }
+    .midddle-sevice-section > h5:last-child {
+        padding-left: 0px;
+    }
+    .basic-head-gasket-repair-option h3 {
+        padding-right: 10px;
+        padding-left: 147px;
+    }
+    .answer-faq ul li {
+        width: 32%;
+    }
+    .clutch-repair .clutch-nonturboo p {
+        width: 100%;
+    }
+}
+
+@media (max-width:785px) {
+    body.admin-bar header,
+    body.admin-bar header.fixed {
+        top: 45px;
+    }
+    body.admin-bar #wprmenu_bar {
+        top: 125px !important;
+    }
+    body header,
+    body header.fixed {
+        top: 0;
+    }
+    body #wprmenu_bar {
+        top: 80px !important;
+    }
+    body.admin-bar #wprmenu_menu.left {
+        top: 45px !important;
+        z-index: -1 !important;
+    }
+    
+    body #wprmenu_menu.left {
+        top:0px !important;
+        z-index: -1 !important;
+    }
+}
+
+@media (max-width:767px) {
+    .container-fluid .navbar-header {
+        margin-left: 0px;
+        float: left;
+    }
+    div#myNavbar {
+        padding-right: 0;
+        float: right;
+    }
+    .call-sec {
+        margin: 5px 0px;
+    }
+    header .navbar > .container-fluid .navbar-brand {
+        width: 120px;
+    }
+    body.admin-bar #wprmenu_bar {
+        top: 115px !important;
+    }
+    body #wprmenu_bar {
+        top: 69px !important;
+    }
+    body.admin-bar .banner {
+        padding-top: 159px;
+    }
+    .banner {
+        padding-top: 110px;
+        height: auto;
+        min-height: 370px;
+    }
+    .home .banner {
+        background-position: 50% 50%;
+    }
+    .banner .container .banner-inner {
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 15px;
+        position: static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .banner .container {
+        position: relative;
+        height: auto;
+    }
+    .banner .banner-inner h1 {
+        font-size: 45px;
+    }
+    .banner .banner-inner h1:before {
+        height: 33px;
+        width: 71px;
+    }
+    .banner .banner-inner h2,
+    .banner .banner-inner h2.pink {
+        font-size: 28px;
+    }
+    .banner .banner-inner .banner-text {
+        padding-right: 0;
+    }
+    .main-search .form-group select.form-control {
+        background-size: 30px 41px;
+    }
+    .main-search .form-group .form-control {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+    .main-search-btn {
+        width: 23%;
+        font-size: 17px;
+    }
+    .all-subro-operates h3 {
+        font-size: 22px;
+        margin: 30px 0;
+    }
+    .all-subro-operates-list:after {
+        display: none;
+    }
+    .all-subro-operates-list h4 {
+        font-size: 20px;
+    }
+    .all-subro-operates-list h4::before {
+        height: 16px;
+        width: 5px;
+    }
+    .all-subro-operates-list-img {
+        min-height: auto;
+        line-height: normal;
+    }
+    .all-subro-operates-list ul {
+        margin: 20px auto 0;
+        max-width: 240px;
+    }
+    .all-subro-operates-list {
+        min-height: 100%;
+        margin-bottom: 30px;
+    }
+    .operates-btn {
+        font-size: 19px;
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .why-choose-subaru h4,
+    .news-art-left-hd h4,
+    .engine-testi-cvr h4 {
+        font-size: 24px;
+    }
+    .why-choose-subaru h4::after {
+        width: 140px;
+    }
+    .why-choose-subaru {
+        padding: 30px 0 10px;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-left,
+    .why-choose-subaru-list .why-choose-subaru-list-right {
+        display: inline-block;
+    }
+    .why-choose-subaru-list {
+        min-height: 100%;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-left {
+        width: 66px;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-right {
+        width: 85%;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-right h5 {
+        font-size: 20px;
+    }
+    .news-art-heading {
+        margin-top: 30px;
+    }
+    .news-art-right-hd a {
+        font-size: 18px;
+    }
+    .news-art-list {
+        padding: 20px 0;
+        min-height: 100%;
+    }
+    .news-art-sec .row .col-md-6:after {
+        right: 15px;
+        bottom: 0px;
+        left: 15px;
+        width: auto;
+    }
+    .news-art-sec .row .col-md-6:nth-child(2n):after {
+        left: 15px;
+    }
+    .news-art-sec .row .col-md-6:before {
+        display: none;
+    }
+    .news-art-sec .row .col-md-6:last-child(2):after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        bottom: 0px;
+        left: 15px;
+        width: auto;
+        height: 1px;
+        background: #b1b1b1;
+    }
+    .engine-testi-cvr .engine-testi-tab-btn .nav > li > a {
+        font-size: 16px;
+    }
+    .client-logo-list {
+        width: 18%;
+    }
+    .client-logo-sec {
+        padding: 30px 0 5px;
+    }
+    footer {
+        padding: 30px 0 10px;
+    }
+    .footer-list.service-list {
+        width: 64.7%;
+    }
+    .footer-list.parts-list,
+    .footer-list.gearbox-list,
+    footer .footer-list.subapedia-list {
+        width: 31%;
+    }
+    footer .footer-list {
+        padding-right: 10px;
+        margin-right: 14px;
+    }
+    footer .footer-list h3 {
+        font-size: 24px;
+        margin: 10px 0 20px;
+    }
+    .modal-form-body .form-group {
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    .all-subro-operates-list p{
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /** Conatct Page **/
+    .page-template-contact .banner-inner.banner-text-new {
+        text-align: left;
+        left: 15px;
+        width: auto;
+    }
+    .banner .banner-inner.banner-text-new h1 {
+        font-size: 30px;
+    }
+    .banner .banner-inner.banner-text-new h1::before {
+        height: 27px;
+        width: 66px;
+    }
+    .contact-main {
+        padding: 30px 0 20px;
+    }
+    .contact-main h2 {
+        font-size: 28px;
+    }
+    .enq-form .enq-gray-cvr {
+        padding: 15px;
+    }
+    .five-res-cvr {
+        padding: 30px 0 20px;
+        margin-top: 20px;
+    }
+    .five-res-cvr .col-md-4 {
+        text-align: center;
+    }
+    .five-res-cvr .col-md-4 img {
+        max-width: 200px;
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .five-res-list-cvr ul li {
+        font-size: 14px;
+        padding: 8px 8px 8px 50px;
+        margin-bottom: 18px;
+    }
+    /** About Page **/
+    .banner.banner-inner-service {
+        height: auto;
+        min-height: 370px;
+    }
+    .banner-inner.banner-text-new.banner-text-full,
+    .banner-inner.banner-text-new.banner-text-testi {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        position: static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .promise-section .col-xs-12.col-sm-4 {
+        position: static;
+        text-align: center;
+    }
+    .promise-section .col-xs-12.col-sm-4 img {
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+    }
+    .img-box {
+        margin-right: 2%;
+        width: 32%;
+    }
+    .img-box:nth-child(3n) {
+        margin-right: 0;
+    }
+    .call-to-act-btn ul li {
+        display: inline-block;
+        width: 48.5%;
+        margin-right: 2%;
+    }
+    .image-section .modal-content .right-modal h4.modal-title {
+        font-size: 22px;
+    }
+    .call-to-act-btn ul li a.cta-btn {
+        font-size: 16px;
+    }
+    .about-section h3,
+    .teams-section h3 {
+        font-size: 34px;
+    }
+    .promise-section h4 {
+        font-size: 28px;
+    }
+    .banner-inner.banner-text-new.banner-text-full ul li {
+        font-size: 19px;
+    }
+    .page-template-about .banner.banner-inner-service {
+        background-position: 0 50px !important;
+    }
+    .page-template-about .banner-inner.banner-text-new.banner-text-full {
+        margin-top: 37px;
+    }
+    .image-section .modal-dialog,
+    #myModalGetQuote .modal-dialog {
+        position: relative;
+        width: 95%;
+        max-width: 750px;
+        top: 0;
+        transform: translate(0, 0%) !important;
+        -webkit-transform: translate(0, 0%) !important;
+        left: 0;
+        right: 0;
+        margin: 90px auto;
+    }
+    #myModalGetQuote .modal-dialog {
+        width: 90%;
+        margin: 0px auto;
+    }
+    #myModalGetQuote .modal-content {
+        margin: 0;
+        margin: 90px auto;
+    }
+    .modal-form-body .form-group div.make-it-half {
+        width: 48.8%;
+    }
+    .popup-get-fm-btn {
+        font-size: 18px;
+    }
+    .testi-btn {
+        padding: 0 40px;
+        font-size: 18px;
+    }
+    .pop-call-cvr ul {
+        text-align: center;
+    }
+    .pop-call-cvr ul li {
+        display: inline-block;
+        float: none;
+        width: auto;
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 5px;
+    }
+    .pop-heading {
+        padding-top: 8px;
+    }
+    .pop-heading h3 {
+        font-size: 40px;
+    }
+    .popup-form-heading h4 {
+        font-size: 26px;
+    }
+    #myModalGetQuote .form-group.textarea textarea.form-control {
+        min-height: 130px;
+    }
+    #myModalGetQuote .modal-form-body .form-group.urgent {
+        padding: 10px;
+    }
+    /** Testimonial page **/
+    .testimonial-main .testimonial-slider .content,
+    .testimonial-main .testimonial-slider .carousel-inner .item {
+        height: 326px;
+    }
+    /** Services Pages **/
+    .row.air-conditioning .col-md-12 ul li a,
+    .row.air-conditioning .col-md-12 ul li.active a {
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+    .clutch-nonturboo {
+        display: block;
+        margin: 20px 0 0;
+    }
+    .subaru-engines-australia .row .col-xs-12 {
+        width: 33%;
+    }
+    .thr-btn-main {
+        padding-bottom: 0;
+    }
+    .thr-btns {
+        width: 100%;
+        position: static;
+        margin: 20px 0 0;
+        float: left;
+    }
+    .subaru-engines-australia {
+        float: left;
+        width: 100%;
+    }
+    .thr-btns ul li,
+    .service .opportunities .thr-btns ul li {
+        width: 31%;
+    }
+    .subaroo-log-book {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .row.air-conditioning .col-md-12 h2,
+    .subaroo-log-book .container h2,
+    .conditioning-service-package .container > h2 {
+        font-size: 28px;
+    }
+    .log-book-tabbing ul li a {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li {
+        width: 32%;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li a {
+        font-size: 14px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li a br {
+        display: none;
+    }
+    .log-book-tabbing .tab-content .tab-pane .tab-content {
+        padding: 15px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .tab-content .tab-pane h3 {
+        font-size: 26px;
+    }
+    .log-book-tabbing .tab-content .tab-pane .tab-content .tab-pane > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .conditioning-service-package {
+        padding: 30px 0 20px;
+        margin-top: 30px;
+    }
+    .price-circle {
+        font-size: 28px;
+    }
+    .absorvers > h4 {
+        font-size: 18px;
+    }
+    .bottom-buttons .btn.btn-default {
+        font-size: 20px;
+    }
+    .appointment-form {
+        min-height: 100%;
+        padding: 15px;
+    }
+    .appointment-form .row .col-md-4 {
+        width: 33.3%;
+    }
+    .srip-cose h2 {
+        font-size: 21px;
+    }
+    .row-span-3 {
+        width: 33.3%;
+        margin-bottom: 25px;
+    }
+    .row-span-3:nth-child(3n) {
+        border-right: none;
+    }
+    .packagedeals {
+        padding: 18px 0 0;
+        margin-top: 30px;
+    }
+    .products-description h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .banner-inner-service h1 {
+        font-size: 40px;
+        padding: 0;
+        line-height: normal;
+    }
+    .banner-inner-service h1 small {
+        display: inline-block;
+    }
+    .banner-thr-box {
+        width: 360px;
+    }
+    .banner-thr-box li {
+        width: 31%;
+    }
+    .banner-text-bottom {
+        position: relative;
+        right: 0;
+        display: block;
+        margin: 20px 0;
+        width: 100%;
+        float: left;
+        bottom: 0;
+    }
+    .banner-black-btn {
+        font-size: 22px;
+    }
+    .banner-text-bottom h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .banner.banner-inner-service .banner-left {
+        margin-top: 0;
+    }
+    .malf-search form {
+        width: 50%;
+    }
+    .malf-search .form-control {
+        width: 100%;
+        height: 40px;
+        margin-left: 0;
+    }
+    .malf-search .adv-srch {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .malfunction-gray h3,
+    .malfunction-search-cover h3 {
+        font-size: 26px;
+    }
+    .malfunction-gray {
+        padding: 35px 0 20px;
+        margin: 30px 0;
+    }
+    .service .opportunities ul.big-chk-icon li {
+        background-size: 40px !important;
+        padding-left: 51px;
+    }
+    .img-serive-image img {
+        max-width: 360px;
+        width: 100%;
+    }
+    .gasket-headding h3 {
+        font-size: 20px;
+    }
+    .internal-head-gasket-leaks.advanced-warning img,
+    .internal-head-gasket-leaks img,
+    .clutch-repair.transpCV .clutch-nonturboo.border-img img,
+    .over-heating-content img {
+        width: 100% !important;
+        max-width: 360px;
+        float: none;
+        display: inline-block;
+        margin: 20px 0 !important;
+    }
+    .internal-head-gasket-leaks img,
+    .clutch-repair.transpCV .clutch-nonturboo.border-img img {
+        margin-top: 8px !important;
+    }
+    .internal-service-section h3 {
+        font-size: 26px;
+    }
+    .internal-service-section-image {
+        float: none;
+        margin: 0 0px 20px 0;
+        text-align: center;
+        width: 100%;
+        max-width: 360px;
+    }
+    .forms-steps-section-internal h3 {
+        font-size: 18px;
+    }
+    .basic-head-gasket-repair-option h3 {
+        padding-left: 117px;
+    }
+    .btn.btn-default.btn-option {
+        position: static;
+        margin: 10px 0 0;
+    }
+    .rely-section h3 {
+        font-size: 28px;
+    }
+    .comman-question h3 {
+        font-size: 24px;
+    }
+    .answer-faq ul li {
+        width: 100%;
+    }
+    .two-coloumns .col-md-6.col-sm-6.col-xs-12:first-child {
+        margin-bottom: 20px;
+    }
+    .services-we-Offer {
+        padding-top: 20px;
+    }
+    .banner-cooling .banner-thr-box {
+        width: 280px;
+    }
+    .white-box {
+        height: auto;
+        padding: 15px;
+    }
+    .cooling-system-comprises .col-sm-4.col-md-3 {
+        width: 50%;
+        float: left;
+    }
+    .cooling-system-comprises .col-sm-4.col-md-3:nth-child(2n+1) {
+        clear: both;
+    }
+    #clutuch-replacement .early-signs-of-wear > span {
+        background-size: 38px;
+    }
+    .alignnone.size-full.wp-image-152 {
+        width: auto;
+    }
+    /** Subapedia pages **/
+    .banner.banner-inner-service.banner-pedia {
+        background-position: 50% 50% !important;
+        background-size: 190%;
+    }
+    .banner-pedia .banner-left {
+        margin-left: 0;
+        margin-top: 45px !important;
+    }
+    .banner-pedia .banner-left h1 {
+        font-size: 30px;
+        padding-bottom: 0;
+        line-height: 50px;
+    }
+    .banner-pedia .banner-left h2 {
+        font-size: 22px;
+    }
+    .subapedia-latest-posts {
+        height: 250px;
+    }
+    .row.mk11 .col-xs-12, .repair-dpf .col-xs-12 .col-xs-12.col-sm-4 {
+        width: 33.3%;
+        margin-bottom: 15px;
+    }
+    .blog-tittles {
+        min-height: 100%;
+    }
+    .latestposts h2 {
+        font-size: 30px
+    }
+    .mor-plus {
+        height: 40px;
+        line-height: 36px;
+        width: 40px;
+    }
+    .mor-plus:before {
+        font-size: 32px;
+    }
+    .latestposts .col-xs-12 hr {
+        top: 30px
+    }
+    .carousel.slide.team-carousel .item .col-md-5 img,
+    .carousel.slide.team-carousel .item .col-md-5 {
+        position: static;
+    }
+    .carousel.slide.team-carousel .item .col-md-5 {
+        text-align: center;
+    }
+    .carousel.slide.team-carousel .item .col-md-5 img {
+        bottom: 0;
+        left: 0;
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    #carousel-example-generic .item .col-md-7.col-md-offset-5 {
+        min-height: 100%;
+        text-align: center;
+    }
+    #carousel-example-generic .carousel-control {
+        top: 140px;
+        bottom: auto;
+    }
+    .reply-form h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .reply-form p {
+        font-size: 14px;
+    }
+    .carousel.slide.team-carousel .item .col-md-7 h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .reply-form textarea.form-control {
+        min-height: 100%;
+        height: 130px;
+    }
+    
+    .reply-form p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .reply-form .form-control{
+        padding: 15px 10px;
+    }
+    
+    
+    .repair-dpf .col-md-4 img {
+        margin: 30px 0;
+        max-width: 250px;
+        width: 100%;
+    }
+    
+    .banner .banner-caption .container {
+        padding: 20px 15px 0px;
+        min-height: 100%;
+    }
+    
+    .banner-caption h2 {
+        font-size: 36px;
+    }
+    
+    .banner-caption p {
+        font-size: 14px;
+    }
+    
+    .btn.btn-default.btn-more {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+    
+    .rob-chris-img {
+        max-width: 300px;
+        width: 100%;
+        text-align: right;
+        margin: 20px 0 0 auto;
+        position: static;
+        display: block;
+        
+    }
+    
+    .page-template-about .banner-inner.banner-text-new.banner-text-full {
+        margin-top: 96px !important;
+    }
+    
+    .page-template-testimonials .banner.banner-inner-service {
+        background-position: 0 0 !important;
+    }
+    
+    .banner-inner.banner-text-new.banner-text-testi {
+        left: auto;
+        right: 0;
+        float: right;
+        width: auto;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width:510px) {
+    body.admin-bar #wprmenu_bar {
+        top: 184px !important;
+    }
+    body #wprmenu_bar {
+        top: 139px !important;
+    }
+    .container-fluid .navbar-header {
+        width: 100%;
+        text-align: center;
+    }
+    header .navbar > .container-fluid .navbar-brand {
+        width: 110px;
+        float: none;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    div#myNavbar {
+        padding-right: 0;
+        float: right;
+        width: 100%;
+    }
+    .call-sec {
+        width: 100%;
+        text-align: center;
+    }
+    .call-sec li {
+        padding-left: 25px;
+        position: relative;
+        font-size: 14px;
+        margin-right: -4px;
+        margin-left: 5px !important;
+    }
+    .call-sec li:first-child {
+        margin-left: 0 !important;
+    }
+    .call-sec li:last-child {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        width: 49%;
+    }
+    .call-sec li a {
+        display: inline-block;
+    }
+    .call-sec li:first-child a::before,
+    .call-sec li:nth-child(2) a::before {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        top: -2px;
+    }
+    body.admin-bar .banner {
+        padding-top: 234px;
+    }
+    body .banner {
+        padding-top: 190px;
+    }
+    .home .banner {
+        background-position: -480px 50px !important;
+    }
+    .banner .container .banner-inner {
+        width: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 15px;
+        position: static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .banner .container {
+        min-height: 310px;
+        margin: 20px 0;
+    }
+    .banner .banner-inner h1::before {
+        height: 24px;
+        width: 41px;
+    }
+    .banner .banner-inner h1 {
+        font-size: 30px;
+        letter-spacing: normal;
+    }
+    .banner .banner-inner h2,
+    .banner .banner-inner h2.pink {
+        font-size: 19px;
+    }
+    .banner .banner-inner .banner-text {
+        padding-right: 0;
+    }
+    .main-search {
+        padding: 8px;
+    }
+    .main-search .form-group.search-in,
+    .main-search .form-group.select-in {
+        width: 100%;
+        margin: 0;
+    }
+    .main-search .form-group.search-in {
+        margin: 8px 0;
+    }
+    .main-search-btn {
+        width: 100%;
+    }
+    .why-choose-subaru-list .why-choose-subaru-list-right {
+        width: 75%;
+    }
+    .news-art-left-hd,
+    .news-art-right-hd {
+        width: 100%;
+    }
+    .news-art-right-hd {
+        text-align: left;
+        margin: 5px 0 0;
+    }
+    .news-art-list-left {
+        width: 100%;
+        text-align: left;
+    }
+    .news-art-list-right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .nav-pills > li {
+        float: left;
+        width: 50%;
+        margin: 0 !important;
+    }
+    .client-logo-list {
+        width: 40%;
+    }
+    .footer-up .footer-item.footer-vdo,
+    .footer-up .footer-item {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .footer-map {
+        min-height: 210px;
+    }
+    .footer-light-grey {
+        min-height: 100%;
+    }
+    .footer-list.service-list,
+    .footer-list.engines-list,
+    .footer-list.parts-list,
+    .footer-list.gearbox-list,
+    footer .footer-list.subapedia-list {
+        width: 100%;
+    }
+    footer .footer-list:after {
+        display: none;
+    }
+    footer .footer-list {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    /** Contact Us **/
+    .page-template-contact .banner {
+        min-height: 450px;
+    }
+    .banner-inner.banner-text-new {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        position: static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    .enq-form .enq-gray-cvr .form-group {
+        width: 100%;
+        margin-right: 0%;
+    }
+    /** About Page **/
+    .about-section {
+        margin: 30px 0;
+    }
+    .about-section h3,
+    .teams-section h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .teams-section p {
+        padding: 0;
+    }
+    .img-box,
+    .img-box:nth-child(3n) {
+        margin-right: 2%;
+        width: 49%;
+    }
+    .img-box:nth-child(2n) {
+        margin-right: 0;
+    }
+    .promise-section {
+        padding: 0 0 30px;
+    }
+    .banner-inner.banner-text-new.banner-text-full ul li {
+        font-size: 18px;
+        margin-right: 10px;
+        padding-right: 8px;
+    }
+    .page-template-about .banner.banner-inner-service {
+        background-position: 0 127px !important;
+        background-size: 590px;
+    }
+    .page-template-about .banner-inner.banner-text-new.banner-text-full {
+        margin-top: 0px;
+    }
+    .banner-inner.banner-text-new.banner-text-full ul {
+        margin: 10px 0 0;
+        padding: 0;
+    }
+    .image-section .modal-content .left-modal,
+    .image-section .modal-content .right-modal {
+        width: 100%;
+    }
+    .image-section .modal-content .right-modal {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .call-to-act-btn ul li {
+        margin-right: 1%;
+    }
+    /** Testimonail page **/
+    .testimonial-main .testimonial-slider .carousel-inner {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .testimonial-main .testimonial-slider .carousel-inner .item {
+        height: 250px;
+    }
+    .testimonial-main .testimonial-slider .content {
+        float: right;
+        width: 100%;
+        height: 150px;
+    }
+    .testimonial-main .testimonial-slider .carousel-indicators li {
+        float: none;
+        width: 86px;
+        height: 100px;
+        margin: 0 5px 10px;
+        background-position: center center;
+        display: inline-block;
+    }
+    .tags-section ul,
+    .testimonial-main .nav.nav-pills {
+        margin: 0;
+        padding: 0;
+    }
+    .testimonial-main .nav-pills li {
+        width: 100%;
+    }
+    .testimonial-main .nav-pills li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .tags-section ul li {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+    .testimonial-main .tab-content article .testimonial-inner .testimonial-descp h4 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .modal-form-body .form-group div.make-it-half {
+        width: 100%;
+    }
+    .modal-form-body .form-group div.make-it-half.no-mar {
+        margin-top: 15px;
+    }
+    .form-outer {
+        padding: 0;
+        margin: 10px 0;
+    }
+    .pop-heading {
+        padding-top: 0;
+    }
+    .pop-heading h3 {
+        font-size: 26px;
+    }
+    .modal-form-body .form-control {
+        height: 40px;
+    }
+    /** Service pages **/
+    .banner.banner-inner-service {
+        background-position: -130px 21px !important;
+    }
+    .banner-thr-box {
+        width: 95%;
+    }
+    .banner-black-btn {
+        font-size: 22px;
+        max-width: 313px;
+    }
+    .banner-text-bottom h2 {
+        line-height: 1.6;
+        padding: 0 30px;
+    }
+    .breadcrumb-container {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .breadcrumb-container .breadcrumb {
+        padding: 5px;
+    }
+    .row.air-conditioning .col-md-12 {
+        padding-right: 15px;
+        min-height: 100%;
+    }
+    ul.services-top-buttons {
+        width: 100%;
+        right: 0;
+        position: static;
+        display: block;
+    }
+    .row.air-conditioning .col-md-12 ul li {
+        margin-right: 12px;
+    }
+    .early-signs-of-wear > span {
+        width: 50px;
+        height: 50px;
+        background-size: 27px;
+    }
+    .early-signs-of-wear > span.icon-log-book1 {
+        background-size: 22px;
+    }
+    .early-signs-of-wear::before {
+        left: 20px;
+        width: 10px;
+    }
+    .early-signs-of-wear {
+        padding-left: 60px;
+    }
+    .service .opportunities h4 {
+        font-size: 18px;
+    }
+    .clutch-repair p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .thr-btns ul li,
+    .service .opportunities .thr-btns ul li {
+        width: 47%;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    .log-book-tabbing ul li a:after {
+        display: none;
+    }
+    .log-book-tabbing .tab-content .tab-pane .nav.nav-tabs li,
+    .log-book-tabbing ul li {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .subaroo-six-star h2 {
+        font-size: 26px;
+        margin: 0 15px;
+    }
+    .appointment-section h2 {
+        font-size: 26px;
+    }
+    .calender > h4 {
+        font-size: 16px;
+    }
+    .appointment-form .row .col-md-4 {
+        width: 50%;
+    }
+    .appointment-date {
+        margin-left: 5px;
+        padding: 5px 14px;
+        width: 98%;
+        max-width: inherit;
+    }
+    .btn.btn-default.btn-appointment {
+        padding: 11px 40px;
+        width: 98%;
+        max-width: inherit;
+        margin: 15px 5px 0;
+        float: left;
+    }
+    .srip-cose:after {
+        display: none;
+    }
+    .srip-cose {
+        background-size: cover;
+        margin: 0;
+        text-align: center;
+    }
+    .srip-cose .btn.btn-mm {
+        margin: 0;
+        font-size: 18px;
+        width: 100%;
+    }
+    .srip-cose .btn.btn-mm:hover,
+    .srip-cose .btn.btn-mm:focus {
+        color: #fff;
+    }
+    .online-section {
+        padding: 30px 0 0;
+    }
+    .row-span-3 {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    .row-span-3:nth-child(2n) {
+        border-right: none;
+    }
+    .row-span-3:nth-child(3n) {
+        border-right: 1px solid #a8a8a8;
+    }
+    .subaru-engines-australia .row .col-xs-12 {
+        width: 50%;
+    }
+    .malf-search form {
+        width: 100%;
+    }
+    .malf-search .form-control {
+        width: 100%;
+        height: 40px;
+        margin-left: 0;
+    }
+    .malf-search .adv-srch {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .malfunction-search-cover .malf-list ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+    .chk-icon.chk-icon-half li {
+        width: 100%;
+    }
+    .chk-icon.chk-icon-half li:empty {
+        display: none;
+    }
+    .lurbri-sec .img-serive-image {
+        width: 100%;
+    }
+    .lurbri-sec .clutch-turbo-content {
+        width: 100%;
+    }
+    .clutch-norrie-andreson .col-md-3,
+    .clutch-norrie-andreson .col-md-6 {
+        width: 100%;
+    }
+    .clutch-norrie-andreson .col-md-3 {
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+    .advice-and-warnings .col-xs-6.col-md-3 {
+        width: 100%;
+    }
+    .white-block {
+        padding: 10px;
+        margin-bottom: 30px;
+        min-height: 100%;
+    }
+    .white-block span {
+        margin-top: 0;
+    }
+    .advice-and-warnings h5 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .basic-head-gasket-repair-option h3 {
+        padding-left: 105px;
+    }
+    .basic-head-gasket-iner {
+        margin: 0 15px 20px;
+    }
+    .enquire-form {
+        padding: 15px;
+    }
+    .rely-section h3,
+    .advice-and-warnings h3 {
+        font-size: 22px;
+    }
+    .comaon-faq-section {
+        margin-top: 0;
+    }
+    .answer-faq {
+        padding: 20px 15px;
+    }
+    .banner-cooling .banner-thr-box {
+        width: 240px;
+        margin: 0;
+    }
+    .banner-thr-box li h2 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .banner-cooling .banner-left h1 {
+        font-size: 24px;
+    }
+    .cooling-system-comprises .col-sm-4.col-md-3 {
+        width: 100%;
+    }
+    /** Subapedia pages **/
+    .banner.banner-inner-service.banner-pedia {
+        background-position: -280px 50px !important;
+        background-size: cover;
+    }
+    .banner-pedia .banner-left h1 {
+        font-size: 24px;
+    }
+    .banner-pedia .banner-left h2 {
+        font-size: 18px;
+    }
+    .banner-pedia .banner-left {
+        margin-left: 0;
+        margin-top: 13px !important;
+    }
+    .breadcrumb-container .breadcrumb li:first-child {
+        margin-left: 5px;
+    }
+    .post-cmts li {
+        margin-right: 10px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .opportunities h2,
+    .carousel.slide.team-carousel .item .col-md-7 h2 {
+        font-size: 24px;
+    }
+    .opportunities .particular-steo h2 {
+        margin-bottom: 10px;
+    }
+    .row.mk11 .col-xs-12, .repair-dpf .col-xs-12 .col-xs-12.col-sm-4 {
+        width: 50%;
+    }
+    
+    .row.mk11 .col-xs-12:nth-child(2n+1), .repair-dpf .col-xs-12 .col-xs-12.col-sm-4:nth-child(2n+1){
+        clear: both;
+    }
+    
+    .subapedia-latest-posts {
+        height: 210px;
+    }
+    
+    .page-template-contact .banner-inner.banner-text-new {
+        text-align: left;
+        left: 0;
+        width: auto;
+        margin-top: 40px;
+        padding-left: 0;
+    }
+    
+    .page-template-about .banner-inner.banner-text-new.banner-text-full {
+        margin-top: 46px !important;
+    }
+    
+    .banner-inner.banner-text-new.banner-text-testi{
+        margin-top: 20px;
+    }
+    
+    .page-template-testimonials .banner.banner-inner-service {
+        background-position: -160px 50px !important;
+    }
+    
+    
+    
+}

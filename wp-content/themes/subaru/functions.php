@@ -61,9 +61,10 @@ register_taxonomy( 'departments_categories', array( 'departments' ), $args );
 }
 add_action( 'init', 'create_departments_taxonomies', 0 );
 add_image_size( 'departments_image', 287,188, false );  
-add_image_size( 'latest_posts', 461,255, false ); 
+add_image_size( 'latest_posts', 360,199, true ); 
 add_image_size( 'team_slider', 599,541, false ); 
 add_image_size( 'adds_img', 192,113, false ); 
+add_image_size( 'banner_small', 176,125, false ); 
 /* End DEPARTMENTS Section Home Page */
 
 /* WHY CHOOSE ALL DRIVE SUBAROO */
@@ -1273,3 +1274,71 @@ array(
 )
 );
 } 
+
+function malfsearch(){
+$code=$_POST['code'];
+remove_all_filters('posts_orderby');
+$args=array( 'post_type' => 'malfunction',
+    'order' => 'ASC',
+     'orderby' => 'date',
+    'showposts' => -1,
+    );
+$the_query = new WP_Query( $args );
+
+// The Loop
+if ( $the_query->have_posts() ) {
+$result = '<div class="loader"></div><ul>';
+while ( $the_query->have_posts() ) {
+$the_query->the_post();
+$post_code=get_post_meta(get_the_id(),"error_code",true);
+if($post_code==$code)
+{
+$class='active';
+}
+else{ $class=''; }
+$result.= '<li><a href="#" class="'.$class.'">' .$post_code.' '. get_the_title() . '</a></li>';
+}
+$result.= '</ul>';
+/* Restore original Post Data */
+wp_reset_postdata();
+ 
+} 
+die($result); 
+    
+}
+add_action( 'wp_ajax_nopriv_malfsearch', 'malfsearch' );  
+add_action( 'wp_ajax_malfsearch', 'malfsearch' );
+
+function malfname(){
+$name=strtolower($_POST['malfname']);
+remove_all_filters('posts_orderby');
+$args=array( 'post_type' => 'malfunction',
+    'order' => 'ASC',
+    'orderby' => 'date',
+    'showposts' => -1,
+    );
+$the_query = new WP_Query( $args );
+
+// The Loop
+if ( $the_query->have_posts() ) {
+$result = '<div class="loader"></div><ul>';
+while ( $the_query->have_posts() ) {
+$the_query->the_post();
+$post_code=get_post_meta(get_the_id(),"error_code",true);
+$title=strtolower(get_the_title());
+$pos.= strpos($title,$name);
+if(stripos($title,$name) !== false) { $class='active'; }
+else { $class=''; }
+
+$result.= '<li><a href="#" class="'.$class.'">' .$post_code.' '. get_the_title() . '</a></li>';
+}
+$result.= '</ul>';
+/* Restore original Post Data */
+wp_reset_postdata();
+ 
+} 
+die($result); 
+    
+}
+add_action( 'wp_ajax_nopriv_malfname', 'malfname' );  
+add_action( 'wp_ajax_malfname', 'malfname' );

@@ -17,7 +17,7 @@ $urla = $thumb['0'];
 if(!empty($urla)) 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $urla;?>">
+<div class="banner" style="background-image:url(<?php echo $urla;?>)">
 <?php
 }
 else
@@ -67,7 +67,7 @@ echo get_the_content(); ?>
 <?php get_sidebar('departments'); ?>  
 <div class="why-choose-subaru">
 <div class="container">
-<h2><?php the_field('why_choose_all_drive',4); ?></h2> 
+<h4><?php the_field('why_choose_all_drive',4); ?></h4> 
 
 <div class="row">
 <?php 
@@ -77,28 +77,29 @@ $i=1;
 while (have_posts()) : the_post(); 
 $post_id=$post->ID;
 ?>
-<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="col-md-4 col-sm-6 col-xs-12">
 <div class="why-choose-subaru-list wow slideInUp" data-wow-duration="1.2s">
 <div class="why-choose-subaru-list-left"> 
 <?php
 $post_id= $post->ID;
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) );
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 $urlas = $thumb['0'];
 if(!empty($urlas)) 
 {
 ?>
-<img src="<?php echo $urlas;?>" class="img-responsive">
+<img src="<?php echo $urlas;?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
 <?php
 }
 else
 {
 ?>
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-choose-subaru-icon-1.png" class="img-responsive">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/why-choose-subaru-icon-1.png" class="img-responsive" alt="why-choose-subaru">
 <?php
 }
 ?></div>
 <div class="why-choose-subaru-list-right">
-<h4><?php the_title();?></h4>
+<h5><?php the_title();?></h5>
 <p><?php the_content();?></p>
 </div>
 </div>
@@ -112,7 +113,7 @@ else
 <div class="container">
 <div class="news-art-heading">
 <div class="news-art-left-hd">
-<h2>News & Subapedia articles</h2>
+<h4>News & Subapedia articles</h4>
 </div>
 <div class="news-art-right-hd">
 <a href="<?php echo get_term_link(40,'subapedia_categories'); ?>">More News & Articles <i class="fa fa-angle-right" aria-hidden="true"></i> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -152,17 +153,18 @@ $post_id=$post->ID;
 <?php
 $post_id= $post->ID;
 $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'news_image' );
+$image_alt = get_post_meta( get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 $urs = $thumb['0'];
 if(!empty($urs)) 
 {
 ?>
-<img src="<?php echo $urs;?>" class="img-responsive">
+<img src="<?php echo $urs;?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
 <?php
 }
 else
 {
 ?>
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/news-artical-img-1.jpg" class="img-responsive">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/news-artical-img-1.jpg" class="img-responsive" alt="subaru-engine">
 <?php
 }
 ?>

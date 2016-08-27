@@ -6,42 +6,42 @@
 <p>For further information use our convenient online enquiry form, and one of our specialised technician will call you to discuss your enquiry. Remember, the more specific details you can provide, the more accurate our assessment will be. Alternatively, call us any time in business hours and talk to Niazi on (02) 9915-9900 or 0420 319 049.</p>
 <div class="row coloumn-form" id='booking-cal'>
 
-<div class="col-xs-12 col-md-6">
+<div class="col-xs-12 col-md-6 col-sm-12">
 <div class="calender">
 <h4>Select your appointment booking date</h4>
 <div id="container" style="margin: 10px 0 0 0; height: 250px"></div>
 </div>
 </div>
-<div class="col-xs-12 col-md-6">
+<div class="col-xs-12 col-md-6 col-sm-12">
 <div class="appointment-form">
 <div class="row">
 <div id="loader"></div>    
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="First Name" value="" id="fname" name="fname">
 <span class="error" id="fnameerror"></span>
 </div> <!--col-md-6-->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="Last Name" value="" id="lname" name="lname">
 <span class="error" id="lnameerror"></span>
 </div> <!--col-md-6-->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="Email" value="" id="email" name="email">
 <span class="error" id="emailerror"></span>
 </div> <!--col-md-6-->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="Phone" value="" id="phone" name="phone">
 <span class="error" id="phoneerror"></span>
 </div> <!--col-md-6-->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="VIN" value="" id="vin" name="vin">
 <span class="error" id="vinerror"></span>
 </div> <!--col-md-6-->
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <input type="text" class="form-control" placeholder="" value="" id="afvin" name="afvin">
 </div> <!--col-md-6-->
 
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <select class="form-control" name="model" id="model">
 <option value="">Model</option>
 <option value="" selected>Model</option>
@@ -59,7 +59,7 @@
 </select>
 <span class="error" id="modelerror"></span>    
 </div> <!--col-md-4-->
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <select class="form-control" name="modyear" id="modyear">
 <option value="" selected>Year</option>    
 <?php for($year=2013;$year>=1989;$year--)
@@ -70,7 +70,7 @@
 </select>
 <span class="error" id="modyearerror"></span>    
 </div> <!--col-md-4-->
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <select class="form-control" name="engine" id="engine">
 <option value="">Engine</option>
 <option value="Short Block">Short Block</option>
@@ -81,7 +81,7 @@
 </select>
 <span class="error" id="engineerror"></span>    
 </div> <!--col-md-4-->
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <select class="form-control" name="transmission" id="transmission">
 <option value="">Transmission</option>
 <option value="Transmission1">Transmission1</option>
@@ -90,12 +90,12 @@
 <span class="error" id="transmissionerror"></span>    
 </div> <!--col-md-4-->
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <input class="form-control" type="text" placeholder="KM" name="km" id="km">
 <span class="error" id="kmerror"></span>
 </div> <!--col-md-4-->
 
-<div class="col-md-4">
+<div class="col-md-4 col-sm-4 col-xs-12">
 <select class="form-control" name="serviceint" id="serviceint">
 <option value="">Service Interval</option>
 <option value="Service Interval1">Service Interval1</option>
@@ -104,7 +104,7 @@
 <span class="error" id="serviceinterror"></span>    
 </div> <!--col-md-4-->
 
-<div class="col-xs-12">
+<div class="col-xs-12 col-sm-12 col-xs-12">
 <select class="form-control" name="findus" id="findus">
 <option value="">How did you find us?</option>
 <option value="Google Web">Google Web</option>
@@ -117,7 +117,7 @@
 </select>
 </div> <!--col-xs-12-->
 
-<div class="col-xs-12">
+<div class="col-xs-12 col-sm-12 col-xs-12">
 <textarea class="form-control" placeholder="Additional Quote Information" name="refine" id="refine"></textarea>
 </div> <!--col-xs-12-->
 

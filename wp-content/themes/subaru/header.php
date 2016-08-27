@@ -22,7 +22,10 @@
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/animate.min.css" rel="stylesheet">
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/main-style.css" rel="stylesheet">
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/oka_slider_model.css">
+<link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.css">
+<link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.theme.css">
 <script>
 var ajaxurl = '<?php echo admin_url('admin-ajax.php');?>'; 
 var cdate='<?php echo date('m/d/Y'); ?>';
@@ -43,16 +46,17 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <nav class="navbar navbar-default">
 <div class="container-fluid">
 <div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-</button>
+</button>-->
 
 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="navbar-brand" >
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/new-logo.png"></a>
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo-Alldrivesubaroo.png" alt="Logo"></a>
 </div>
-<div class="collapse navbar-collapse " id="myNavbar">
+<!--<div class="collapse navbar-collapse " id="myNavbar">-->
+<div  id="myNavbar">
 <?php //wp_nav_menu( array( 'menu_class' => 'nav navbar-nav', 'theme_location' => 'primary', 'walker' => new ik_walker() ) );
 ?> 
 <?php
@@ -116,7 +120,7 @@ if($parent_id == 795) // If parent is service
 { 
 $taxonomy = 'categories_services';  
 $post_type= 'services';
-$img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.jpg';
+$img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/Subaru-EngineAlldrivesubaroo.jpg';
 $order="ASC";
 }
 
@@ -124,7 +128,7 @@ if($parent_id == 796) // If parent is Subapedia
 { 
 $taxonomy = 'subapedia_categories';  
 $post_type= 'subapedia';
-$img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/service-ad-img.jpg';
+$img_src= get_stylesheet_directory_uri().'/images/mega-menu-ads/Subaru-EngineAlldrivesubaroo.jpg';
 //$order="DESC";
 }
 ?>
@@ -219,7 +223,7 @@ wp_reset_postdata();
 <div class="mega-inner-right">
 <div class="mega-menu-ad">
 <a href="#">
-<img class="img-responsive" src="<?php echo $img_src; ?>">
+<img class="img-responsive" src="<?php echo $img_src; ?>" alt="Subaru-EngineAlldrivesubaroo">
 </a>
 </div>
 </div> <!-- mega inner -->
@@ -237,7 +241,7 @@ if($parent_id==296)
 <div class="mega-inner-left">
 <div class="mega-menu-ad">
 <a href="#">
-<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/engine-ad-img-left.jpg">
+<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/Subaru-Vehicle-Selector-Alldrivesubaroo.jpg" alt="Subaru-Vehicle-Selector">
 </a>
 
 </div>
@@ -286,7 +290,7 @@ if($parent_id==296)
 <div class="mega-inner-right">
 <div class="mega-menu-ad">
 <a href="#">
-<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/engine-ad-img.jpg">
+<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/Subaru-EngineAlldrivesubaroo.jpg" alt="subaru-engine">
 </a>
 
 </div>
@@ -308,7 +312,7 @@ if($parent_id==863)
 <div class="mega-inner-left">
 <div class="mega-menu-ad">
 <a href="#">
-<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/gearbox-ad-img-left.jpg">
+<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/gearbox-ad-img-left.jpg" alt="subaru-engine">
 </a>
 
 </div>
@@ -375,7 +379,7 @@ if($parent_id==863)
 <div class="mega-inner-right">
 <div class="mega-menu-ad">
 <a href="#">
-<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/gearbox-ad-img.jpg">
+<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mega-menu-ads/Subaru-Gearbox-Alldrivesubaroo.jpg" alt="Subaru-Gearbox">
 </a>
 
 </div>

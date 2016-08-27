@@ -19,32 +19,38 @@ get_header(); ?>
 
 <?php
 $term=get_queried_object();
-$url= get_field('banner_image', $term->taxonomy.'_'.$term->term_id);
-
+if($term->term_id==41)
+{
+$banner= get_field('banner_caption_banner_background', $term->taxonomy.'_'.$term->term_id);
+$image = wp_get_attachment_image_src($banner,'full');
+$url = $image[0];
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position:center center;">
+<div class="banner banner-inner-service" style="background-image:url(<?php echo $url;?>);background-position:center center;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
 }
-if($term->term_id==41)
-{ ?>
+?>
 <div class="banner-caption">
 <div style="position:static;" class="container">
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6 col-xs-12">
 <?php echo get_field('banner_caption_text', $term->taxonomy.'_'.$term->term_id);
 ?>
 </div> <!--col-sm-->
-<div class="col-sm-5">
+</div> 
+</div>
+</div>
+<div class="rob-chris-img">     
 <?php 
 $banner_cap= get_field('banner_caption_image', $term->taxonomy.'_'.$term->term_id);
+
 if($banner_cap)
 {
 ?>
@@ -52,14 +58,34 @@ if($banner_cap)
 <?php } 
 ?>
 </div>
-</div> 
 </div>
+<?php } else{ 
+$term=get_queried_object();
+$banner= get_field('banner_caption_banner_background', $term->taxonomy.'_'.$term->term_id);
+$image = wp_get_attachment_image_src($banner,'full');
+$url = $image[0];
+if($url!="") 
+{
+?>
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(<?php echo $url;?>);background-position: center center;">
+<?php
+}
+else
+{
+?>
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<?php 
+}   
+ ?>
+<div class="container-fluid">
+<div class="banner-left">
+<?php echo get_field('banner_caption_text', $term->taxonomy.'_'.$term->term_id); ?>
 </div>
+</div>  
+</div>   
 <?php }
 ?>
-</div>
 
-<div class="clearfix"></div>
 
 <div class="main-search-sec">
 <div class="container">
@@ -96,7 +122,7 @@ if($banner_cap)
 <h2><?php echo $term->name; ?></h2> 
 
 <div class="row mk00">
-<div class="col-xs-12 col-md-7">   
+<div class="col-xs-12 col-md-7 col-sm-8">   
 <?php
 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 $query = new WP_Query( 
@@ -139,7 +165,7 @@ get_template_part( 'template-parts/content', 'none' );
 }
 ?>
 <div class="row mk11">
-<div class="col-xs-12 col-sm-4">
+<div class="col-xs-12 col-sm-4 ">
 <button class="btn btn-default btn-quote quote" type="button">Get A Quote</button>
 </div> <!--col-xs-12 col-sm-4-->
 <div class="col-xs-12 col-sm-4">

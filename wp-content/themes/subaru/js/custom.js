@@ -57,7 +57,7 @@ jQuery('.featured-carousel').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:2,
+            items:1,
           
         },
         767:{
@@ -78,7 +78,7 @@ jQuery('.parts-page-logo').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:2,
+            items:1,
           
         },
         767:{
@@ -94,46 +94,23 @@ jQuery('.parts-page-logo').owlCarousel({
 });
 
 jQuery('.price-grid').owlCarousel({
-    loop:false,
-	autoplay:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-          
-        },
-        767:{
-            items:2,
-			
-          
-        },
-        1000:{
-            items:3,
-            nav:true,
-        }
-    }
+items : 3,
+itemsDesktop : [1199,3],
+itemsDesktopSmall : [980,2],
+itemsTablet: [768,2],
+itemsMobile : [479,1],
+navigation : true,
+pagination:false,
 });
 
 jQuery('.timing-belt-carosuel').owlCarousel({
-    loop:true,
-
-	autoplay:false,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:2,
-          
-        },
-        767:{
-            items:3,
-			
-          
-        },
-        1000:{
-            items:4,
-            nav:true,
-        }
-    }
+items : 4,
+itemsDesktop : [1199,4],
+itemsDesktopSmall : [980,2],
+itemsTablet: [768,2],
+itemsMobile : [479,1],
+navigation : true,
+pagination:false,
 });
 
 /*************OWL CAROUSEL********************/
@@ -597,4 +574,90 @@ return false;
 }
 
     return false;
+}
+
+jQuery('#malfunction-code').keypress(function (e) {
+  if (e.which == 13) {
+    jQuery('form#malfunction-search').submit();
+    return false;    //<---- Add this line
+  }
+});
+
+jQuery('#malfunction-name').keypress(function (e) {
+  if (e.which == 13) {
+    jQuery('form#malfname').submit();
+    return false;    //<---- Add this line
+  }
+});
+
+function malfsearch(){
+var code= jQuery("#malfunction-code").val().toUpperCase();
+if(code!='')
+{
+jQuery.ajax({  
+type: 'POST',  
+url: ajaxurl,  
+data: {  
+action: 'malfsearch',  
+code: code,
+},  
+beforeSend: function() {
+// setting a timeout
+jQuery("#malf-list").addClass('loading');
+},
+success: function(data){
+if(data)
+{
+jQuery("#malf-list").removeClass('loading');
+jQuery("#malf-list").html(data); 
+jQuery('form#malfunction-search').find("input[type=text]").val("");
+}
+},  
+error: function(errorThrown){  
+alert(errorThrown);  
+}  
+}); 
+return false;
+}
+else{
+return false;
+}
+
+return false;
+}
+
+function malfname(){
+var malfname= jQuery("#malfunction-name").val();
+if(malfname!='')
+{
+jQuery.ajax({  
+type: 'POST',  
+url: ajaxurl,  
+data: {  
+action: 'malfname',  
+malfname: malfname,
+},  
+beforeSend: function() {
+// setting a timeout
+jQuery("#malf-list").addClass('loading');
+},
+success: function(data){
+if(data)
+{
+jQuery("#malf-list").removeClass('loading');
+jQuery("#malf-list").html(data); 
+jQuery('form#malfname').find("input[type=text]").val("");
+}
+},  
+error: function(errorThrown){  
+alert(errorThrown);  
+}  
+}); 
+return false;
+}
+else{
+return false;
+}
+
+return false;
 }

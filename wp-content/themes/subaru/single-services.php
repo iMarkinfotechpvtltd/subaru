@@ -20,18 +20,48 @@ if($post_id==100){$background="background-position:left center;";}
 else if($post_id==99 || $post_id==102 || $post_id==104 || $post_id==105 || $post_id==106 || $post_id==109){$background="background-position:center center;";}
 else{$background="background-position:72% 50%;";}
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);<?php echo $background; ?>">
+<div class="banner banner-inner-service" style="background-image:url(<?php echo $url;?>);<?php echo $background; ?>">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
 }
 ?>
+
+<div class="container-fluid">
+<div class="banner-left">
+<h1><?php echo get_post_meta($post_id,"banner_title",true); ?></h1>
+<ul class="banner-thr-box">
+<?php
+for($i=1;$i<=3;$i++){
+ $bann= "small_banner_image_".$i;
+$banner_small = get_post_meta($post_id,$bann,true);
+if($banner_small){
+$small_image = wp_get_attachment_image_src($banner_small,'banner_small');
+$small_url = $small_image[0]; ?>
+<li><img class="img-responsive" src="<?php echo $small_url; ?>"></li>
+<?php }
+}
+?>
+
+</ul>
+<?php $button_url = get_post_meta($post_id,"button_url",true); ?>
+<a class="banner-black-btn" href="<?php if($button_url){echo '$button_url'; } else{ echo '#'; } ?>"><?php echo get_post_meta($post_id,"button_text",true); ?></a>
+
 </div>
+
+<div class="banner-text-bottom">
+<h2><?php echo get_post_meta($post_id,"banner_desription",true); ?></h2>
+
 </div>
+
+</div>
+
+
+ </div>   
 <!--- Banner Section End here ---->
 <div class="clearfix"></div>
 
@@ -83,8 +113,9 @@ echo '<h2>'.$term->name.'</h2>';
 <?php 
 $args = array(
 'post_type'   => 'services',
-'orderby' => 'title',
-'order'   => 'ASC',  
+'orderby' => 'menu_order',    
+//'orderby' => 'title',
+//'order'   => 'ASC',  
 'tax_query' => array(
 array(
 'taxonomy' => 'categories_services',
@@ -110,6 +141,10 @@ echo '<li class="'.$class.'"><a href="'.get_the_permalink().'">'.get_the_title()
 wp_reset_postdata();
 ?>
 </ul> 
+<ul class="services-top-buttons">
+<li><a href="#appointment">Book Your Service</a></li>    
+<li><a href="#packages" >View Packages</a></li> 
+</ul>    
 </div>
 </div> <!-- End Show the Category Name and it's posts -->
 <?php 
@@ -117,7 +152,7 @@ if($post_id==96){ $main=' lubri-main'; }
 else{$main='';}
 ?>
 <div class="row conditioning-repairs <?php echo $main; ?>">
-<div class="col-xs-12 col-md-8 ">
+<div class="col-xs-12 col-md-8 col-sm-8">
 <div class="tab-content">
 <?php 
 $contid[]=array(96 => "battery-services", 97 => "clutuch-replacement", 98 => "battery-services", 99 => "brake-repair", 100 => "wheel-bearing-repair", 101 => "cv-shaft-repair", 102 => "battery-services", 103 => "shock-absorbers", 104 => "bushes-and-links", 105 => "battery-services", 106 => "battery-services", 107 => "power-window-repair", 108 => "battery-services", 109 => "door-mirrors-repair", 110 => "air-re-gas");
@@ -139,7 +174,7 @@ else{$displaycls='clutch-repair';}
 </div> <!--subaru-air-conditioning-repairs Close-->
 </div>
 </div> <!--col-md-8--->
-<div class="col-xs-12 col-md-4">
+<div class="col-xs-12 col-md-4 col-sm-4">
 <?php get_sidebar('services'); ?>
 </div> <!--col-md-4--->
 </div>
@@ -153,15 +188,19 @@ $show= get_post_meta($post->ID,"show_info",true);
 if($show )
 {
 $auth_img=get_post_meta($post->ID,"author_image",true);
+$image_alt = get_post_meta($auth_img, '_wp_attachment_image_alt', true);
+
 $auth_dec=get_post_meta($post->ID,"author_info",true);
+
 $tool_img=get_post_meta($post->ID,"tool_image",true);
+$image_alt1 = get_post_meta($tool_img, '_wp_attachment_image_alt', true);
 ?>
 <div class="clutch-norrie-andreson">
 <div class="container">
 <div class="row">
 <div class="col-md-3">
 <?php  if($auth_img){ ?>
-<img alt="..." src="<?php echo wp_get_attachment_url($auth_img); ?>">
+<img alt="<?php echo $image_alt; ?>" src="<?php echo wp_get_attachment_url($auth_img); ?>">
 <?php } ?>
 </div> <!--col-md-3-->
 <div class="col-md-6">
@@ -172,14 +211,14 @@ echo $auth_dec;
 </div> <!--col-md-6-->
 <div class="col-md-3">
 <?php if($tool_img){ ?>
-<img alt="..." src="<?php echo wp_get_attachment_url($tool_img); ?>">
+<img alt="<?php echo $image_alt1; ?>" src="<?php echo wp_get_attachment_url($tool_img); ?>">
 <?php } ?>
 </div>
 </div> <!--row close-->
 </div> <!--container-fluid-->
 </div>
 <?php } ?>
-<div class="conditioning-service-package air-conditioning">
+<div class="conditioning-service-package air-conditioning" id="packages">
 <div class="container">
 <?php
 $pack_title=get_post_meta($post->ID,"package_title",true);
@@ -225,113 +264,8 @@ else{ echo 'POA'; }
 <!--price -Tag-close-->
 
 <!-- Appointment Form -->
-<?php get_sidebar('appointment'); ?>
-
-<div class="srip-cose">
-<div class="container">
-<h2>ALL DRIVE SUBAROO PARTS ONLINE STORE</h2>
-<a class="btn btn-default btn-mm" href="">VISIT OUR ONLINE STORE</a>   
-</div> 
-</div> <!--srip-cose-->
-
-<div class="online-section"> 
-<div class="container">
-<p>If you're good with tools and want to replace the Subaru air compressor or evaporator kit yourself then we can supply you with all the necessary Subaru air conditioning parts, compressors, TX valves, evaporators and hoses. Our Subaru parts online website also offers a comprehensive range of new, pre-loved and reconditioned Subaru parts sourced locally and internationally. Our skilled technical staff will match you to the best part, at the best price. We will also provide technical advice and assistance in the installation of your parts.</p>
-<div class="packagedeals">
-<div clasas="row">
-<div class="row-span-3">
-<span class="package-0" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package00.png);"></span>
-<h3>Package Deals <br>
-Saving You $$$$</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-1" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package01.png);"></span>
-
-<h3>Customer Support <br>
-For All Subaru Parts</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-2" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package02.png);"></span>
-<h3>Hard To Find Subaru <br>
-Parts</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-3" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package03.png);"></span>
-
-<h3>New and Used  <br>
-Subaru Part Options</h3>
-</div> <!--row-span-3-->
-<div class="row-span-3">
-<span class="package-4" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/images/service/package04.png);"></span>
-
-<h3>Exclusive Subaru <br>
-Repair Kits Supplied</h3>
-</div> <!--row-span-3-->
-</div>
-</div>
-
-<div class="row timing-belt">
-<div class="col-md-12 timing-belt-carosuel">
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images00.jpg">
-<div class="price-tags"> <small>ONLY</small> $349 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images01.jpg">
-<div class="price-tags"> <small>ONLY</small> $549 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images02.jpg">
-<div class="price-tags"> <small>ONLY</small> $749 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-
-
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-
-<div class="col-xs-6 col-md-3">
-<div class="img-div">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images03.jpg">
-<div class="price-tags"> <small>ONLY</small> $949 </div>
-</div> <!--img-div-->
-
-<div class="products-description">
-<h4>Subaru TIMING BELT ONLY</h4>
-<p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-</div> <!--products-description-->
-<button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
-</div>
-</div>
-</div>
-</div> 
+<?php get_sidebar('appointment'); ?> <!-- Appointment form -->
+<?php get_sidebar('online_store'); ?> <!-- Show products-->
 <?php get_sidebar('brands'); ?> <!-- Client logo's Section -->
-
 <?php get_footer(); ?>
 

@@ -14,23 +14,30 @@ while ( have_posts() ) : the_post();
 global $postid;
 $postid = get_the_ID();
 $post_id= get_the_ID();
-$banner = get_post_meta($post->ID,"banner_image",true);
+$banner = get_post_meta($post->ID,"banner_background_image",true);
 $image = wp_get_attachment_image_src($banner,'full');
 $url = $image[0];
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position: center center;">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(<?php echo $url;?>);background-position: center center;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
-}
-?>
+}   
+    ?>
+<div class="container-fluid">
+<div class="banner-left">
+<h1><?php echo get_post_meta($post->ID,"main_title_subapedia",true); ?></h1>
+<h2><?php echo get_post_meta($post->ID,"sub_title_subapedia",true); ?></h2>
 </div>
+</div>  
+</div>
+
 
 <div class="clearfix"></div>
 
@@ -89,7 +96,7 @@ echo $fname.' '.$lname;
 </div>  
     
 <div class="row mk00">
-<div class="col-xs-12 col-md-7 diesel">
+<div class="col-xs-12 col-md-7 col-sm-8 diesel">
  <div class="author-post-headding">
 <?php $post_title=get_post_meta($post->ID,"author_post_heading",true);  
 if($post_title){echo $post_title;}

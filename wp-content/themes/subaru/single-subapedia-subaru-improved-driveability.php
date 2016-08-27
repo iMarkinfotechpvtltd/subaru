@@ -14,23 +14,30 @@ while ( have_posts() ) : the_post();
 global $postid;
 $postid = get_the_ID();
 $post_id= get_the_ID();
-$banner = get_post_meta($post->ID,"banner_image",true);
+$banner = get_post_meta($post->ID,"banner_background_image",true);
 $image = wp_get_attachment_image_src($banner,'full');
 $url = $image[0];
 if($url!="") 
 {
 ?>
-<div class="banner" style="background-image:url(<?php echo $url;?>);background-position: center center;">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(<?php echo $url;?>);background-position: center center;">
 <?php
 }
 else
 {
 ?>
-<div class="banner" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
+<div class="banner banner-inner-service banner-pedia" style="background-image:url(https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=1920&h=895)">
 <?php 
-}
-?>
+}   
+    ?>
+<div class="container-fluid">
+<div class="banner-left">
+<h1><?php echo get_post_meta($post->ID,"main_title_subapedia",true); ?></h1>
+<h2><?php echo get_post_meta($post->ID,"sub_title_subapedia",true); ?></h2>
 </div>
+</div>  
+</div>
+
 
 <div class="clearfix"></div>
 
@@ -89,7 +96,7 @@ echo $fname.' '.$lname;
 </div>  
     
 <div class="row mk00">
-<div class="col-xs-12 col-md-7 news-section">
+<div class="col-xs-12 col-md-7 col-sm-8 news-section">
  <div class="author-post-headding">
 <?php $post_title=get_post_meta($post->ID,"author_post_heading",true);  
 if($post_title){echo $post_title;}
@@ -110,14 +117,15 @@ if($post_title){echo $post_title;}
 <div class="repair-dpf">
 <div class="container">
 <div class="row">
-<div class="col-xs-12 col-md-4"> 
+<div class="col-xs-12 col-md-4 col-sm-4"> 
 <?php 
 $imgsrc11= get_post_meta($post_id,"pdf_image",true); 
 $pdf_src = wp_get_attachment_image_src($imgsrc11,'full');
+$image_alt = get_post_meta( $pdf_src, '_wp_attachment_image_alt', true);
 $imgsrc = $pdf_src[0];
 if($imgsrc)
 { ?>
-<img src="<?php echo $imgsrc; ?>">      
+<img src="<?php echo $imgsrc; ?>" alt="<?php echo $image_alt; ?>">      
 <?php }
 else{ ?>
 <img src="https://placeholdit.imgix.net/~text?txtsize=74&txt=1500%C3%97296&w=442&h=434">    
@@ -125,7 +133,7 @@ else{ ?>
 ?>
     
 </div>
-<div class="col-xs-12 col-md-8">
+<div class="col-xs-12 col-md-8 col-sm-8">
 <?php echo get_post_meta($post_id,"pdf_description",true); ?>
 </div>
 <div class="col-xs-12">

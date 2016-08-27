@@ -7,7 +7,7 @@
 <button data-dismiss="modal" class="close red-close" type="button">×</button>
 
 <div class="row">
-<div class="col-xs-4">
+<div class="col-sm-4 col-xs-12">
 <div class="pop-call-cvr">
 <ul>
 <li><a href="tel:02 9915 9900"><i aria-hidden="true" class="fa fa-phone"></i> 02 9915 9900</a></li>
@@ -15,21 +15,21 @@
 </ul>
 </div>
 </div>
-<div class="col-xs-4">
+<div class="col-sm-4 col-xs-6">
 <div class="pop-heading">
-<h1>Get A Quote</h1>
+<h3>Get A Quote</h3>
 </div>
 </div>
-<div class="col-xs-4">
+<div class="col-sm-4 col-xs-6">
 <div class="popup-car">
-<img class="img-responsive" src="/wp-content/themes/subaru/images/engine/popup-car.jpg">
+<img class="img-responsive" src="/wp-content/themes/subaru/images/engine/popup-car.jpg" alt="quote-subaru">
 </div>
 </div>
 </div>
 </div>
 <div class="modal-body modal-form-body">
 <div class="popup-form-heading">
-<h2>Customer Details</h2>
+<h4>Customer Details</h4>
 </div>
 
 <form novalidate="novalidate" id="quote_form" role="form" class="form-inline" onsubmit="return quoteval();">
