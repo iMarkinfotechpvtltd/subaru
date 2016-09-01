@@ -362,6 +362,7 @@ var modyear1= jQuery("#modyear1").val();
 var engine1= jQuery("#engine1").val();
 var vin1= jQuery("#vin1").val();
 var comments1=jQuery("#comments1").val();
+var headoption = jQuery('input[name=headsol]:checked').val();
 var r=true;
 
 jQuery("#fname1").removeClass('error');  
@@ -416,6 +417,7 @@ modyear: modyear1,
 engine: engine1,
 vin: vin1,
 comments: comments1,
+headoption:headoption
 },  
 beforeSend: function() {
 // setting a timeout
@@ -426,6 +428,7 @@ if(data=='1')
 {
 var msg="Your Enquiry has been Sent.";
 jQuery(".enquire-form").removeClass('loading');
+window.location.href = 'http://www.alldrivesubaru.com.au/thank-you-for-contact/';
 jQuery("#success-msg").html(''); 
 jQuery("#success-msg").show();
 jQuery("#success-msg").append(msg); 

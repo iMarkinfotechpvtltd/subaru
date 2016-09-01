@@ -945,18 +945,24 @@ textarea {
     bottom: 0;
     height: 100%;
     left: 0;
-    position: absolute;
+    position: relative;
+    display: table-cell;
+    float: none;
+    vertical-align: bottom;
+}
+
+#carousel-example-generic .item .col-md-7.col-md-offset-5 {
+    min-height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
 }
 
 .carousel.slide.team-carousel .item .container {
     position: relative;
 }
 
-.carousel.slide.team-carousel .item .col-md-5 img {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-}
+
 
 .carousel.slide.team-carousel .carousel-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -1311,6 +1317,7 @@ textarea {
     text-align: center;
     width: 30px;
     transition: 0.5s;
+    box-shadow: none;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
@@ -4601,6 +4608,7 @@ li.dropdown-menu > li > a:hover {
     margin-right: 20px;
     padding: 0;
     vertical-align: top;
+    margin-bottom: 10px;
 }
 
 .row.air-conditioning .col-md-12 ul li a,
@@ -5711,6 +5719,7 @@ li.dropdown-menu > li > a:hover {
     margin: 0 2px 0 0;
     padding: 5px 10px 10px 50px;
     width: 118px;
+    opacity: 1;
 }
 
 .price-grid.owl-carousel .owl-nav .owl-next, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-next {
@@ -5727,6 +5736,7 @@ li.dropdown-menu > li > a:hover {
     margin: 0 0 0 2px;
     padding: 5px 50px 10px 10px;
     width: 118px;
+    opacity: 1;
 }
 
 .price-grid.owl-carousel .owl-nav .owl-next:hover, .price-grid.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
@@ -6273,38 +6283,38 @@ li.dropdown-menu > li > a:hover {
 }
 
 .conditioning-service-package.timing-belt .absorvers {
-    min-height: 500px;
+    min-height: 550px;
 }
 
 .conditioning-service-package.air-conditioning .absorvers,
 .conditioning-service-package.lubricants .absorvers,
 .conditioning-service-package.CV-shaft .absorvers,
 .conditioning-service-package.battery-service .absorvers {
-    min-height: 500px;
+    min-height: 550px;
 }
 
 .conditioning-service-package.ecu-service .absorvers {
-    min-height: 500px;
+     min-height: 550px;
 }
 
 .conditioning-service-package.power-window .absorvers {
-    min-height: 500px;
+     min-height: 550px;
 }
 
 .conditioning-service-package.vehicle-security .absorvers {
-    min-height: 500px;
+     min-height: 550px;
 }
 
 .conditioning-service-package.brake-price .absorvers {
-    min-height: 500px;
+    min-height: 550px;
 }
 
 .conditioning-service-package.door-morror-price .absorvers {
-    min-height: 500px;
+     min-height: 550px;
 }
 
 .conditioning-service-package.log-book .absorvers {
-    min-height: 500px;
+     min-height: 550px;
 }
 
 .early-signs-of-wear:last-child::before {
@@ -6909,6 +6919,19 @@ li.dropdown-menu > li > a:hover {
 .btn-morre:focus {
     color: #fff;
     opacity: 0.8;
+}
+
+.system-cooling .btn-morre{
+    height: 100%;
+}
+
+.system-cooling .btn-morre:before{
+        margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .btn-morre::before {
@@ -7617,6 +7640,11 @@ li.dropdown-menu > li > a:hover {
     font-family: "AgencyBold";
     line-height: 35px;
     margin: 0;
+    font-size: 26px;
+}
+
+.internal-service-section .system-cooling img{
+    width: 100%;
 }
 
 .two-coloumns::after,
@@ -9781,7 +9809,7 @@ a.abv-bey-btn:hover {
     background: #84c02f;
 }
 
-.selecrt-option-btn input[type="checkbox"] {
+.selecrt-option-btn input[type="checkbox"], .selecrt-option-btn input[type="radio"] {
     display: none;
 }
 
@@ -13487,10 +13515,11 @@ ul.gear-tick-list li:before {
         font-size: 60px;
     }
     .carousel.slide.team-carousel .item {
-        min-height: 565px;
+        min-height:100%;
     }
     .carousel.slide.team-carousel .item .container {
-        min-height: 565px;
+        min-height: 100%;
+        display: table;
     }
     .testimonial-banner .banner-caption h2 {
         font-size: 140px;

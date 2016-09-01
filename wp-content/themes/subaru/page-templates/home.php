@@ -42,26 +42,7 @@ echo get_the_content(); ?>
 <?php endwhile; ?>
 <div class="clearfix"></div>
 
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search wow bounceInUp" data-wow-duration="2s">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-
-</form>
-</div>
-</div>
+<?php get_sidebar('search'); ?>  
 </div>
 
 <?php get_sidebar('departments'); ?>  
@@ -158,13 +139,13 @@ $urs = $thumb['0'];
 if(!empty($urs)) 
 {
 ?>
-<img src="<?php echo $urs;?>" class="img-responsive" alt="<?php echo $image_alt; ?>">
+<a href="<?php the_permalink(); ?>"><img src="<?php echo $urs;?>" class="img-responsive" alt="<?php echo $image_alt; ?>"></a>
 <?php
 }
 else
 {
 ?>
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/news-artical-img-1.jpg" class="img-responsive" alt="subaru-engine">
+<a href="<?php the_permalink(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/news-artical-img-1.jpg" class="img-responsive" alt="subaru-engine"></a>
 <?php
 }
 ?>

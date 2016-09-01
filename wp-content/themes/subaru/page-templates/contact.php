@@ -81,7 +81,7 @@ else{ ?>
 if(get_post_meta($post->ID,"cont_phone",true)) {
 ?>
 <li>
-Phone +61 <a href="tel:<?php echo get_post_meta($post->ID,"cont_phone",true); ?>"><span><?php echo get_post_meta($post->ID,"cont_phone",true); ?></span></a>
+Phone +61 <a href="tel:<?php echo preg_replace("/[^a-zA-Z0-9\s]/", '', get_post_meta($post->ID,"cont_phone",true)); ?>"><span><?php echo get_post_meta($post->ID,"cont_phone",true); ?></span></a>
 </li>
 <?php } 
 if(get_post_meta($post->ID,"cont_fax",true)) {

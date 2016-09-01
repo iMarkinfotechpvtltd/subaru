@@ -479,7 +479,8 @@ header.fixed .navbar-nav>li.has-mm:hover .custm-mega-cvr {
     width: 52%;
 }
 
-.main-search .form-group .form-control {
+.main-search .form-group .form-control,
+.main-search .form-control {
     width: 100%;
     height: 41px;
     border: solid 1px #ccc;
@@ -493,21 +494,28 @@ header.fixed .navbar-nav>li.has-mm:hover .custm-mega-cvr {
     border-radius: 0px;
 }
 
-.main-search .form-group .form-control::-webkit-input-placeholder {
+.main-search input[type=search].form-control {
+    background: #fff url(../images/home-search-icon.png) no-repeat;
+    background-position: 99% 50%;
+    background-size: 17px;
+    padding-right: 45px;
+}
+
+.main-search .form-control::-webkit-input-placeholder {
     color: #909090;
 }
 
-.main-search .form-group .form-control:-moz-placeholder {
+.main-search .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: #909090;
 }
 
-.main-search .form-group .form-control::-moz-placeholder {
+.main-search .form-control::-moz-placeholder {
     /* Firefox 19+ */
     color: #909090;
 }
 
-.main-search .form-group .form-control:-ms-input-placeholder {
+.main-search .form-control:-ms-input-placeholder {
     color: #909090;
 }
 
@@ -517,7 +525,7 @@ header.fixed .navbar-nav>li.has-mm:hover .custm-mega-cvr {
     color: #909090;
 }
 
-.main-search .form-group .form-control:focus {
+.main-search .form-control:focus {
     color: #010101;
     border-color: #b5b2b2;
 }
@@ -1149,6 +1157,12 @@ footer .footer-list h3 {
     margin: 0 0 30px;
 }
 
+footer .footer-list h3 a,
+footer .footer-list h3 a:hover,
+footer .footer-list h3 a:focus {
+    color: #fff;
+}
+
 footer .footer-list ul {
     margin: 0;
     padding: 0;
@@ -1223,7 +1237,7 @@ footer .footer-list.subapedia-list:after {
     display: none;
 }
 
-.footer-item.footer-vdo .textwidget iframe{
+.footer-item.footer-vdo .textwidget iframe {
     width: 100%;
     height: 260px;
 }
@@ -3449,7 +3463,111 @@ ul.services-top-buttons li {
     width: 100%;
 }
 
+
+/** Wheel banner **/
+
+.wheel-white-heading {
+    background: #fff;
+    padding: 25px;
+    max-width: 440px;
+}
+
+.wheel-white-heading p {
+    font-family: "AgencyBold";
+    font-size: 49px;
+    color: #6a5624;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.searchwp-live-search-result p {
+    padding: 0 !important;
+}
+
+.searchwp-live-search-result a {
+    color: #010101;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    background: #f5f5f5;
+    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+}
+
+.searchwp-live-search-result a:hover,
+.searchwp-live-search-result a:focus {
+    color: #df0185;
+    background: #fff;
+}
+
+.clutch-repair .ejengines .blocks-engine p{
+    text-align: center;
+}
+
+#appointment-main, #packages{
+    display: block;
+    height: 135px;
+    margin-top: -115px;
+}
+
+.basic-head-gasket-iner .selecrt-option-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+}
+
+.basic-head-gasket-iner .selecrt-option-btn label{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.basic-head-gasket-iner .selecrt-option-btn .cust-checkbox{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    top: -3px;
+}
+
+.basic-head-gasket-iner .selecrt-option-btn input[type="radio"]:checked + span.cust-checkbox {
+    background: #fff;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.basic-head-gasket-iner .selecrt-option-btn input[type="radio"]:checked + span.cust-checkbox:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 7px;
+    background: transparent;
+    top: 7px;
+    left: 5px;
+    border: 3px solid #84c02f;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 @media(min-width:1600px) {
+    .wheel-white-heading p {
+        font-size: 64px;
+    }
+    .wheel-white-heading {
+        max-width: 555px;
+    }
+    /** Wheel banner end **/
     ul.services-top-buttons {
         position: absolute;
         top: 7px;
@@ -3517,9 +3635,13 @@ ul.services-top-buttons li {
         width: auto;
     }
     /** head Gaskit **/
-    .banner-head-gaskets .banner-left,
+    .banner-head-gaskets .banner-left{
+         margin-top: 230px;
+    }
+    
     .banner-pedia .banner-left {
-        margin-top: 244px;
+        margin-top: 290px;
+        margin-left: 240px;
     }
     .banner-head-gaskets .banner-left h1,
     .banner-pedia .banner-left h1 {
@@ -3666,5 +3788,9 @@ ul.services-top-buttons li {
     }
     .call-sec {
         margin-right: 20px;
+    }
+    body.admin-bar .banner,
+    body.admin-bar .banner.banner-inner-service {
+        height: 946px;
     }
 }

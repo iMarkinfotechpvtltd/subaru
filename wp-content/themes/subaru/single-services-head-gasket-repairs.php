@@ -50,26 +50,7 @@ $small_url = $small_image[0]; ?>
 <!--- Banner Section End here ---->
 
 <!--- Search Section start here ---->
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 <!--- Search Section End here ---->
 
 <div class="container">
@@ -127,7 +108,7 @@ wp_reset_postdata();
 ?>
 </ul> 
  <ul class="services-top-buttons">
-<li><a href="#appointment">Book Your Service</a></li>    
+<li><a href="#appointment-main">Book Your Service</a></li>    
 </ul>     
 </div>
 </div> <!-- End Show the Category Name and it's posts -->
@@ -245,14 +226,18 @@ $url1 = $img[0];
 </div> col-sm-4
 </div>
 </div>-->
-<div class="forms-steps-section-internal">
+<div class="forms-steps-section-internal" id="head-right-sol">
 <h3><span style="color:#027ffd;">Step 1 -</span> Select Your Option</h3>
 
 <div class="basic-head-gasket-repair-option">  
 <h3><span>Option 1 -</span><?php echo get_post_meta($post->ID,"option_1_title",true); ?></h3>
 <div class="basic-head-gasket-iner">
 <?php echo get_post_meta($post->ID,"option_1_description",true); ?>
-<button class="btn btn-default btn-option" type="button"></button>
+<div class="selecrt-option-btn">
+<label>
+<input type="radio" name="headsol" value="Basic Head Gasket Repair Option">
+<span class="cust-checkbox"></span>Select Option</label>
+</div>
 </div> <!---basic-head-gasket-iner--->
 </div>   <!--basic-head-gasket-repair-option-->   
 
@@ -260,12 +245,16 @@ $url1 = $img[0];
 <h3><span>Option 2 -</span>Head Gasket Repair And Maintenance Option</h3>
 <div class="basic-head-gasket-iner">
 <?php echo get_post_meta($post->ID,"option_2_description",true); ?>
-<button class="btn btn-default btn-option" type="button"></button>
+<div class="selecrt-option-btn">
+<label>
+<input type="radio" name="headsol" value="Head Gasket Repair And Maintenance Option">
+<span class="cust-checkbox"></span>Select Option</label>
+</div>
 </div> <!---basic-head-gasket-iner--->
 </div>   <!--basic-head-gasket-repair-option--> 
 </div>
 
-<div class="forms-steps-section-internal">
+<div class="forms-steps-section-internal" id="head-second-step" style="display:none;">
 <h3><span style="color:#027ffd;">Step 2 -</span> Send Your Enquiry</h3>
 <?php echo get_sidebar('enquiry'); ?>
 </div>

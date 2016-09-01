@@ -46,7 +46,7 @@ $small_url = $small_image[0]; ?>
 
 </ul>
 <?php $button_url = get_post_meta($post_id,"button_url",true); ?>
-<a class="banner-black-btn" href="<?php if($button_url){echo '$button_url'; } else{ echo '#'; } ?>"><?php echo get_post_meta($post_id,"button_text",true); ?></a>
+<a class="banner-black-btn" href="<?php if($button_url){echo $button_url; } else{ echo '#'; } ?>"><?php echo get_post_meta($post_id,"button_text",true); ?></a>
 
 </div>
 
@@ -64,26 +64,7 @@ $small_url = $small_image[0]; ?>
 <div class="clearfix"></div>
 
 <!--- Search Section start here ---->
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 <!--- Search Section End here ---->
 
 <div class="container">
@@ -141,7 +122,7 @@ wp_reset_postdata();
 ?>
 </ul> 
 <ul class="services-top-buttons">
-<li><a href="#appointment">Book Your Service</a></li>    
+<li><a href="#appointment-main">Book Your Service</a></li>    
 <li><a href="#packages" >View Packages</a></li> 
 </ul>      
 </div>
@@ -302,7 +283,8 @@ CHANGES
 </div> <!--container-->
 </div>
 <!-- Appointment Form -->
-<div class="conditioning-service-package log-book" id="packages">
+<div class="conditioning-service-package log-book">
+ <a id="packages"></a>   
 <div class="container">
 <?php
 $pack_title=get_post_meta($post->ID,"package_title",true);
@@ -337,8 +319,8 @@ else{ echo 'POA'; }
 <?php echo get_the_content($pack_id); ?>
 </div> <!---->
 <div class="bottom-buttons">
-<a href="#appointment"><button type="button" class="btn btn-default">Book Now</button></a>
-<a href="#appointment"><button type="button" class="btn btn-default right">Inquire Now</button></a>
+<a href="#appointment-main"><button type="button" class="btn btn-default">Book Now</button></a>
+<a href="#appointment-main"><button type="button" class="btn btn-default right">Inquire Now</button></a>
 </div>
 </div> <!--col-xs-12 col-md-4-->  
 <?php } ?>

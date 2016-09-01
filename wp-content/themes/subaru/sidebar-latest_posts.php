@@ -32,7 +32,7 @@ $post_id=get_the_ID();
 ?>
 <div class="col-xs-12 col-md-4 col-sm-4">
 <?php $subaimg= get_the_post_thumbnail_url($post_id,'latest_posts'); ?>
-<div class="subapedia-latest-posts" style="background-image:url(<?php echo $subaimg;?>);">  </div>
+<a href="<?php echo get_the_permalink(); ?>"><div class="subapedia-latest-posts" style="background-image:url(<?php echo $subaimg;?>);">  </div></a>
 <div class="blog-tittles">
 <h3><?php echo get_the_title($post_id); ?></h3>
 <p><?php echo get_excerpt(55); ?></p>

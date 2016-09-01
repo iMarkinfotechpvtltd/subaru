@@ -1,7 +1,7 @@
 <div class="srip-cose">
 <div class="container">
 <h2>ALL DRIVE SUBAROO PARTS ONLINE STORE</h2>
-<a class="btn btn-default btn-mm" href="">VISIT OUR ONLINE STORE</a>   
+<a class="btn btn-default btn-mm" href="http://stores.ebay.com.au/alldrive-subaroo?_rdc=1" target="_blank">VISIT OUR ONLINE STORE</a>   
 </div> 
 </div> <!--srip-cose-->
 
@@ -41,64 +41,64 @@ Repair Kits Supplied</h3>
 </div>
 </div>
 
-<div class="row timing-belt" id="timing-belt">
+<!--<div class="row timing-belt" id="timing-belt">
 <div class="col-md-12 timing-belt-carosuel">
 <div class="col-xs-6 col-md-3">
 <div class="img-div">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images00.jpg">
 <div class="price-tags"> <small>ONLY</small> $349 </div>
-</div> <!--img-div-->
+</div> img-div
 
 <div class="products-description">
 <h4>Subaru TIMING BELT ONLY</h4>
 <p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
 
 
-</div> <!--products-description-->
+</div> products-description
 <button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
+</div> col-xs-6
 <div class="col-xs-6 col-md-3">
 <div class="img-div">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images01.jpg" alt="online-store-subaru">
 <div class="price-tags"> <small>ONLY</small> $549 </div>
-</div> <!--img-div-->
+</div> img-div
 
 <div class="products-description">
 <h4>Subaru TIMING BELT ONLY</h4>
 <p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
 
 
-</div> <!--products-description-->
+</div> products-description
 <button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
+</div> col-xs-6
 <div class="col-xs-6 col-md-3">
 <div class="img-div">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/Subaru-Electrical-Parts-Alldrivesubaroo.jpg" alt="Subaru-Electrical-Parts">
 <div class="price-tags"> <small>ONLY</small> $749 </div>
-</div> <!--img-div-->
+</div> img-div
 
 <div class="products-description">
 <h4>Subaru TIMING BELT ONLY</h4>
 <p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
 
 
-</div> <!--products-description-->
+</div> products-description
 <button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
+</div> col-xs-6
 
 <div class="col-xs-6 col-md-3">
 <div class="img-div">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/service/images03.jpg" alt="online-store-subaru">
 <div class="price-tags"> <small>ONLY</small> $949 </div>
-</div> <!--img-div-->
+</div> img-div
 
 <div class="products-description">
 <h4>Subaru TIMING BELT ONLY</h4>
 <p>Genuine Subaru Timing Belt. Designed and Manufactured specifically for your Subaru. Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
-</div> <!--products-description-->
+</div> products-description
 <button type="button" class="btn btn-default btn-order">ordeR PART ONLINE</button>
-</div> <!--col-xs-6-->
+</div> col-xs-6
 </div>
-</div>
+</div>-->
 </div>
 </div> 

@@ -81,27 +81,7 @@ else
 ?>
 
 
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 
 
 
@@ -150,10 +130,10 @@ if($post_title){echo $post_title;}
 <button type="button" class="btn btn-default btn-quote quote">Get A Quote</button>
 </div> <!--col-xs-12 col-sm-4-->
 <div class="col-xs-12 col-sm-4">
-<a href='tel:+(02) 9915 9900' class="btn btn-default btn-quote helpline">(02) 9915 9900</a>
+<a href='tel:02 9915 9900' class="btn btn-default btn-quote helpline">(02) 9915 9900</a>
 </div> <!--col-xs-12 col-sm-4--> 
 <div class="col-xs-12 col-sm-4">
-<a href="tel:+0420 319 049" class="btn btn-default btn-quote helpline">0420 319 049</a>
+<a href="tel:0420 319 049" class="btn btn-default btn-quote helpline">0420 319 049</a>
 </div> <!--col-xs-12 col-sm-4-->
 </div>  <!--row-->
 

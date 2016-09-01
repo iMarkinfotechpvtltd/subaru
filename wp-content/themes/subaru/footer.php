@@ -51,16 +51,16 @@ echo '</ul>';}
 </div>
 
 <div class="footer-list engines-list">
-<h3>Engines</h3>
-<?php wp_nav_menu( array( 'theme_location' => 'footer-engine-menu' ) ); ?>
+<h3><a href="http://www.subaruengine.com.au/" target="_blank">Engines</a></h3>
+<?php //wp_nav_menu( array( 'theme_location' => 'footer-engine-menu' ) ); ?>
 </div>
 <div class="footer-list parts-list">
-<h3>Parts</h3>
-<?php wp_nav_menu( array( 'theme_location' => 'footer-parts-menu' ) ); ?>
+<h3><a href="http://stores.ebay.com.au/alldrive-subaroo?_rdc=1" target="_blank">Parts</a></h3>
+<?php //wp_nav_menu( array( 'theme_location' => 'footer-parts-menu' ) ); ?>
 </div>
 <div class="footer-list gearbox-list">
-<h3>Gearbox</h3>
-<?php wp_nav_menu( array( 'theme_location' => 'footer-gearbox-menu' ) ); ?>
+<h3><a href="http://www.subarugearbox.com.au/" target="_blank">Gearbox</a></h3>
+<?php //wp_nav_menu( array( 'theme_location' => 'footer-gearbox-menu' ) ); ?>
 </div>
 <div class="footer-list subapedia-list">
 <h3>Subapedia</h3>
@@ -120,5 +120,15 @@ axis: "y"
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.timepicker.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/jquery.timepicker.css" />
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom-footer.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74362168-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

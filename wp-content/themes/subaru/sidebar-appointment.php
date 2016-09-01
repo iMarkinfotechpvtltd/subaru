@@ -1,8 +1,9 @@
 <div class="appointment-section">
+<a id="appointment-main"></a>    
 <div class="container">
 
 <form name='appointment' method='post' action="" onsubmit="return appointval();" id="appointment">   
-<h2>enquire or book an apointment now</h2>
+<h2>enquire or book an appointment now</h2>
 <p>For further information use our convenient online enquiry form, and one of our specialised technician will call you to discuss your enquiry. Remember, the more specific details you can provide, the more accurate our assessment will be. Alternatively, call us any time in business hours and talk to Niazi on (02) 9915-9900 or 0420 319 049.</p>
 <div class="row coloumn-form" id='booking-cal'>
 
@@ -123,7 +124,7 @@
 
 <div class="appointment-date">
 <p>Your Appointment Date:</p> 
-<input id="datepicker-example14" type="text" value="<?php echo date('m/d/Y'); ?>">
+<input id="datepicker-example14" type="text" value="<?php echo date('d/m/Y'); ?>">
 </div> 
 <input type="submit" class="btn btn-default btn-appointment" value="submit" name="submit">
 

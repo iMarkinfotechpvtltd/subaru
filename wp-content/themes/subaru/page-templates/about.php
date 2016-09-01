@@ -190,8 +190,8 @@ else{ ?>
 
 <div class="call-to-act-btn">
 <ul>
-<li><a href="#" class="cta-btn">Send an enquiry to Niazi</a></li>
-<li><a href="tel:029915 9900" class="cta-btn">Call us on 02 9915 9900</a></li>
+<li><a href="<?php echo get_the_permalink(133); ?>" class="cta-btn">Send an enquiry</a></li>
+<li><a href="tel:02 9915 9900" class="cta-btn">Call us on 02 9915 9900</a></li>
 </ul>
 </div>
 </div>

@@ -36,27 +36,7 @@ else
 <div class="clearfix"></div>
 
 <!-- Search Section Start -->
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search wow bounceInUp" data-wow-duration="2s">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 <!-- Search Section End -->
 
 <!-- Testimonials Section Start -->

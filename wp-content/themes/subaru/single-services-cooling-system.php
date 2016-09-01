@@ -52,26 +52,7 @@ $small_url = $small_image[0]; ?>
 <div class="clearfix"></div>
 
 <!--- Search Section start here ---->
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 <!--- Search Section End here ---->
 
 <div class="container">
@@ -129,7 +110,7 @@ wp_reset_postdata();
 ?>
 </ul> 
     <ul class="services-top-buttons">
-<li><a href="#appointment">Book Your Service</a></li>    
+<li><a href="#appointment-main">Book Your Service</a></li>    
 </ul>  
 </div>
 </div> <!-- End Show the Category Name and it's posts -->
@@ -241,7 +222,7 @@ header and radiator</p>
 <!--black bar start here-->
 <div class="black-bar">
 <div class="container">
-<h4>We have all these components in stock and ready to go. <a href="#">Visit our Online Parts Store</a></h4>
+<h4>We have all these components in stock and ready to go. <a href="http://stores.ebay.com.au/alldrive-subaroo?_rdc=1" target="_blank">Visit our Online Parts Store</a></h4>
 </div>
 </div>
 <!-- Black Bar End here -->

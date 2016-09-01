@@ -31,6 +31,36 @@ else
 }
 ?>
 
+<?php if ($post_id==100){ ?>
+<div class="container-fluid">
+<div class="banner-left">
+<div class="wheel-white-heading">
+<p><?php echo get_post_meta($post_id,"banner_title",true); ?></p>
+</div>
+
+<ul class="banner-thr-box">
+<?php
+for($i=1;$i<=3;$i++){
+ $bann= "small_banner_image_".$i;
+$banner_small = get_post_meta($post_id,$bann,true);
+if($banner_small){
+$small_image = wp_get_attachment_image_src($banner_small,'banner_small');
+$image_alt = get_post_meta( $banner_small, '_wp_attachment_image_alt', true);
+$small_url = $small_image[0]; ?>
+<li><img class="img-responsive" src="<?php echo $small_url; ?>" alt="<?php echo $image_alt; ?>">
+<h2><?php echo get_the_title($banner_small); ?></h2>
+</li>
+
+<?php }
+}
+?>
+
+</ul>
+</div>
+</div>
+  <?php      
+    } else{
+?>
 <div class="container-fluid">
 <div class="banner-left">
 <h1><?php echo get_post_meta($post_id,"banner_title",true); ?></h1>
@@ -49,7 +79,7 @@ $small_url = $small_image[0]; ?>
 
 </ul>
 <?php $button_url = get_post_meta($post_id,"button_url",true); ?>
-<a class="banner-black-btn" href="<?php if($button_url){echo '$button_url'; } else{ echo '#'; } ?>"><?php echo get_post_meta($post_id,"button_text",true); ?></a>
+<a class="banner-black-btn" href="<?php if($button_url){echo $button_url; } else{ echo '#'; } ?>"><?php echo get_post_meta($post_id,"button_text",true); ?></a>
 
 </div>
 
@@ -60,32 +90,13 @@ $small_url = $small_image[0]; ?>
 
 </div>
 
-
+    <?php } ?>
  </div>   
 <!--- Banner Section End here ---->
 <div class="clearfix"></div>
 
 <!--- Search Section start here ---->
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 <!--- Search Section End here ---->
 
 <div class="container">
@@ -142,7 +153,7 @@ wp_reset_postdata();
 ?>
 </ul> 
 <ul class="services-top-buttons">
-<li><a href="#appointment">Book Your Service</a></li>    
+<li><a href="#appointment-main">Book Your Service</a></li>    
 <li><a href="#packages" >View Packages</a></li> 
 </ul>    
 </div>
@@ -218,7 +229,8 @@ echo $auth_dec;
 </div> <!--container-fluid-->
 </div>
 <?php } ?>
-<div class="conditioning-service-package air-conditioning" id="packages">
+<div class="conditioning-service-package air-conditioning">
+ <a id="packages"></a>      
 <div class="container">
 <?php
 $pack_title=get_post_meta($post->ID,"package_title",true);
@@ -252,8 +264,8 @@ else{ echo 'POA'; }
 <?php echo get_the_content($pack_id); ?>
 </div> <!---->
 <div class="bottom-buttons">
-<a href="#appointment"><button type="button" class="btn btn-default">Book Now</button></a>
-<a href="#appointment"><button type="button" class="btn btn-default right">Inquire Now</button></a>
+<a href="#appointment-main"><button type="button" class="btn btn-default">Book Now</button></a>
+<a href="#appointment-main"><button type="button" class="btn btn-default right">Inquire Now</button></a>
 </div>
 </div> <!--col-xs-12 col-md-4-->  
 <?php } ?>

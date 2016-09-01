@@ -24,7 +24,9 @@ array(
 'parent' => 'Parent Main Departments'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,  
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -88,7 +90,9 @@ array(
 'parent' => 'Parent Main WHY CHOOSE SUBAROO'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -148,7 +152,9 @@ array(
 'parent' => 'Parent Main TESTIMONIALS'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,  
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -241,7 +247,9 @@ array(
 'parent' => 'Parent Main Brands'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,  
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -300,7 +308,9 @@ array(
 'parent' => 'Parent Main Teams'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,  
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -456,6 +466,16 @@ function custom_widgets_init() {
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>'
 	) );
+        
+        register_sidebar( array(
+		'name'          => __( 'Header Search', 'twentysixteen' ),
+		'id'            => 'header-search',
+		'description'   => __( 'Show below banner.', 'twentysixteen' ),
+		'before_widget' => '<div class="main-search wow bounceInUp" data-wow-duration="2s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>'
+	) );
 }
 add_action( 'widgets_init', 'custom_widgets_init' );
 
@@ -490,7 +510,9 @@ array(
 'parent' => 'Parent Main PACKAGES'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,
+'exclude_from_search' => true,    
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),
@@ -789,7 +811,7 @@ $body = '
 </html>
 ';
 $subject="Appointment Booked";
-$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
+$sent=wp_mail( 'info@alldrivesubaroo.com.au', $subject, $body, $headers );
 // Return the String  
 die($sent);  
 }  
@@ -818,6 +840,7 @@ $modyear=$_POST['modyear'];
 $engine=$_POST['engine'];
 $vin=$_POST['vin'];
 $comments=$_POST['comments'];
+$headoption=$_POST['headoption'];
 
 $headers = "From: $fname <$email>\r\n";
 $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
@@ -899,6 +922,11 @@ $body = '
 </tr>
 
 <tr>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Selected Option :</strong></td>
+<td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$headoption.'</td>
+</tr>
+
+<tr>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:15px;background: #eaeaea;padding:8px 15px;text-transform: capitalize;"><strong>Comments :</strong></td>
 <td style="width:20%; font-family:"PT Sans",sans-serif; font-size:13px;background: #f9f9f9; padding:8px 15px;">'.$comments.'</td>
 </tr>
@@ -924,7 +952,7 @@ $body = '
 </html>
 ';
 $subject="Enquiry";
-$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
+$sent=wp_mail( 'info@alldrivesubaroo.com.au', $subject, $body, $headers );
 // Return the String  
 die($sent);  
 }  
@@ -1222,7 +1250,7 @@ $body = '
 </html>
 ';
 $subject="Quote Request";
-$sent=wp_mail( 'support@internetagency.com.au', $subject, $body, $headers );
+$sent=wp_mail( 'info@alldrivesubaroo.com.au', $subject, $body, $headers );
 
 
   // Return the String  
@@ -1265,7 +1293,9 @@ array(
 'parent' => 'Parent Main Malfunction'
 ),
 
-'public' => true,
+'public' => false,
+'show_ui' => true,   
+'exclude_from_search' => true,
 'menu_position' => 15,
 'supports' => array( 'title', 'editor', 'comments', 'thumbnail', 'custom-fields' ),
 'taxonomies' => array( '' ),

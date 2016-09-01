@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.theme.css">
 <script>
 var ajaxurl = '<?php echo admin_url('admin-ajax.php');?>'; 
-var cdate='<?php echo date('m/d/Y'); ?>';
+var cdate='<?php echo date('d/m/Y'); ?>';
 </script>
 <!--Start of Zopim Live Chat Script-->
 <script type="text/javascript">
@@ -74,7 +74,7 @@ $current=get_the_id();
  $menu_name = 27;
  $menu = wp_get_nav_menu_object( $menu_name );
  $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
- ?>
+?>
 
 <ul class="nav navbar-nav">
 <?php
@@ -84,6 +84,7 @@ foreach( $menuitems as $item ):
 $link = $item->url;
 $title = $item->title;
 $loopid= $item->object_id;
+$target= $item->target;
 
 // item does not have a parent so menu_item_parent equals 0 (false)
 if ( !$item->menu_item_parent ):
@@ -103,7 +104,7 @@ else{
 ?>
 
 <li class="<?php echo $class ?>">
-<a href="<?php echo $link; ?>" class="title">
+<a href="<?php echo $link; ?>" class="title" target="<?php echo $target; ?>">
 <?php echo $title; ?>
 </a>
 <?php endif; ?>

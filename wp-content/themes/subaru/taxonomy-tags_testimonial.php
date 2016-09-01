@@ -38,26 +38,7 @@ else
 
 <div class="clearfix"></div>
 
-<div class="main-search-sec">
-<div class="container">
-<div class="main-search ">
-<form>
-<div class="form-group select-in">
-<select class="form-control">
-<option>Search by category</option>
-<option>Engine</option>
-<option>Gearbox</option>
-<option>Parts</option>
-</select>
-</div>
-<div class="form-group search-in">
-<input type="text" class="form-control" placeholder="Search website">
-</div>
-<button type="submit" class="main-search-btn">search</button>
-</form>
-</div>
-</div>
-</div>
+<?php get_sidebar('search'); ?> 
 
 
 <div class="container">
@@ -135,7 +116,7 @@ endif; ?>
 </div>
 <div class="testimonial-descp">
 <div class="tittle-date"><h3><?php echo get_the_title(); ?></h3> 
-<div class="date-calender"><?php echo get_the_date('m/d/Y'); ?></div>
+<div class="date-calender"><?php echo get_the_date('d/m/Y'); ?></div>
 </div> <!--tittle-date-->
 
 <h4><?php echo get_post_meta($id,"client_role",true); ?></h4>

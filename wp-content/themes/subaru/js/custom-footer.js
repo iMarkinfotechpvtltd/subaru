@@ -22,7 +22,7 @@ itemsMobile : [479,1],
 });
 
 jQuery('#datepicker-example14').Zebra_DatePicker({
-format: 'm/d/Y',
+format: 'd/m/Y',
 always_visible: jQuery('#container')
 });
 });
@@ -84,4 +84,38 @@ jQuery('header').addClass("fixed animated fadeInDown");
 jQuery('header').removeClass("fixed animated fadeInDown");
 }
 });
+});
+
+jQuery(document).ready(function()
+{
+// Stop user to press enter in textbox
+jQuery("#search-ajax").keypress(function(event) {
+if (event.keyCode == 13) {
+event.preventDefault();
+return false;
+}
+});
+    
+});
+
+//$(document).ready(function () {
+//    $('a[href*="#"]:not([href="#"])').click(function () {
+//        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//            var target = $(this.hash);
+//            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//            if (target.length) {
+//
+//                $('html, body').animate({
+//                    scrollTop: target.offset().top
+//                }, 1000);
+//                return false;
+//            }
+//        }
+//    });
+//    
+//});
+
+
+$('input[name=headsol]').change(function(){
+$("#head-second-step").show();
 });

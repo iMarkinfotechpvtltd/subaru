@@ -17,7 +17,6 @@
 </div> <!---col-md-6--->
 <div class="col-md-6 col-sm-6 col-xs-12">
 <select class="form-control" name="model1" id="model1">
-<option value="">Model</option>
 <option value="" selected>Model</option>
 <option value="BRZ">BRZ</option>
 <option value="Exiga">Exiga</option>
